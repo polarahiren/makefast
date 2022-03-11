@@ -1,11 +1,51 @@
 @font-face {
-  font-family: 'Avenir LT Std';
-  src: url('../fonts/AvenirLTStd-Roman.eot');
-  src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
-  url('../fonts/AvenirLTStd-Roman.woff') format('woff'),
-  url('../fonts/AvenirLTStd-Roman.ttf') format('truetype');
+  font-family: 'Prata-Regular';
+  src: url('../fonts/Prata-Regular.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/Muli-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../fonts/RedHatDisplay-Regular.eot');
+  src: url('../fonts/RedHatDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RedHatDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/RedHatDisplay-Regular.woff') format('woff'),
+      url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../fonts/RedHatDisplay-Medium.eot');
+  src: url('../fonts/RedHatDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RedHatDisplay-Medium.woff2') format('woff2'),
+      url('../fonts/RedHatDisplay-Medium.woff') format('woff'),
+      url('../fonts/RedHatDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../fonts/RedHatDisplay-Bold.eot');
+  src: url('../fonts/RedHatDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RedHatDisplay-Bold.woff2') format('woff2'),
+      url('../fonts/RedHatDisplay-Bold.woff') format('woff'),
+      url('../fonts/RedHatDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

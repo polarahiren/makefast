@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap';
+import lozad from 'lozad';
 
 import {App} from './parts/app.js'
 import {Plugins} from './parts/plugins.js'
@@ -88,3 +89,7 @@ $(".mega-menu-back").click(function () {
     $("body").removeClass("fixed-bg");
     $(".mega-menu").removeClass("open");
 });
+
+// For Lazy Load
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();

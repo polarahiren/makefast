@@ -5,10 +5,23 @@ body, html{
   padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 p{
 
+}
+
+.font-red-hat-display{
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.font-prata{
+  font-family: 'Prata-Regular', sans-serif;
+}
+
+.font-muli{
+  font-family: 'Muli', sans-serif;
 }
 
 a {
@@ -110,6 +123,24 @@ img{
 .bg--black {
   background-color: $black;
 }
+.bg-gray-light{
+  background-color: $light-gray;
+}
+.bg-gray{
+  background-color: $gray;
+}
+.bg-primary{
+  background-color: $primary;
+}
+.bg-secondary{
+  background-color: $secondary;
+}
+.bg-gray-shade1{
+  background-color: $gray-shade1;
+}
+.bg-gray-shade2{
+  background-color: $gray-shade2;
+}
 
 .color--black {
   color: $black;
@@ -126,6 +157,24 @@ img{
   }
 }
 
+.text-gray-light{
+  color: $light-gray;
+}
+.text-gray{
+  color: $gray;
+}
+.text-primary{
+  color: $primary;
+}
+.text-secondary{
+  color: $secondary;
+}
+.text-gray-shade1{
+  color: $gray-shade1;
+}
+.text-gray-shade2{
+  color: $gray-shade2;
+}
 
 /*------- Miscellaneous Classes -------*/
 

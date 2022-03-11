@@ -9,24 +9,39 @@ $sidebar-sm-columns:    4;
 
 $black: #000000;
 $white: #ffffff;
-$primary: #1775E2;
-$secondary: #1F2133;
-$gray: #A0A8AE;
+$light-gray: #D6D6D6;
+$gray: #7D7D7D;
+$primary: #011B21;
+$secondary: #707070;
+$gray-shade1: #E8E8E8;
+$gray-shade2: #828282;
 
 
 /*******************************************************************************
 ******************************* FONTS VARIABLES *******************************
 *******************************************************************************/
 
-$bodyL: 18px;
-$bodyM: 16px;
-$bodyS: 14px;
 $bodyXS: 12px;
+$bodyS: 14px;
+$bodyM: 16px;
+$bodyL: 18px;
 
-$headingL: 48px;
-$headingM: 38px;
-$headingS: 28px;
+$text-xl: 20px;
+$text-2xl: 22px;
+$text-3xl: 30px;
+$text-4xl: 32px;
+$text-5xl: 34px;
+$text-6xl: 36px;
+$text-7xl: 42px;
+$text-8xl: 66px;
+$text-large: 120px;
+
 $headingXS: 18px;
+$headingS: 28px;
+$headingM: 38px;
+$headingL: 48px;
+
+
 
 $buttonSize: 15px;
 $taglineSize: 12px;

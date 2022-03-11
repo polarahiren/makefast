@@ -1,0 +1,61 @@
+.btn{
+    &.btn-primary{
+        color: $black;
+        background-color: $white;
+        border-color: $white;
+        padding: 17px 32px 15px;
+        font-size: $bodyXS;
+        letter-spacing: 1.8px;
+        line-height: 16px;
+        &:hover{
+            color: $white;
+            background-color: $black;
+            border-color: $black;
+        }
+        &.btn-primary-large{
+            padding: 17px 42px 15px;
+        }
+    }
+    &.btn-primary-dark-icon{
+        padding: 0;
+        font-size: $bodyS;
+        font-weight: 500;
+        color: $black;
+        letter-spacing: 1.8px;
+        line-height: 16px;
+        border: 0;
+        background-color: transparent;
+        span{
+            padding-right: 13px;
+        }
+        svg{
+            @include generate-transition(all, 500ms, ease);
+        }
+        &:hover{
+            svg{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &.btn-primary-light-icon{
+        padding: 0;
+        font-size: $bodyS;
+        font-weight: 500;
+        color: $white;
+        letter-spacing: 1.8px;
+        line-height: 16px;
+        border: 0;
+        background-color: transparent;
+        span{
+            padding-right: 13px;
+        }
+        svg{
+            @include generate-transition(all, 500ms, ease);
+        }
+        &:hover{
+            svg{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
