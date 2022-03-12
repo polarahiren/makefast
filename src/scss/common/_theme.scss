@@ -207,3 +207,68 @@ p.error-message {
         margin-left: 0;
     }
 }
+
+// Background Size
+.bg-cover{
+    background-size: cover;
+}
+.bg-center{
+    background-position: center;
+}
+
+/* input form css */
+.form-control-label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.10px;
+    margin-bottom: 5px;
+
+    &.white-label {
+        color: rgb(255 255 255 / 50%);
+    }
+    &.gray-label {
+        color: rgb(0 0 0 / 45%);
+    }
+}
+
+.input-control{
+    background: $white;
+    line-height: 2;
+    font-size: $bodyS;
+    padding: 10px 1.3rem;
+    border-radius: 30px;
+    letter-spacing: 0.42px;
+    border: 1px solid transparent;
+    transition: 0.2s all ease-in-out;
+    margin-bottom: 5px;
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    &.white-input-control{
+        background: rgb(255 255 255 / 20%);
+        
+        &::placeholder{
+            color: $white;
+        }
+        &:focus{
+            border: 1px solid $white;
+        }
+    }
+    &.gray-input-control{
+        background: $gray;
+        
+        &::placeholder{
+            color: $black;
+        }
+        &:focus{
+            border: 1px solid $black;
+        }
+    }
+}
+
+/* END input form css */
+
