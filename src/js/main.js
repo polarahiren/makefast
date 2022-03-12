@@ -93,3 +93,26 @@ $(".mega-menu-back").click(function () {
 // For Lazy Load
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
+
+//search box
+$(document).ready(function(){
+    $(".global-search-button").click(function(){
+      $(".global-search form").addClass("show");
+      $(".menu ul li a.menu-item, .menu ul li a.btn").addClass("menu-visible");
+    });
+    $(".search-close").click(function(){
+      $(".global-search form").removeClass("show");
+      $(".menu ul li a.menu-item, .menu ul li a.btn").removeClass("menu-visible");
+    });
+  });
+  // END search box
+
+// Slick Slider JS
+$('.hero-slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 1
+}); //Home Slider

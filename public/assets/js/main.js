@@ -11665,7 +11665,28 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-back").click(function 
 
 var observer = lozad__WEBPACK_IMPORTED_MODULE_2___default()(); // lazy loads elements with default selector as '.lozad'
 
-observer.observe();
+observer.observe(); //search box
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".global-search-button").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".global-search form").addClass("show");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu ul li a.menu-item, .menu ul li a.btn").addClass("menu-visible");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".search-close").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".global-search form").removeClass("show");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu ul li a.menu-item, .menu ul li a.btn").removeClass("menu-visible");
+  });
+}); // END search box
+// Slick Slider JS
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.hero-slider').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  autoplay: true,
+  slidesToShow: 1
+}); //Home Slider
 
 /***/ }),
 

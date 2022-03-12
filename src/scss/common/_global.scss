@@ -189,6 +189,10 @@ img{
   opacity: 0.5;
 }
 
+.opacity-10{
+  opacity:0.10;
+}
+
 .border--radius {
   border-radius: 10px;
 }
@@ -241,4 +245,44 @@ li{
 
 .slick-overflow .slick-list{
   overflow: visible;
+}
+
+.slick-vertical-dots{
+  ul.slick-dots {
+    width: auto;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-up(xxl){
+      right: 30px;
+    }
+    li{
+      margin: 2px 0px;
+      width: auto;
+      height: auto;
+      position: relative;
+      display: inline-block;
+      padding: 0;
+      cursor: pointer;
+      &.slick-active{
+        // height: 25px;
+        button{
+          opacity: 0.3;
+        }
+      }
+      button{
+        padding: 0px;
+        width: 2px;
+        height: 18px;
+        background-color: $white;
+        opacity: 1;
+        transition: 0.2s all ease-in-out;
+        margin: 0 auto;
+      }
+    }
+  }
 }
