@@ -5,7 +5,7 @@ body, html{
   padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red-Hat-Display', sans-serif;
 }
 
 p{
@@ -13,7 +13,7 @@ p{
 }
 
 .font-red-hat-display{
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red-Hat-Display', sans-serif;
 }
 
 .font-prata{
@@ -174,6 +174,9 @@ img{
 }
 .text-gray-shade2{
   color: $gray-shade2;
+}
+.text-black-2{
+  color: $black-shade-2;
 }
 
 /*------- Miscellaneous Classes -------*/
