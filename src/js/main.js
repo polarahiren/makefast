@@ -114,5 +114,33 @@ $('.hero-slider').slick({
     infinite: true,
     speed: 300,
     autoplay: true,
-    slidesToShow: 1
+    slidesToShow: 1,
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            dots: false
+        }
+    }]
 }); //Home Slider
+
+$('.latest-blog-slider').slick({
+    dots: false,
+    arrows: true,
+    speed: 300,
+    autoplay: true,
+    infinite: false,
+    slidesToScroll: 3,
+    slidesToShow: 3,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            arrows: false
+        }
+    }]
+}); //Latest Blog Slider

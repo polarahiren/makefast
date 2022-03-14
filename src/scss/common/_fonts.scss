@@ -15,19 +15,19 @@
 }
 
 @font-face {
-  font-family: 'Red Hat Display';
+  font-family: 'Red-Hat-Display';
   src: url('../fonts/RedHatDisplay-Regular.eot');
   src: url('../fonts/RedHatDisplay-Regular.eot?#iefix') format('embedded-opentype'),
       url('../fonts/RedHatDisplay-Regular.woff2') format('woff2'),
       url('../fonts/RedHatDisplay-Regular.woff') format('woff'),
       url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Red Hat Display';
+  font-family: 'Red-Hat-Display';
   src: url('../fonts/RedHatDisplay-Medium.eot');
   src: url('../fonts/RedHatDisplay-Medium.eot?#iefix') format('embedded-opentype'),
       url('../fonts/RedHatDisplay-Medium.woff2') format('woff2'),
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: 'Red Hat Display';
+  font-family: 'Red-Hat-Display';
   src: url('../fonts/RedHatDisplay-Bold.eot');
   src: url('../fonts/RedHatDisplay-Bold.eot?#iefix') format('embedded-opentype'),
       url('../fonts/RedHatDisplay-Bold.woff2') format('woff2'),

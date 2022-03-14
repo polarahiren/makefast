@@ -1,0 +1,57 @@
+// Home Page
+.hero-slider{
+    .slick-slide{
+        .img-fluid{
+            height: 780px;
+            @include media-breakpoint-down(md){
+                height: 864px;
+            }
+        }
+        .hero-filter{
+            top: 261px;
+            @include media-breakpoint-down(md){
+                top: 288px;
+                .hero-title{
+                    letter-spacing: 0.54pt;
+                    line-height: 65px;
+                }
+            }
+            .hero-content{
+                letter-spacing: 0.9px;
+                line-height: 27px;
+                @include media-breakpoint-down(md){
+                    letter-spacing: 0.42pt;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md){
+    .section-md-up{
+        transform: translateY(-220px);
+        margin-bottom: -220px;
+    }
+}
+
+.image-box{
+    .object-cover {
+        height: 434px;
+        @include media-breakpoint-down(md){
+            height: 370px;
+        }
+    }
+    .image-filter {
+        top: 244px;
+        @include media-breakpoint-down(md){
+            top: 135px;
+        }
+    }
+}
+
+.latest-blog-slider {
+    .slick-list {
+        overflow: visible;
+    }
+}

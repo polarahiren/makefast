@@ -7,28 +7,28 @@
 
 .text-xs{
     font-size: $bodyXS;
-    letter-spacing: 1.8px;
-    list-style: 16px;
+    // letter-spacing: 1.8px;
+    // line-height: 16px;
 }
 .text-sm{
     font-size: $bodyS;
-    letter-spacing: 1.26px;
-    list-style: 18px;
+    // letter-spacing: 1.26px;
+    // line-height: 18px;
 }
 .text-base{
     font-size: $bodyM;
-    letter-spacing: 0.32px;
-    line-height: 28px;
+    // letter-spacing: 0.32px;
+    // line-height: 28px;
 }
 .text-lg{
     font-size: $bodyL;
-    letter-spacing: 0.4px;
-    line-height: 28px;
+    // letter-spacing: 0.4px;
+    // line-height: 28px;
 }
 .text-xl{
     font-size: $text-xl;
-    letter-spacing: 0.4px;
-    line-height: 28px;
+    // letter-spacing: 0.4px;
+    // line-height: 28px;
 }
 .text-2xl{
     font-size: $text-2xl;
@@ -58,7 +58,10 @@
 .text-8xl{
     font-size: $text-8xl;
     line-height: 72px;
-    letter-spacing: 0.36px;
+    letter-spacing: 0.66px;
+}
+.text-9xl{
+    font-size: $text-9xl;
 }
 .text-large{
     font-size: $text-large;
@@ -78,6 +81,7 @@
     .sm\:text-6xl{font-size: $text-6xl;}
     .sm\:text-7xl{font-size: $text-7xl;}
     .sm\:text-8xl{font-size: $text-8xl;}
+    .sm\:text-9xl{font-size: $text-9xl;}
     .sm\:text-large{font-size: $text-large;}
 }
 
@@ -94,6 +98,7 @@
     .md\:text-6xl{font-size: $text-6xl;}
     .md\:text-7xl{font-size: $text-7xl;}
     .md\:text-8xl{font-size: $text-8xl;}
+    .md\:text-9xl{font-size: $text-9xl;}
     .md\:text-large{font-size: $text-large;}
 }
 
@@ -110,6 +115,7 @@
     .lg\:text-6xl{font-size: $text-6xl;}
     .lg\:text-7xl{font-size: $text-7xl;}
     .lg\:text-8xl{font-size: $text-8xl;}
+    .lg\:text-9xl{font-size: $text-9xl;}
     .lg\:text-large{font-size: $text-large;}
 }
 
@@ -126,6 +132,7 @@
     .xl\:text-6xl{font-size: $text-6xl;}
     .xl\:text-7xl{font-size: $text-7xl;}
     .xl\:text-8xl{font-size: $text-8xl;}
+    .xl\:text-9xl{font-size: $text-9xl;}
     .xl\:text-large{font-size: $text-large;}
 }
 
@@ -142,6 +149,7 @@
     .xxl\:text-6xl{font-size: $text-6xl;}
     .xxl\:text-7xl{font-size: $text-7xl;}
     .xxl\:text-8xl{font-size: $text-8xl;}
+    .xxl\:text-9xl{font-size: $text-9xl;}
     .xxl\:text-large{font-size: $text-large;}
 }
 
