@@ -98,3 +98,35 @@
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+
+
+// shop page 
+
+// product filter css
+@include media-breakpoint-down(md){
+    .product-filter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 99;
+        padding: 30px 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s all ease-in-out;
+        overflow-y: auto;
+
+        &.show{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+// END shop page 
+
+>>>>>>> aa42c8c7997d0a7b19b5d8d15edcb7600da7a666

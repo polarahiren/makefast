@@ -15754,6 +15754,10 @@ p.error-message {
 }
 
 /* END insights card */
+.product-card .card-img {
+  overflow: hidden;
+}
+
 /* card-with-inner-body */
 .card-with-inner-body {
   position: relative;

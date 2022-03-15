@@ -308,3 +308,22 @@ p.error-message {
     }
 }
 
+
+// shop page filter css
+.product-filter{
+    .accordion-item{
+        border: none;
+        .accordion-button{
+            background-color: transparent;
+            color: $black;
+            padding: 15px 0px;
+            border-bottom: 1px solid #D5D5D545;
+
+            &:after{
+                background-image: url("../images/icon/filter-dropdown-icon.svg");
+                background-size: 12px;
+                background-position: center;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
-/public/**/**
-/public/**/**
+.gitignore
+/public/css/**
+/public/js/**
 /node_modules
 mix-manifest.json

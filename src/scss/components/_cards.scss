@@ -108,3 +108,26 @@
     }
 }
 /* END insights card */
+
+
+// product card
+.product-card{
+    margin-bottom: 20px;
+
+        @include media-breakpoint-up(md){
+            margin-bottom: 50px;
+        }
+
+        .card-img{
+            height: 360px;
+            overflow: hidden;
+            
+            @include media-breakpoint-down(lg){
+                height: 260px;
+            }
+            @include media-breakpoint-down(sm){
+                height: 180px;
+            }
+        }
+}
+// END product card

@@ -24,30 +24,30 @@ p{
   font-family: 'Muli', sans-serif;
 }
 
-a {
-  &:hover {
-    text-decoration: none;
-  }
+
+a, a:hover {
+  text-decoration: none;
 }
 
 *{
- outline: none !important;
+outline: none !important;
 }
 
 a, input, button{
- outline: none !important;
- box-shadow: none !important;
+outline: none !important;
+box-shadow: none !important;
 }
 
 .no-gutter > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
+padding-right:0;
+padding-left:0;
 }
 
 img{
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
+
 
 .align--center{
   display: flex;
