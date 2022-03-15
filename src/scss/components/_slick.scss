@@ -299,3 +299,37 @@
         }
     }
 }
+
+.slider-overflow-visable{
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+.slick-slider{
+    .slick-arrow{
+        height: auto;
+        width: auto;
+        &:before{
+            font-size: 34px;
+            color: $black-shade-2;
+            opacity: 1 !important;
+        }
+        &.slick-disabled{
+            &:before{
+                opacity: 0.13 !important;
+            }
+        }
+    }
+    &.slick-arrow-top-right{
+        .slick-next {
+            right: -12px;
+            top: -60px;
+        }
+        .slick-prev{
+            right: 45px;
+            top: -60px;
+            left: auto;
+        }
+    }
+}

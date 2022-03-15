@@ -135,12 +135,35 @@ $('.latest-blog-slider').slick({
     variableWidth: false,
     focusOnSelect: false,
     centerMode: false,
-    prevArrow:"<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
+    nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
     responsive: [{
         breakpoint: 767,
         settings: {
-            arrows: false
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }]
+}); //Latest Blog Slider
+
+$('.offer-slider').slick({
+    dots: false,
+    arrows: false,
+    speed: 300,
+    autoplay: true,
+    infinite: false,
+    slidesToScroll: 3,
+    slidesToShow: 3,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
     }]
 }); //Latest Blog Slider
