@@ -1,4 +1,4 @@
-public/css/*
-public/js/*
+/public/**/**
+/public/**/**
 /node_modules
 mix-manifest.json
