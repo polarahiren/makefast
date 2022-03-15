@@ -272,3 +272,39 @@ p.error-message {
 
 /* END input form css */
 
+.checkbox-control{
+    .theme-checkbox {
+        width: 17px;
+        height: 17px;
+        border-radius: 5px;
+        border: 1px solid #707070;
+        background: $white;
+        position: relative;
+
+        &::before{
+            content:"";
+            display: block;
+            width: 11px;
+            height: 11px;
+            border-radius: 3px;
+            background: $black;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0);
+            transition: 0.2s all ease-in-out;
+        }
+    }
+
+    input{
+        display: none;
+
+        &:checked + .theme-checkbox:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
