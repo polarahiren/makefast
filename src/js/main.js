@@ -167,3 +167,16 @@ $('.offer-slider').slick({
         }
     }]
 }); //Latest Blog Slider
+
+
+
+
+// product filter close
+$(document).ready(function(){
+    $(".filter-close").click(function(){
+      $(".filter-trigger").removeClass("open");
+      $(".product-filter").removeClass("show");
+      $("body").removeClass("fixed-bg");
+    });
+  });
+  
