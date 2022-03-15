@@ -11738,6 +11738,15 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.offer-slider').slick({
     }
   }]
 }); //Latest Blog Slider
+// product filter close
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".filter-close").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".filter-trigger").removeClass("open");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".product-filter").removeClass("show");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("fixed-bg");
+  });
+});
 
 /***/ }),
 

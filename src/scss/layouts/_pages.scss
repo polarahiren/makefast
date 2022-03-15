@@ -98,10 +98,27 @@
         }
     }
 }
-<<<<<<< HEAD
-=======
 
-
+// Featured Product
+.product-box{
+    .pro-img{
+        .object-cover{
+            height: 363px;
+            @include media-breakpoint-down(md){
+                height: 256px;
+            }
+        }
+    }
+    .pro-cat-name{
+        letter-spacing: 1.8px;
+        @include media-breakpoint-down(md){
+            color: $white;
+        }
+    }
+    .pro-name{
+        letter-spacing: 0.4px;
+    }
+}
 
 // shop page 
 
@@ -129,4 +146,3 @@
 }
 // END shop page 
 
->>>>>>> aa42c8c7997d0a7b19b5d8d15edcb7600da7a666
