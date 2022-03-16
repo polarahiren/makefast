@@ -333,3 +333,83 @@
         }
     }
 }
+
+.slick-overflow .slick-list{
+    overflow: visible;
+  }
+  
+.slick-vertical-dots{
+    ul.slick-dots {
+      width: auto;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      right: 10px;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-up(xxl){
+        right: 30px;
+      }
+      li{
+        margin: 2px 0px;
+        width: auto;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+        &.slick-active{
+          // height: 25px;
+          button{
+            opacity: 0.3;
+          }
+        }
+        button{
+          padding: 0px;
+          width: 2px;
+          height: 18px;
+          background-color: $white;
+          opacity: 1;
+          transition: 0.2s all ease-in-out;
+          margin: 0 auto;
+        }
+      }
+    }
+}
+
+.slick-horizontal-dots{
+    ul.slick-dots{
+        width: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        z-index: 99;
+        li{
+            margin: 0px 4px;
+            width: auto;
+            height: auto;
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            cursor: pointer;
+            &.slick-active{
+              // height: 25px;
+              button{
+                opacity: 0.3;
+              }
+            }
+            button{
+              padding: 0px;
+              width: 20px;
+              height: 2px;
+              background-color: $black;
+              opacity: 1;
+              transition: 0.2s all ease-in-out;
+              margin: 0 auto;
+            }
+        }
+    }
+}

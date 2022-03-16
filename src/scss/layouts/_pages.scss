@@ -160,7 +160,15 @@
             vertical-align: bottom;
         }
     }
+    .position{
+        letter-spacing: 2.1px;
+        line-height: 18px;
+        @include media-breakpoint-down(md){
+            letter-spacing: 1.26px;
+        }
+    }
 }
+
 
 // shop page 
 

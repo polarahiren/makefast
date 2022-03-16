@@ -168,6 +168,20 @@ $('.offer-slider').slick({
     }]
 }); //Latest Blog Slider
 
+$('.testimonial-carousel').slick({
+    dots: true,
+    arrows: false,
+    speed: 300,
+    autoplay: true,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false
+}); //Latest Blog Slider
+
 
 
 

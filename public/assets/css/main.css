@@ -14791,47 +14791,6 @@ li {
      object-position: center;
 }
 
-.slick-overflow .slick-list {
-  overflow: visible;
-}
-
-.slick-vertical-dots ul.slick-dots {
-  width: auto;
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-  right: 10px;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1400px) {
-  .slick-vertical-dots ul.slick-dots {
-    right: 30px;
-  }
-}
-.slick-vertical-dots ul.slick-dots li {
-  margin: 2px 0px;
-  width: auto;
-  height: auto;
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  cursor: pointer;
-}
-.slick-vertical-dots ul.slick-dots li.slick-active button {
-  opacity: 0.3;
-}
-.slick-vertical-dots ul.slick-dots li button {
-  padding: 0px;
-  width: 2px;
-  height: 18px;
-  background-color: #ffffff;
-  opacity: 1;
-  transition: 0.2s all ease-in-out;
-  margin: 0 auto;
-}
-
 .overflow-scroll-hidden {
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -15143,13 +15102,31 @@ p.error-message {
 .product-filter .accordion-item .accordion-button {
   background-color: transparent;
   color: #000000;
-  padding: 15px 0px;
+  padding: 13px 0px;
   border-bottom: 1px solid #D5D5D545;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 26px;
 }
 .product-filter .accordion-item .accordion-button:after {
   background-image: url("../images/icon/filter-dropdown-icon.svg");
   background-size: 12px;
   background-position: center;
+}
+.product-filter .accordion-item .accordion-button:not(.collapsed) {
+  border-color: transparent;
+}
+.product-filter .accordion-item .accordion-collapse.show {
+  border-bottom: 1px solid #D5D5D545;
+}
+.product-filter .accordion-item .accordion-body {
+  padding: 5px 0;
+}
+.product-filter .accordion-item .accordion-body label {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 26px;
+  text-transform: capitalize;
 }
 
 /*******************************************************************************
@@ -16306,6 +16283,78 @@ p.error-message {
   left: auto;
 }
 
+.slick-overflow .slick-list {
+  overflow: visible;
+}
+
+.slick-vertical-dots ul.slick-dots {
+  width: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1400px) {
+  .slick-vertical-dots ul.slick-dots {
+    right: 30px;
+  }
+}
+.slick-vertical-dots ul.slick-dots li {
+  margin: 2px 0px;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-vertical-dots ul.slick-dots li.slick-active button {
+  opacity: 0.3;
+}
+.slick-vertical-dots ul.slick-dots li button {
+  padding: 0px;
+  width: 2px;
+  height: 18px;
+  background-color: #ffffff;
+  opacity: 1;
+  transition: 0.2s all ease-in-out;
+  margin: 0 auto;
+}
+
+.slick-horizontal-dots ul.slick-dots {
+  width: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+}
+.slick-horizontal-dots ul.slick-dots li {
+  margin: 0px 4px;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-horizontal-dots ul.slick-dots li.slick-active button {
+  opacity: 0.3;
+}
+.slick-horizontal-dots ul.slick-dots li button {
+  padding: 0px;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  opacity: 1;
+  transition: 0.2s all ease-in-out;
+  margin: 0 auto;
+}
+
 header {
   background-color: #ffffff;
   z-index: 99;
@@ -16733,6 +16782,10 @@ header.header-fixed .top-bar {
   color: #000000;
 }
 
+footer .container {
+  border-top: 1px solid #707070;
+}
+
 .hero-slider .slick-slide .img-fluid {
   height: 780px;
 }
@@ -16901,6 +16954,19 @@ header.header-fixed .top-bar {
   line-height: 12px;
   vertical-align: bottom;
 }
+.testimonial-box .position {
+  letter-spacing: 2.1px;
+  line-height: 18px;
+}
+@media (max-width: 767.98px) {
+  .testimonial-box .position {
+    letter-spacing: 1.26px;
+  }
+}
+
+.clear-filter-btn {
+  letter-spacing: 1.5px;
+}
 
 @media (max-width: 767.98px) {
   .product-filter {
@@ -16922,6 +16988,12 @@ header.header-fixed .top-bar {
     visibility: visible;
   }
 }
+.filter-trigger h4, .filter-trigger .h4 {
+  letter-spacing: 2.1px;
+  line-height: 29px;
+  border-bottom: 1px solid #000000;
+}
+
 body#tinymce {
   margin: 13px !important;
 }
