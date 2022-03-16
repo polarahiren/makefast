@@ -165,6 +165,10 @@
 // shop page 
 
 // product filter css
+.clear-filter-btn{
+    letter-spacing: 1.5px;
+}
+
 @include media-breakpoint-down(md){
     .product-filter {
         position: fixed;
@@ -184,6 +188,13 @@
             opacity: 1;
             visibility: visible;
         }
+    }
+}
+.filter-trigger{
+    h4{
+        letter-spacing: 2.1px;
+        line-height: 29px;
+        border-bottom: 1px solid #000000;
     }
 }
 // END shop page 
