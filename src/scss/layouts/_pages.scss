@@ -43,9 +43,11 @@
         }
     }
     .image-filter {
-        top: 244px;
+        top: 50%;
+        transform: translateY(-50%);
         @include media-breakpoint-down(md){
-            top: 135px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -117,6 +119,46 @@
     }
     .pro-name{
         letter-spacing: 0.4px;
+    }
+}
+
+// Case Studies
+.case-studies-section {
+    background: -webkit-linear-gradient(top, $primary 0%, $primary 46%, $white 46%, $white 100%);
+    @include media-breakpoint-down(md){
+        background: $primary;
+    }
+}
+
+.case-studies-box{
+    @include media-breakpoint-down(md){
+        .cat-name,
+        .pro-name,
+        p{
+            color: $white !important;
+        }
+    }
+    .object-cover{
+        height: 450px;
+        @include media-breakpoint-down(md){
+            height: 299px;
+        }
+    }
+}
+
+// Testimonial Section
+.testimonial-box{
+    .content{
+        letter-spacing: 0.36px;
+        line-height: 56px;
+        @include media-breakpoint-down(md){
+            letter-spacing: 0.23px;
+            line-height: 37px;
+        }
+        .text-large{
+            line-height: 12px;
+            vertical-align: bottom;
+        }
     }
 }
 

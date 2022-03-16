@@ -128,7 +128,7 @@ $('.latest-blog-slider').slick({
     arrows: true,
     speed: 300,
     autoplay: true,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 3,
     slidesToShow: 3,
     accessibility: true,
@@ -152,7 +152,7 @@ $('.offer-slider').slick({
     arrows: false,
     speed: 300,
     autoplay: true,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 3,
     slidesToShow: 3,
     accessibility: true,
@@ -178,5 +178,5 @@ $(document).ready(function(){
       $(".product-filter").removeClass("show");
       $("body").removeClass("fixed-bg");
     });
-  });
+});
   
