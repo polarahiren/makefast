@@ -1,4 +1,5 @@
 .btn{
+    @include generate-transition(all, 500ms, ease);
     &.btn-primary{
         color: $black;
         background-color: $white;
@@ -27,16 +28,14 @@
         line-height: 16px;
         border: 0;
         background-color: transparent;
+        .btn-icon-box{
+            background: $button-black;
+        }
         span{
             padding-right: 13px;
         }
         svg{
             @include generate-transition(all, 500ms, ease);
-        }
-        &:hover{
-            svg{
-                transform: scale(1.1);
-            }
         }
     }
     &.btn-primary-light-icon{
@@ -48,6 +47,9 @@
         line-height: 16px;
         border: 0;
         background-color: transparent;
+        .btn-icon-box{
+            background: $white;
+        }
         span{
             padding-right: 13px;
         }
@@ -60,10 +62,45 @@
             }
         }
     }
+    .btn-icon-box{
+        width: 39px;
+        height: 39px;
+        border-radius: 100%;
+        @include generate-transition(all, 500ms, ease);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 
 .btn-text{
     text-decoration: underline;
     letter-spacing: 2.1px;
     line-height: 18px;
+}
+
+.footer-contact{
+    .icon-box{
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        @include generate-transition(all, 500ms, ease);
+        &.dark-box{
+            background: rgba($button-black, $alpha: 0.24);
+        }
+    }
+    &:hover{
+        .icon-box{
+            &.dark-box{
+                background: $button-black;
+                svg *{
+                    fill: $white;
+                }
+            }
+        }
+    }
+    .text-xs{
+        letter-spacing: 1.8px;
+        line-height: 22px;
+    }
 }

@@ -1,5 +1,16 @@
 footer{
     .container{
-        border-top: 1px solid $secondary;
+        border-top: 1px solid rgba($secondary, $alpha: 0.45);
+    }
+    small{
+        letter-spacing: 0.56px;
+        line-height: 26px;
+    }
+    .checkbox-control{
+        ~ label{
+            letter-spacing: 0.56px;
+            line-height: 18px;
+            font-weight: 500;
+        }
     }
 }

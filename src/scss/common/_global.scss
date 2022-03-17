@@ -136,10 +136,10 @@ height: auto;
   background-color: $secondary;
 }
 .bg-gray-shade1{
-  background-color: $gray-shade1;
+  background-color: $gray-shade1 !important;
 }
 .bg-gray-shade2{
-  background-color: $gray-shade2;
+  background-color: $gray-shade2 !important;
 }
 
 .color--black {
@@ -260,5 +260,18 @@ li{
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+.search-form {
+  position: relative;
+  .input-control {
+    padding-right: 50px;
+  }
+  .input-group-append {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
   }
 }
