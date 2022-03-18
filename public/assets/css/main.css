@@ -14699,10 +14699,6 @@ img {
   color: #011B21;
 }
 
-.text-secondary {
-  color: #707070;
-}
-
 .text-gray-shade1 {
   color: #E8E8E8;
 }
@@ -14713,6 +14709,17 @@ img {
 
 .text-black-2 {
   color: #0F0F0F;
+}
+
+.hover-text-black {
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+.hover-text-black:hover {
+  color: #0F0F0F !important;
 }
 
 /*------- Miscellaneous Classes -------*/
@@ -16854,6 +16861,49 @@ footer .checkbox-control ~ label {
   line-height: 18px;
   font-weight: 500;
 }
+footer ul.footer-menu li a {
+  position: relative;
+  letter-spacing: 1.8px;
+}
+footer ul.footer-menu li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000000;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+footer ul.footer-menu li a:hover:after {
+  width: 20px;
+}
+@media (max-width: 767.98px) {
+  footer ul.footer-menu li {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  footer ul.footer-menu li a {
+    color: #0F0F0F !important;
+    opacity: 0.3;
+    font-weight: 600;
+  }
+}
+footer ul.social-media li a {
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+footer ul.social-media li a:hover {
+  transform: translateY(-5px);
+}
 
 .hero-slider .slick-slide .img-fluid {
   height: 780px;
@@ -16908,6 +16958,15 @@ footer .checkbox-control ~ label {
   .image-box .image-filter {
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.blog-box .object-cover {
+  height: 268px;
+}
+@media (max-width: 767.98px) {
+  .blog-box .object-cover {
+    height: 299px;
   }
 }
 

@@ -166,9 +166,9 @@ height: auto;
 .text-primary{
   color: $primary;
 }
-.text-secondary{
-  color: $secondary;
-}
+// .text-secondary{
+//   color: $secondary;
+// }
 .text-gray-shade1{
   color: $gray-shade1;
 }
@@ -177,6 +177,12 @@ height: auto;
 }
 .text-black-2{
   color: $black-shade-2;
+}
+.hover-text-black{
+  @include generate-transition(all, 500ms, ease);
+  &:hover{
+    color: $black-shade-2 !important;
+  }
 }
 
 /*------- Miscellaneous Classes -------*/

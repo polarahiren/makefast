@@ -13,4 +13,49 @@ footer{
             font-weight: 500;
         }
     }
+    ul{
+        &.footer-menu{
+            li{
+                a{
+                    position: relative;
+                    letter-spacing: 1.8px;
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        background: $black;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        @include generate-transition(all, 500ms, ease);
+                    }
+                    &:hover{
+                        &:after{
+                            width: 20px;
+                        }
+                    }
+                }
+                @include media-breakpoint-down(md){
+                    width: 50%;
+                    margin-bottom: 40px;
+                    a{
+                        color: $black-shade-2 !important;
+                        opacity: 0.30;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        &.social-media{
+            li{
+                a{
+                    @include generate-transition(all, 500ms, ease);
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
+                }
+            }   
+        }
+    }
 }

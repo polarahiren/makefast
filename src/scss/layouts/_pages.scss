@@ -52,6 +52,15 @@
     }
 }
 
+.blog-box{
+    .object-cover{
+        height: 268px;
+        @include media-breakpoint-down(md){
+            height: 299px;
+        }
+    }
+}
+
 .our-story-section {
     background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 11%, $primary 11%, $primary 100%);
     @include media-breakpoint-down(md){
