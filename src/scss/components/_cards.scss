@@ -112,11 +112,7 @@
 
 // product card
 .product-card{
-    margin-bottom: 20px;
-
-        @include media-breakpoint-up(md){
-            margin-bottom: 50px;
-        }
+    margin-bottom: 50px;
 
         .card-img{
             height: 360px;
@@ -127,6 +123,16 @@
             }
             @include media-breakpoint-down(sm){
                 height: 180px;
+            }
+        }
+        .card-body{
+            @include media-breakpoint-down(md){
+                .small-label{
+                    font-size: 10px;
+                }
+                h6{
+                    font-size: 15px;
+                }
             }
         }
 }
