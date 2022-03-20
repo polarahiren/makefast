@@ -238,7 +238,28 @@ $('.product-carousel').slick({
     lazyLoad: 'ondemand'
 }); //Case Studies Slider
 
-
+$('.features-carousel').slick({
+    dots: false,
+    arrows: false,
+    speed: 500,
+    autoplay: true,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    lazyLoad: 'ondemand',
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+        }
+    }]
+}); //Featured Slider
 
 
 // product filter close
