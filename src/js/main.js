@@ -223,6 +223,21 @@ $('.brochure-slider').slick({
     lazyLoad: 'ondemand'
 }); //Case Studies Slider
 
+$('.product-carousel').slick({
+    dots: false,
+    arrows: true,
+    speed: 800,
+    autoplay: true,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    lazyLoad: 'ondemand'
+}); //Case Studies Slider
+
 
 
 

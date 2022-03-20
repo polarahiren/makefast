@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="39" height="39">
+	<title>button-dark-icon-svg</title>
+	<style>
+		.s0 { fill: #141414 } 
+		.s1 { fill: #ffffff;stroke: #ffffff } 
+	</style>
+	<g id="Group_1868">
+		<circle id="Ellipse_102" class="s0" cx="19.5" cy="19.5" r="19.5"/>
+		<path id="Path_12172" class="s1" d="m17.1 19.5q0 0 0-0.1 0 0 0.1 0 0-0.1 0-0.1 0 0 0 0l4.1-4.5q0-0.1 0.2-0.1 0.1-0.1 0.2 0 0.2 0.1 0.2 0.3 0 0.1-0.1 0.2l-3.9 4.3 3.9 4.3q0.1 0.1 0 0.2 0 0.2-0.1 0.2-0.1 0.1-0.2 0.1-0.1 0-0.2-0.1l-4.1-4.5q0 0 0 0 0-0.1 0-0.1-0.1 0-0.1-0.1 0 0 0 0z"/>
+	</g>
+</svg>

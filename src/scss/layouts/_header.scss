@@ -2,22 +2,6 @@
 header {
     background-color: $white;
     z-index: 99;
-
-    &.header-transparent{
-        background: transparent;
-        .logo.navbar-brand svg,
-        .navbar-toggler{
-            @include media-breakpoint-down(lg) {
-                color: $white;
-            }
-        }
-        @include media-breakpoint-up(lg) {
-            .navbar .logo,
-            ul li a.menu-item{
-                color: $white !important;
-            }
-        }
-    }
   
     @include media-breakpoint-up(xxl) {
         .container {
@@ -71,6 +55,9 @@ header {
             svg{
                 transition: 0.4s all ease-in-out;
                 max-width: 132px;
+                path{
+                    fill: $black;
+                }
                 // height: 75px;
 
                 @include media-breakpoint-down(lg) {
@@ -86,6 +73,46 @@ header {
             opacity: 0;
         }
     }
+
+    &.header-fixed,
+    &.header-transparent{
+        background: transparent;
+        .logo.navbar-brand svg,
+        .navbar-toggler{
+            @include media-breakpoint-down(lg) {
+                color: $white;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            .navbar .logo,
+            ul li a.menu-item{
+                color: $white !important;
+            }
+        }
+        .navbar{
+            .logo{
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+            }
+        }
+        .btn-primary{
+            color: $white;
+            background-color: $black;
+            border-color: $black;
+        }
+        .global-search{
+            .global-search-button{
+                svg{
+                    circle{
+                        fill: rgba($white, $alpha: 0.50);
+                    }
+                }                
+            }
+        }
+    }
   
     &.header-fixed {
         // box-shadow: 0px 0px 3px #ccc;
@@ -95,12 +122,21 @@ header {
         -moz-animation: fadeIn linear 1s;
         -o-animation: fadeIn linear 1s;
         -ms-animation: fadeIn linear 1s;
+        @include media-breakpoint-up(lg) {
+            .navbar .logo,
+            ul li a.menu-item{
+                color: $white !important;
+            }
+        }
         .navbar{
             padding-top: 12px;
             padding-bottom: 12px;
             .logo{
                 svg{
                     max-width: 100px;
+                    path{
+                        fill: $white;
+                    }
                     @include media-breakpoint-down(lg) {
                         max-width: 80px;
                         // height: 82px;
@@ -123,7 +159,7 @@ header {
   
   .navbar {
     #navbarHeader {
-        display: none;
+        // display: none;
         //@include media-breakpoint-down(lg) {
         //    height: 100vh !important;
         //}
@@ -453,7 +489,11 @@ header {
         border-radius: 100%;
         padding: 0;
         transition: 0.4s all ease-in-out;
-
+        svg{
+            circle{
+                fill: rgba($button-black, $alpha: 0.50);
+            }
+        }
         @include media-breakpoint-down(lg) {
             &:not(.global-search-result-button){
                 width: 48px;

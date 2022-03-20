@@ -310,6 +310,7 @@
     .slick-arrow{
         height: auto;
         width: auto;
+        z-index: 9;
         &:before{
             font-size: 34px;
             color: $black-shade-2;
@@ -330,6 +331,13 @@
             right: 45px;
             top: -60px;
             left: auto;
+        }
+    }
+    &.slick-light-arrow{
+        .slick-arrow{
+            &:before{
+                color: $white;
+            }
         }
     }
 }

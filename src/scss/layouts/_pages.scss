@@ -292,7 +292,7 @@
 }
 
 
-.marine-call-to-action{
+.theme-call-to-action{
     .object-cover{
         height: 639px;
         @include media-breakpoint-down(md){
@@ -314,7 +314,53 @@
             height: 184px;
             @include media-breakpoint-down(md){
                 height: 399px;
-            }  
+            }
         }
+    }
+}
+
+.product-carousel{
+    .product-image{
+        .object-cover{
+            height: 530px;
+            @include media-breakpoint-down(md){
+                height: 340px;
+            }
+        }
+    }
+}
+
+.product-carousel{
+    .slick-arrow{
+        width: 39px;
+        height: 39px;
+        background-position: center;
+        background-size: 39px;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:before{
+            display: none;
+        }
+        &.slick-prev{
+            left: 16px;
+            background: url(../images/slider/slick-prev-icon.svg);
+        }
+        &.slick-next{
+            right: 16px;
+            background: url(../images/slider/slick-next-icon.svg);
+        }
+    }
+}
+
+.product-content-box{
+    .product-des{
+        letter-spacing: 0.64px;
+        line-height: 26px;
+    }
+    .view-popup{
+        text-decoration: underline;
+        letter-spacing: 0.64px;
+        line-height: 26px;
     }
 }

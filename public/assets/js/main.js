@@ -11793,6 +11793,21 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.brochure-slider').slick({
   centerMode: false,
   lazyLoad: 'ondemand'
 }); //Case Studies Slider
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.product-carousel').slick({
+  dots: false,
+  arrows: true,
+  speed: 800,
+  autoplay: true,
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  accessibility: true,
+  variableWidth: false,
+  focusOnSelect: false,
+  centerMode: false,
+  lazyLoad: 'ondemand'
+}); //Case Studies Slider
 // product filter close
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
