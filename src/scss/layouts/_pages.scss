@@ -12,7 +12,7 @@
             @include media-breakpoint-down(md){
                 top: 288px;
                 .hero-title{
-                    letter-spacing: 0.54pt;
+                    letter-spacing: 0.54px;
                     line-height: 65px;
                 }
             }
@@ -20,7 +20,7 @@
                 letter-spacing: 0.9px;
                 line-height: 27px;
                 @include media-breakpoint-down(md){
-                    letter-spacing: 0.42pt;
+                    letter-spacing: 0.42px;
                     line-height: 25px;
                 }
             }
@@ -50,6 +50,18 @@
             transform: translateY(-50%);
         }
     }
+    &.image-overlay{
+        &:before{
+            content:"";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba($black, $alpha: 0.24);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
 }
 
 .blog-box{
@@ -58,6 +70,9 @@
         @include media-breakpoint-down(md){
             height: 299px;
         }
+    }
+    .blog-cat-name{
+        letter-spacing: 1.8px;
     }
 }
 
@@ -76,7 +91,7 @@
         letter-spacing: 0.32px;
         line-height: 28px;
         @include media-breakpoint-down(md){
-            letter-spacing: 0.64pt;
+            letter-spacing: 0.64px;
             line-height: 26px;
         }
     }
@@ -94,6 +109,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            z-index: 9;
         }
         .object-cover{
             height: 286px;
@@ -105,6 +121,7 @@
             @include media-breakpoint-up(md){
                 position: absolute;
                 bottom: 5px;
+                z-index: 99;
             }
         }
     }
@@ -152,6 +169,14 @@
         @include media-breakpoint-down(md){
             height: 299px;
         }
+    }
+    .cat-name{
+        letter-spacing: 2.1px;
+        line-height: 18px;
+    }
+    p{
+        letter-spacing: 0.32px;
+        line-height: 28px;
     }
 }
 
@@ -216,3 +241,80 @@
 }
 // END shop page 
 
+// Marine Page
+.marine-hero-slider{
+    .slick-slide{
+        .img-fluid{
+            @include media-breakpoint-down(md){
+                height: 387px;
+            }
+        }
+        .hero-filter{
+            position: absolute;
+            top: 261px;
+            z-index: 9;
+            @include media-breakpoint-down(md){
+                position: relative;
+                top: auto;
+                .hero-title{
+                    letter-spacing: 0.44px;
+                    line-height: 49px;
+                }
+            }
+            .hero-content{
+                letter-spacing: 0.68px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.case-studies-slider{
+    margin: -24px -12px;
+    // @include media-breakpoint-down(md){
+    //     margin: 0;
+    // }
+    .slick-slide{
+        .object-cover{
+            height: 450px;
+            @include media-breakpoint-down(md){
+                height: 311px;
+            }
+        }
+        .content-box{
+            box-shadow: 0px 0px 16px #00000015;
+            p{
+                letter-spacing: 0.32px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+
+.marine-call-to-action{
+    .object-cover{
+        height: 639px;
+        @include media-breakpoint-down(md){
+            height: 331px;
+        }       
+    }
+}
+
+.image-content-box{
+    .object-cover{
+        width: 166px;
+        height: 133px;
+    }
+}
+
+.image-box-section{
+    .image-box{
+        .object-cover{
+            height: 184px;
+            @include media-breakpoint-down(md){
+                height: 399px;
+            }  
+        }
+    }
+}

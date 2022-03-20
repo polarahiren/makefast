@@ -115,6 +115,7 @@ $('.hero-slider').slick({
     speed: 300,
     autoplay: true,
     slidesToShow: 1,
+    lazyLoad: 'ondemand',
     responsive: [{
         breakpoint: 767,
         settings: {
@@ -135,6 +136,7 @@ $('.latest-blog-slider').slick({
     variableWidth: false,
     focusOnSelect: false,
     centerMode: false,
+    lazyLoad: 'ondemand',
     prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
     nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
     responsive: [{
@@ -159,6 +161,7 @@ $('.offer-slider').slick({
     variableWidth: false,
     focusOnSelect: false,
     centerMode: false,
+    lazyLoad: 'ondemand',
     responsive: [{
         breakpoint: 767,
         settings: {
@@ -181,6 +184,44 @@ $('.testimonial-carousel').slick({
     focusOnSelect: false,
     centerMode: false
 }); //Latest Blog Slider
+
+$('.case-studies-slider').slick({
+    dots: false,
+    arrows: true,
+    speed: 300,
+    autoplay: true,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    lazyLoad: 'ondemand',
+    prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
+    nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
+    responsive: [{
+        breakpoint: 767,
+        settings: {
+            arrows: false
+        }
+    }]
+}); //Case Studies Slider
+
+$('.brochure-slider').slick({
+    dots: false,
+    arrows: false,
+    speed: 300,
+    autoplay: true,
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    accessibility: true,
+    variableWidth: false,
+    focusOnSelect: false,
+    centerMode: false,
+    lazyLoad: 'ondemand'
+}); //Case Studies Slider
 
 
 

@@ -6,6 +6,7 @@ body, html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Red-Hat-Display', sans-serif;
+  scroll-behavior: smooth;
 }
 
 p{
@@ -129,12 +130,12 @@ height: auto;
 .bg-gray{
   background-color: $gray;
 }
-.bg-primary{
-  background-color: $primary;
-}
-.bg-secondary{
-  background-color: $secondary;
-}
+// .bg-primary{
+//   background-color: $primary;
+// }
+// .bg-secondary{
+//   background-color: $secondary;
+// }
 .bg-gray-shade1{
   background-color: $gray-shade1 !important;
 }
@@ -163,9 +164,9 @@ height: auto;
 .text-gray{
   color: $gray;
 }
-.text-primary{
-  color: $primary;
-}
+// .text-primary{
+//   color: $primary;
+// }
 // .text-secondary{
 //   color: $secondary;
 // }
@@ -280,4 +281,41 @@ li{
     right: 8px;
     transform: translateY(-50%);
   }
+}
+
+// Position
+@include media-breakpoint-up(md){
+  .position-md-static {
+    position: static !important;
+  }
+  
+  .position-md-relative {
+    position: relative !important;
+  }
+  
+  .position-md-absolute {
+    position: absolute !important;
+  }
+  
+  .position-md-fixed {
+    position: fixed !important;
+  }
+  
+  .position-md-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+}
+
+.left-auto{
+  left: auto;
+}
+.right-auto{
+  right: auto;
+}
+.left-0{
+  left: 0;
+}
+.right-0{
+  right: 0;
 }

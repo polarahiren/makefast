@@ -413,3 +413,15 @@
         }
     }
 }
+
+.slick-slider{
+    ul.slick-dots{
+        li{
+            button{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}

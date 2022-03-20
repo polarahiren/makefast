@@ -11686,6 +11686,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.hero-slider').slick({
   speed: 300,
   autoplay: true,
   slidesToShow: 1,
+  lazyLoad: 'ondemand',
   responsive: [{
     breakpoint: 767,
     settings: {
@@ -11706,6 +11707,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.latest-blog-slider').slick({
   variableWidth: false,
   focusOnSelect: false,
   centerMode: false,
+  lazyLoad: 'ondemand',
   prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
   nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
   responsive: [{
@@ -11730,6 +11732,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.offer-slider').slick({
   variableWidth: false,
   focusOnSelect: false,
   centerMode: false,
+  lazyLoad: 'ondemand',
   responsive: [{
     breakpoint: 767,
     settings: {
@@ -11752,6 +11755,44 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.testimonial-carousel').slick({
   focusOnSelect: false,
   centerMode: false
 }); //Latest Blog Slider
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.case-studies-slider').slick({
+  dots: false,
+  arrows: true,
+  speed: 300,
+  autoplay: true,
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  accessibility: true,
+  variableWidth: false,
+  focusOnSelect: false,
+  centerMode: false,
+  lazyLoad: 'ondemand',
+  prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
+  nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: false
+    }
+  }]
+}); //Case Studies Slider
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.brochure-slider').slick({
+  dots: false,
+  arrows: false,
+  speed: 300,
+  autoplay: true,
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  accessibility: true,
+  variableWidth: false,
+  focusOnSelect: false,
+  centerMode: false,
+  lazyLoad: 'ondemand'
+}); //Case Studies Slider
 // product filter close
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {

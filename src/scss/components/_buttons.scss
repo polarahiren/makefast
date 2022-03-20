@@ -30,12 +30,14 @@
         background-color: transparent;
         .btn-icon-box{
             background: $button-black;
+            svg path{
+                fill: $white;
+                stroke: $white;
+                @include generate-transition(all, 500ms, ease);
+            }
         }
         span{
             padding-right: 13px;
-        }
-        svg{
-            @include generate-transition(all, 500ms, ease);
         }
     }
     &.btn-primary-light-icon{
@@ -49,12 +51,14 @@
         background-color: transparent;
         .btn-icon-box{
             background: $white;
+            svg path{
+                fill: $black;
+                stroke: $black;
+                @include generate-transition(all, 500ms, ease);
+            }
         }
         span{
             padding-right: 13px;
-        }
-        svg{
-            @include generate-transition(all, 500ms, ease);
         }
         &:hover{
             svg{

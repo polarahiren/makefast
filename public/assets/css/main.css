@@ -14318,6 +14318,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Red-Hat-Display", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .font-red-hat-display {
@@ -14657,14 +14658,6 @@ img {
   background-color: #7D7D7D;
 }
 
-.bg-primary {
-  background-color: #011B21;
-}
-
-.bg-secondary {
-  background-color: #707070;
-}
-
 .bg-gray-shade1 {
   background-color: #E8E8E8 !important;
 }
@@ -14693,10 +14686,6 @@ img {
 
 .text-gray {
   color: #7D7D7D;
-}
-
-.text-primary {
-  color: #011B21;
 }
 
 .text-gray-shade1 {
@@ -14818,6 +14807,44 @@ li {
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .position-md-static {
+    position: static !important;
+  }
+
+  .position-md-relative {
+    position: relative !important;
+  }
+
+  .position-md-absolute {
+    position: absolute !important;
+  }
+
+  .position-md-fixed {
+    position: fixed !important;
+  }
+
+  .position-md-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+}
+.left-auto {
+  left: auto;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
 }
 
 p.error-message {
@@ -15147,6 +15174,11 @@ p.error-message {
   letter-spacing: 0.56px;
   line-height: 26px;
   text-transform: capitalize;
+}
+
+.scroll-to-bottom {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*******************************************************************************
@@ -15638,15 +15670,17 @@ p.error-message {
 .btn.btn-primary-dark-icon .btn-icon-box {
   background: #141414;
 }
-.btn.btn-primary-dark-icon span {
-  padding-right: 13px;
-}
-.btn.btn-primary-dark-icon svg {
+.btn.btn-primary-dark-icon .btn-icon-box svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
   /* Safari 4+ */
   /* Fx 5+ */
   /* Opera 12+ */
   transition: all 500ms ease;
   /* IE 10+, Fx 29+ */
+}
+.btn.btn-primary-dark-icon span {
+  padding-right: 13px;
 }
 .btn.btn-primary-light-icon {
   padding: 0;
@@ -15661,15 +15695,17 @@ p.error-message {
 .btn.btn-primary-light-icon .btn-icon-box {
   background: #ffffff;
 }
-.btn.btn-primary-light-icon span {
-  padding-right: 13px;
-}
-.btn.btn-primary-light-icon svg {
+.btn.btn-primary-light-icon .btn-icon-box svg path {
+  fill: #000000;
+  stroke: #000000;
   /* Safari 4+ */
   /* Fx 5+ */
   /* Opera 12+ */
   transition: all 500ms ease;
   /* IE 10+, Fx 29+ */
+}
+.btn.btn-primary-light-icon span {
+  padding-right: 13px;
 }
 .btn.btn-primary-light-icon:hover svg {
   transform: scale(1.1);
@@ -16422,6 +16458,10 @@ p.error-message {
   margin: 0 auto;
 }
 
+.slick-slider ul.slick-dots li button::before {
+  display: none;
+}
+
 header {
   background-color: #ffffff;
   z-index: 99;
@@ -16921,7 +16961,7 @@ footer ul.social-media li a:hover {
     top: 288px;
   }
   .hero-slider .slick-slide .hero-filter .hero-title {
-    letter-spacing: 0.54pt;
+    letter-spacing: 0.54px;
     line-height: 65px;
   }
 }
@@ -16931,7 +16971,7 @@ footer ul.social-media li a:hover {
 }
 @media (max-width: 767.98px) {
   .hero-slider .slick-slide .hero-filter .hero-content {
-    letter-spacing: 0.42pt;
+    letter-spacing: 0.42px;
     line-height: 25px;
   }
 }
@@ -16960,6 +17000,16 @@ footer ul.social-media li a:hover {
     transform: translateY(-50%);
   }
 }
+.image-box.image-overlay:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .blog-box .object-cover {
   height: 268px;
@@ -16968,6 +17018,9 @@ footer ul.social-media li a:hover {
   .blog-box .object-cover {
     height: 299px;
   }
+}
+.blog-box .blog-cat-name {
+  letter-spacing: 1.8px;
 }
 
 .our-story-section {
@@ -16992,7 +17045,7 @@ footer ul.social-media li a:hover {
 }
 @media (max-width: 767.98px) {
   .our-story-section p {
-    letter-spacing: 0.64pt;
+    letter-spacing: 0.64px;
     line-height: 26px;
   }
 }
@@ -17007,6 +17060,7 @@ footer ul.social-media li a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 9;
 }
 .offer-box .offer-image .object-cover {
   height: 286px;
@@ -17020,6 +17074,7 @@ footer ul.social-media li a:hover {
   .offer-box .offer-image .offer-cat-name {
     position: absolute;
     bottom: 5px;
+    z-index: 99;
   }
 }
 
@@ -17066,6 +17121,14 @@ footer ul.social-media li a:hover {
   .case-studies-box .object-cover {
     height: 299px;
   }
+}
+.case-studies-box .cat-name {
+  letter-spacing: 2.1px;
+  line-height: 18px;
+}
+.case-studies-box p {
+  letter-spacing: 0.32px;
+  line-height: 28px;
 }
 
 .testimonial-box .content {
@@ -17120,6 +17183,73 @@ footer ul.social-media li a:hover {
   letter-spacing: 2.1px;
   line-height: 29px;
   border-bottom: 1px solid #000000;
+}
+
+@media (max-width: 767.98px) {
+  .marine-hero-slider .slick-slide .img-fluid {
+    height: 387px;
+  }
+}
+.marine-hero-slider .slick-slide .hero-filter {
+  position: absolute;
+  top: 261px;
+  z-index: 9;
+}
+@media (max-width: 767.98px) {
+  .marine-hero-slider .slick-slide .hero-filter {
+    position: relative;
+    top: auto;
+  }
+  .marine-hero-slider .slick-slide .hero-filter .hero-title {
+    letter-spacing: 0.44px;
+    line-height: 49px;
+  }
+}
+.marine-hero-slider .slick-slide .hero-filter .hero-content {
+  letter-spacing: 0.68px;
+  line-height: 30px;
+}
+
+.case-studies-slider {
+  margin: -24px -12px;
+}
+.case-studies-slider .slick-slide .object-cover {
+  height: 450px;
+}
+@media (max-width: 767.98px) {
+  .case-studies-slider .slick-slide .object-cover {
+    height: 311px;
+  }
+}
+.case-studies-slider .slick-slide .content-box {
+  box-shadow: 0px 0px 16px #00000015;
+}
+.case-studies-slider .slick-slide .content-box p {
+  letter-spacing: 0.32px;
+  line-height: 28px;
+}
+
+.marine-call-to-action .object-cover {
+  height: 639px;
+}
+@media (max-width: 767.98px) {
+  .marine-call-to-action .object-cover {
+    height: 331px;
+  }
+}
+
+.image-content-box .object-cover {
+  width: 166px;
+  height: 133px;
+}
+
+.image-box-section .image-box .object-cover {
+  height: 184px;
+}
+@media (max-width: 767.98px) {
+  .image-box-section .image-box .object-cover {
+    height: 399px;
+  }
 }
 
 body#tinymce {
