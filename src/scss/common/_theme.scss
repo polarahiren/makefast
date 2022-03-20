@@ -170,7 +170,7 @@ p.error-message {
 /* END story section */
 
 .box-large-image {
-    width: 55%;
+    width: 50%;
     @include media-breakpoint-down(md) {
         width: 100%;
         position: relative !important;

@@ -320,7 +320,29 @@ li{
   right: 0;
 }
 
-//shop page css
+// All globle css
+.main-news-blog{
+  p{
+    letter-spacing: 0.64px;
+  }
+}
+
+.blog-listing{
+  margin-left: -8px;
+  margin-right: -8px;
+  
+  .news-card-img{
+    @include media-breakpoint-down(md){
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+}
+
+
+
+
+//responsive css
 @include media-breakpoint-down(md){
   .shop-page-title{
     font-size: 27px;
@@ -340,6 +362,12 @@ li{
   body .product-filter{
     padding-bottom: 100px;
   }
+
+  .main-news-blog{
+    img.main-news-image{
+      height: 380px !important;
+    }
+  }
 }
 
 @include media-breakpoint-down(sm){
@@ -348,4 +376,4 @@ li{
     margin-right: -12px !important;
   }
 }
-// END shop page css
+// END responsive css
