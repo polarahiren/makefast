@@ -223,7 +223,7 @@ $('.brochure-slider').slick({
     lazyLoad: 'ondemand'
 }); //Case Studies Slider
 
-$('.product-carousel').slick({
+$('.single-carousel').slick({
     dots: false,
     arrows: true,
     speed: 800,
