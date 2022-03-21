@@ -271,3 +271,30 @@ $(document).ready(function(){
     });
 });
   
+
+$(document).ready(function(){
+    $(".filter-tab-btn").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            $('.filter').show('700');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('2000');
+            $('.filter').filter('.'+value).show('2000');
+        }
+
+        var filterOpen = $(this).hasClass("active");
+
+        if(filterOpen){
+            $('.filter-tab-btn').removeClass('active');
+        }else {
+            var siblings = $('.filter-tab-nav').find(".active");
+            siblings.removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+});
