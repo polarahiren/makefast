@@ -11896,7 +11896,7 @@ var App = /*#__PURE__*/function () {
         lazyLoad: 'ondemand'
       }); //Case Studies Slider
 
-      $('.product-carousel').slick({
+      $('.single-carousel').slick({
         dots: false,
         arrows: true,
         speed: 800,
@@ -11925,7 +11925,14 @@ var App = /*#__PURE__*/function () {
         centerMode: false,
         lazyLoad: 'ondemand',
         responsive: [{
-          breakpoint: 767,
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }, {
+          breakpoint: 992,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
