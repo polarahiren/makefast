@@ -456,3 +456,27 @@
     }
 }
 // END news page
+<<<<<<< Updated upstream
+=======
+
+
+// news details page
+.news-title{
+    h3{
+        letter-spacing: 0.88px;
+        line-height: 36px;
+    }
+
+    @include media-breakpoint-down(md){
+        h1{
+            font-size: 25px;
+        }
+
+        h3{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+}
+// END news details page
+>>>>>>> Stashed changes
