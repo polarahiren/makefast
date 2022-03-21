@@ -514,4 +514,32 @@
         }
     }
 }
+.latest-blog-slider{
+    .slick-prev:before,
+    .slick-next:before{
+        content: "";
+        width: 45px;
+        height: 30px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40px;
+        opacity: 0.2 !important;
+        transition: 0.2s all ease-in-out;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before{
+        opacity: 1 !important;
+    }
+
+    .slick-prev:before{ 
+        background-image: url("../images/icons/slick-arrow.svg"); 
+        transform: scaleX(-1);
+    }
+    .slick-next:before{ 
+        background-image: url("../images/icons/slick-arrow.svg"); 
+    }
+}
 // END news details page
