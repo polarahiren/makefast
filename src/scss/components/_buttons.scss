@@ -20,6 +20,11 @@
         span{
             padding-right: 13px;
         }
+        &:hover{
+            .btn-icon-box{
+                background: $primary;
+            }
+        }
     }
     &.btn-primary-light-icon{
         padding: 0;
@@ -45,7 +50,7 @@
         }
         &:hover{
             .btn-icon-box{
-                transform: scale(1.1);
+                background: $primary;
             }
         }
     }
@@ -54,9 +59,9 @@
         height: 39px;
         border-radius: 100%;
         @include generate-transition(all, 500ms, ease);
-        &:hover{
-            transform: scale(1.1);
-        }
+        // &:hover{
+        //     transform: scale(1.1);
+        // }
     }
 }
 

@@ -435,6 +435,15 @@
     }
 }
 
+.alt-product{
+    .object-cover{
+        height: 567px;
+        @include media-breakpoint-down(md){
+            height: 349px;
+        }
+    }
+}
+
 // news page
 .filter-tab-nav{
     .active{
@@ -476,3 +485,4 @@
     }
 }
 // END news details page
+

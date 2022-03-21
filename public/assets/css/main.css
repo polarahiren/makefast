@@ -15747,6 +15747,9 @@ p.error-message {
 .btn.btn-primary-dark-icon span {
   padding-right: 13px;
 }
+.btn.btn-primary-dark-icon:hover .btn-icon-box {
+  background: #011B21;
+}
 .btn.btn-primary-light-icon {
   padding: 0;
   font-size: 14px;
@@ -15774,7 +15777,7 @@ p.error-message {
   padding-right: 13px;
 }
 .btn.btn-primary-light-icon:hover .btn-icon-box {
-  transform: scale(1.1);
+  background: #011B21;
 }
 .btn .btn-icon-box {
   width: 39px;
@@ -15785,9 +15788,6 @@ p.error-message {
   /* Opera 12+ */
   transition: all 500ms ease;
   /* IE 10+, Fx 29+ */
-}
-.btn .btn-icon-box:hover {
-  transform: scale(1.1);
 }
 
 .btn-black,
@@ -17510,6 +17510,15 @@ footer ul.social-media li a:hover {
 
 .additional-info .object-cover {
   height: 507px;
+}
+
+.alt-product .object-cover {
+  height: 567px;
+}
+@media (max-width: 767.98px) {
+  .alt-product .object-cover {
+    height: 349px;
+  }
 }
 
 .filter-tab-nav .active {
