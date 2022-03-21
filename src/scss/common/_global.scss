@@ -332,7 +332,7 @@ li{
   margin-right: -8px;
   
   .news-card-img{
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(sm){
       margin-left: -12px;
       margin-right: -12px;
     }

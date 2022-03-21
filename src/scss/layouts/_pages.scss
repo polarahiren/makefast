@@ -434,3 +434,25 @@
         height: 507px;
     }
 }
+
+// news page
+.filter-tab-nav{
+    .active{
+        position: relative;
+        opacity: 0.46;
+        transition: 0.2s all ease-in-out;
+
+        &:before{
+            content: "";
+            width: calc(100% - 16px);
+            height: 1px;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #000000;
+            display: block;
+            position: absolute;
+        }
+    }
+}
+// END news page
