@@ -11677,160 +11677,6 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu ul li a.menu-item, .menu ul li a.btn").removeClass("menu-visible");
   });
 }); // END search box
-// Slick Slider JS
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.hero-slider').slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 300,
-  autoplay: true,
-  slidesToShow: 1,
-  lazyLoad: 'ondemand',
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      dots: false
-    }
-  }]
-}); //Home Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.latest-blog-slider').slick({
-  dots: false,
-  arrows: true,
-  speed: 300,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand',
-  prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
-  nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }]
-}); //Latest Blog Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.offer-slider').slick({
-  dots: false,
-  arrows: false,
-  speed: 300,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand',
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }]
-}); //Latest Blog Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.testimonial-carousel').slick({
-  dots: true,
-  arrows: false,
-  speed: 300,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false
-}); //Latest Blog Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.case-studies-slider').slick({
-  dots: false,
-  arrows: true,
-  speed: 300,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand',
-  prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
-  nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      arrows: false
-    }
-  }]
-}); //Case Studies Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.brochure-slider').slick({
-  dots: false,
-  arrows: false,
-  speed: 300,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand'
-}); //Case Studies Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.product-carousel').slick({
-  dots: false,
-  arrows: true,
-  speed: 800,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand'
-}); //Case Studies Slider
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.features-carousel').slick({
-  dots: false,
-  arrows: false,
-  speed: 500,
-  autoplay: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  accessibility: true,
-  variableWidth: false,
-  focusOnSelect: false,
-  centerMode: false,
-  lazyLoad: 'ondemand',
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true
-    }
-  }]
-}); //Featured Slider
 // product filter close
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
@@ -11838,6 +11684,28 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".filter-trigger").removeClass("open");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".product-filter").removeClass("show");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("fixed-bg");
+  });
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".filter-tab-btn").click(function () {
+    var value = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-filter');
+
+    if (value == "all") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.filter').show('700');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".filter").not('.' + value).hide('2000');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.filter').filter('.' + value).show('2000');
+    }
+
+    var filterOpen = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).hasClass("active");
+
+    if (filterOpen) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.filter-tab-btn').removeClass('active');
+    } else {
+      var siblings = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.filter-tab-nav').find(".active");
+      siblings.removeClass('active');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('active');
+    }
   });
 });
 
@@ -11911,7 +11779,160 @@ var App = /*#__PURE__*/function () {
             slidesToShow: 3
           }
         }]
-      });
+      }); // Slick Slider JS
+
+      $('.hero-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1,
+        lazyLoad: 'ondemand',
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            dots: false
+          }
+        }]
+      }); //Home Slider
+
+      $('.latest-blog-slider').slick({
+        dots: false,
+        arrows: true,
+        speed: 300,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand',
+        prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
+        nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      }); //Latest Blog Slider
+
+      $('.offer-slider').slick({
+        dots: false,
+        arrows: false,
+        speed: 300,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand',
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      }); //Latest Blog Slider
+
+      $('.testimonial-carousel').slick({
+        dots: true,
+        arrows: false,
+        speed: 300,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false
+      }); //Latest Blog Slider
+
+      $('.case-studies-slider').slick({
+        dots: false,
+        arrows: true,
+        speed: 300,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand',
+        prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
+        nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            arrows: false
+          }
+        }]
+      }); //Case Studies Slider
+
+      $('.brochure-slider').slick({
+        dots: false,
+        arrows: false,
+        speed: 300,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand'
+      }); //Case Studies Slider
+
+      $('.product-carousel').slick({
+        dots: false,
+        arrows: true,
+        speed: 800,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand'
+      }); //Case Studies Slider
+
+      $('.features-carousel').slick({
+        dots: false,
+        arrows: false,
+        speed: 500,
+        autoplay: true,
+        infinite: true,
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        lazyLoad: 'ondemand',
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }]
+      }); //Featured Slider
     }
   }, {
     key: "slickSLider",
