@@ -809,18 +809,21 @@
     <main class="pt-5 mt-5 overflow-hidden ">
         <div class="py-5 container mt-5">
             <!-- <h2 class="shop-page-title md:text-5xl text-black-shade-2 font-prata mb-md-0">Product Results [76]</h2> -->
-            <ul class="breadcrumb-menu d-none d-md-flex p-0 text-uppercase mb-4">
+            <ul class="breadcrumb-menu d-none d-lg-flex p-0 text-uppercase mb-4">
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="shop.html"> Safety Products </a></li>
                 <li><a href="shop.html"> d rings, delta dees, triangles & rings </a></li>
                 <li class="text-xs text-black-2"> bimini top fitting </li>
             </ul>
+            <div class="back-to-all text-xs small-label font-medium text-uppercase d-lg-none mb-4">BACK TO VIEW ALL</div>
 
             <div class="row align-items-center mx-0 pb-4 pb-lg-2">
                 <div class="col-12 col-lg-7 px-0">
-                    <div class="product-carousel">
-                        <div class="product-image">
-                            <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
+                    <div class="single-carousel mb-5 mb-xl-0">
+                        <div>
+                            <div class="product-image">
+                                <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
+                            </div>
                         </div>
                         <div class="product-image">
                             <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
@@ -850,16 +853,16 @@
                 </div>
             </div>
 
-            <div class="product-information px-md-5 mx-md-5 pt-5 mt-4">
+            <div class="product-information px-xl-5 mx-xl-5 pt-5 mt-4">
                 <h3 class="font-prata text-3xl mb-3">Additional Information</h3>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="normal-content">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptuat vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="normal-content">
                             <p>Tramet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. met, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
@@ -937,26 +940,34 @@
                     </div>
                 </div>
                 <div class="dimensions-section py-5 my-5">
-                    <div class="col-md-6 mb-3 mb-md-4 pb-md-3 d-md-flex align-items-center">
-                        <h2 class="text-3xl text-black-2 font-prata d-block d-md-inline-block mb-3 mb-md-0 me-md-4 pe-md-2">Dimensions</h2>
-                        <a href="javascript:void(0);" class="btn-text text-xs text-black-2 font-medium d-block d-md-inline-block mb-2 mb-md-0 pb-5 pb-md-0 ms-0">CLICK HERE TO VIEW ALL</a>
+                    <div class="col-lg-8 mb-3 mb-lg-4 pb-lg-3 d-lg-flex align-items-center">
+                        <h2 class="text-3xl text-black-2 font-prata text-center text-lg-start d-block d-lg-inline-block mb-3 mb-lg-0 me-lg-4 pe-lg-2">Dimensions</h2>
+                        <a href="javascript:void(0);" class="btn-text text-xs text-black-2 font-medium d-none d-lg-inline-block mb-2 mb-md-0 pb-5 pb-md-0 ms-0">CLICK HERE TO VIEW ALL</a>
                     </div>
-                    <div class="d-flex justify-content-md-between flex-nowrap overflow-auto overflow-scroll-hidden w-100">
-                        <div class="dimension-box">
-                            <div class="dimension-size text-7xl md:text-9xl font-prata">22<sub class="text-lg md:text-3xl">mm</sub></div>
-                            <div class="small-label font-medium text-black-2 text-uppercase mt-2">HEIGHT</div>
+                    <div class="row justify-content-md-between flex-nowrap overflow-auto overflow-scroll-hidden w-100">
+                        <div class="col-5 col-sm-4 col-md-6 col-lg-3">
+                            <div class="dimension-box">
+                                <div class="dimension-size text-7xl md:text-9xl font-prata">22<sub class="text-lg md:text-3xl">mm</sub></div>
+                                <div class="small-label font-medium text-black-2 text-uppercase mt-2">HEIGHT</div>
+                            </div>
                         </div>
-                        <div class="dimension-box">
-                            <div class="dimension-size text-7xl md:text-9xl font-prata">12<sub class="text-lg md:text-3xl">mm</sub></div>
-                            <div class="small-label font-medium text-black-2 text-uppercase mt-2">Width</div>
+                        <div class="col-5 col-sm-4 col-md-6 col-lg-3">
+                            <div class="dimension-box">
+                                <div class="dimension-size text-7xl md:text-9xl font-prata">12<sub class="text-lg md:text-3xl">mm</sub></div>
+                                <div class="small-label font-medium text-black-2 text-uppercase mt-2">Width</div>
+                            </div>
                         </div>
-                        <div class="dimension-box">
-                            <div class="dimension-size text-7xl md:text-9xl font-prata">6<sub class="text-lg md:text-3xl">mm</sub></div>
-                            <div class="small-label font-medium text-black-2 text-uppercase mt-2">Depth</div>
+                        <div class="col-5 col-sm-4 col-md-6 col-lg-3">
+                            <div class="dimension-box">
+                                <div class="dimension-size text-7xl md:text-9xl font-prata">6<sub class="text-lg md:text-3xl">mm</sub></div>
+                                <div class="small-label font-medium text-black-2 text-uppercase mt-2">Depth</div>
+                            </div>
                         </div>
-                        <div class="dimension-box">
-                            <div class="dimension-size text-7xl md:text-9xl font-prata">2.2<sub class="text-lg md:text-3xl">mm</sub></div>
-                            <div class="small-label font-medium text-black-2 text-uppercase mt-2">Weight</div>
+                        <div class="col-5 col-sm-4 col-md-6 col-lg-3">
+                            <div class="dimension-box">
+                                <div class="dimension-size text-7xl md:text-9xl font-prata">2.2<sub class="text-lg md:text-3xl">mm</sub></div>
+                                <div class="small-label font-medium text-black-2 text-uppercase mt-2">Weight</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -998,7 +1009,7 @@
                 </div>
             </div>
 
-            <div class="related-posts px-md-5 mx-md-5 py-5">
+            <div class="related-posts px-xl-5 mx-xl-5 py-5">
                 <div class="col-md-6 mb-4 pb-md-2">
                     <h2 class="text-3xl md:text-5xl text-black-2 font-prata">Latest News & Articles</h2>
                 </div>
@@ -1106,7 +1117,7 @@
             </div>
 
             <section class="feature-product-section py-5 mt-4">
-                <div class="px-md-5 mx-md-5 mt-4 mt-md-5">
+                <div class="px-xl-5 mx-xl-5 mt-4 mt-md-5">
                     <h2 class="text-3xl md:text-5xl text-black-2 font-prata text-start text-md-center mb-3 mb-md-2">Related Products</h2>
                     <div class="row mt-4 pt-2 pt-md-0 flex-nowrap overflow-auto overflow-scroll-hidden">
                         <div class="col-9 col-md-4 px-lg-4">
@@ -1147,7 +1158,7 @@
             </section>
 
             <section class="testimonial-section py-5">
-                <div class="px-md-5 mx-md-5 py-5">
+                <div class="px-xl-5 mx-xl-5 py-5">
                     <div class="col-md-10 mx-auto">
                         <div class="testimonial-carousel slick-slider slick-horizontal-dots slick-dark-dots pb-5">
                             <div>
