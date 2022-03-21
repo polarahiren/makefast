@@ -334,29 +334,34 @@
     .slick-arrow{
         width: 39px;
         height: 39px;
-        background-position: center;
-        background-size: 39px;
+        background: $black;
+        border-radius: 100%;
         &:hover{
-            transform: scale(1.05);
+            background: $primary;
         }
         &:before{
-            display: none;
+            content: "";
+            width: 39px;
+            height: 39px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         &.slick-prev{
             left: 16px;
-            background: url(../images/slider/slick-prev-icon.svg);
+            &:before{
+                background: url(../images/slider/prev-angle.svg);
+            }
         }
         &.slick-next{
             right: 16px;
-            background: url(../images/slider/slick-next-icon.svg);
+            &:before{
+                background: url(../images/slider/next-angle.svg);
+            }
         }
     }
 }
 
-.product-des{
-    letter-spacing: 0.64px;
-    line-height: 26px;
-}
 .product-content-box{
     .view-popup{
         text-decoration: underline;
@@ -367,8 +372,10 @@
 
 .single-feature{
     .img-box {
-        width: 115px;
-        height: 115px;
+        .object-cover{
+            width: 115px;
+            height: 115px;
+        }
     }
     p{
         letter-spacing: 0.56px;
@@ -393,5 +400,37 @@
         @include media-breakpoint-down(md){
             line-height: 35px;
         }
+    }
+}
+
+.product-view{
+    box-shadow: 0px 0px 26px #0000001A;
+    .object-cover{
+        height: 413px;
+        @include media-breakpoint-down(md){
+            height: 161px;
+        }
+    }
+    .view-product{
+        position: absolute;
+        right: 16px;
+        bottom: 18px;
+        @include media-breakpoint-down(md){
+            bottom: 33px;
+        }
+        svg{
+            width: 36px;
+            height: 36px;
+            @include media-breakpoint-down(md){
+                width: 51px;
+                height: 51px;
+            }
+        }
+    }
+}
+
+.additional-info{
+    .object-cover{
+        height: 507px;
     }
 }
