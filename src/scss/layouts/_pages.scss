@@ -475,4 +475,43 @@
         }
     }
 }
+
+.news-detail-slider{
+    line-height: 1;
+
+    .news-detail-image img{
+        height: 570px;
+
+        @include media-breakpoint-down(md){
+            height: 400px;
+        }
+    }
+}
+
+.news-details-description{
+    p{
+        letter-spacing: 0.64px;
+        margin-bottom: 25px;
+        line-height: 26px;
+    }
+}
+
+.news-detail-testimonial{
+    border-top: 1px solid #70707040;
+    border-bottom: 1px solid #70707040;
+
+    .slick-slider{
+        margin-bottom: 0px;
+    }
+    .testimonial-box .content{
+        font-size: 26px;
+        letter-spacing: 0.26px;
+        line-height: 44px;
+
+        @include media-breakpoint-down(md){
+            font-size: 23px;
+            letter-spacing: 0.23px;
+        }
+    }
+}
 // END news details page
