@@ -820,16 +820,14 @@
             <div class="row align-items-center mx-0 pb-4 pb-lg-2">
                 <div class="col-12 col-lg-7 px-0">
                     <div class="single-carousel mb-5 mb-xl-0">
-                        <div>
-                            <div class="product-image">
-                                <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
-                            </div>
+                        <div class="product-image">
+                            <img src="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
                         </div>
                         <div class="product-image">
-                            <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
+                            <img src="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
                         </div>
                         <div class="product-image">
-                            <img data-lazy="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
+                            <img src="assets/images/products/single-product.png" class="img-fluid w-100 object-cover" alt="">
                         </div>
                     </div>
                 </div>
@@ -1097,7 +1095,7 @@
                                 <div class="small-label font-medium text-secondary text-uppercase mb-2">ALTERNATIVE PRODUCT</div>
                                 <h2 class="text-3xl text-black-2 mb-2 font-prata">Bimini Top Fitting</h2>
                                 <p class="text-base text-black-2 normal-content font-medium mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl nisl, ornare eget tortor pulvinar, maximus aliquam neque.</p>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center text-uppercase" tabindex="0">
+                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center" tabindex="0">
                                     <span>View Product</span>
                                     <div class="btn-icon-box">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
@@ -1193,8 +1191,8 @@
     <div class="info-modal">
         <div class="modal fade" id="viewTechSpace" aria-labelledby="viewTechSpace" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <button type="button" class="btn-close opacity-100 ms-auto me-0" data-bs-dismiss="modal" aria-label="Close">
+                <div class="modal-content rounded-0 p-0">
+                    <button type="button" class="btn-close opacity-100 ms-auto me-0 mt-3 mt-md-0" data-bs-dismiss="modal" aria-label="Close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
                             <g id="Group_1223" data-name="Group 1223" transform="translate(-1148 -140)">
                               <circle id="Ellipse_25" data-name="Ellipse 25" cx="23.5" cy="23.5" r="23.5" transform="translate(1148 140)"/>
@@ -1205,14 +1203,14 @@
                             </g>
                         </svg>
                     </button>
-                    <div class="modal-body p-0 mt-5 px-4 mx-2">
+                    <div class="modal-body p-0 mt-md-5 mt-4 pt-2 pt-md-0 px-md-4 mx-2">
                         <h2 class="text-5xl font-prata mb-1">Bimini Top Fitting</h2>
                         <div class="small-label font-medium opacity-50 mb-3 text-uppercase">POA</div>
-                        <div class="normal-content mb-5">
+                        <div class="normal-content mb-md-5 mb-4">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-primary btn-black px-lg-5 text-uppercase">GET IN TOUCH</a>
+                        <a href="javascript:void(0);" class="btn btn-primary btn-black px-5">GET IN TOUCH</a>
                     </div>
                 </div>
             </div>
@@ -1220,37 +1218,60 @@
     </div>
 
     <!-- Enquiry modal -->
-    <div class="modal fade enquiry-modal view-booking-modal" id="enquirymodal" aria-hidden="true" aria-labelledby="enquirymodal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-gray-light">
+    <div class="enquiry-modal">
+        <div class="modal fade enquiry-modal view-booking-modal" id="enquirymodal" aria-hidden="true" aria-labelledby="enquirymodal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
-                <div class="modal-body py-5 px-4 p-md-5 text-primary position-relative">
-                    <!--                    close button-->
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="assets/images/icons/close-icon.svg" class="w-100" alt="close icon" />
-                    </button>
-                    <!--                END    close button-->
+                    <div class="modal-body bg-primary position-relative">
+                        <!--close button-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+                                <g id="Group_1360" data-name="Group 1360" transform="translate(-1243 -319)">
+                                  <circle id="Ellipse_15" data-name="Ellipse 15" cx="29" cy="29" r="29" transform="translate(1243 319)" fill="#fff"/>
+                                  <g id="Group_138" data-name="Group 138" transform="translate(-0.73 0.42)">
+                                    <rect id="Rectangle_132" data-name="Rectangle 132" width="26.665" height="2.807" transform="translate(1262.731 356.435) rotate(-45)" fill="#0f0f0f"/>
+                                    <rect id="Rectangle_133" data-name="Rectangle 133" width="26.665" height="2.807" transform="translate(1281.586 358.42) rotate(-135)" fill="#0f0f0f"/>
+                                  </g>
+                                </g>
+                            </svg>                              
+                        </button>
+                        <!--END close button-->
 
-                    <div class="pt-4 pt-md-0 mb-md-2 mt-md-4">
-                        <h3 class="mb-3 heading-font text-center">I’d like to book a viewing</h3>
-
-                        <span class="text-primary small-label d-block text-center font-medium mb-3 mb-md-4 ">PROPERTY DETAILS</span>
+                        <h3 class="mb-3 heading-font text-center text-white text-3xl font-prata mb-2">I’d like to know more</h3>
+                        <span class="text-white small-label d-block text-center font-medium mb-5 pb-3 pb-md-0 mb-md-4 text-uppercase">PRODUCT DETAILS</span>
                         <form>
-                            <div class="contact-form">
-                                <div class="w-100 mb-3">
-                                    <input type="text" class="form-control w-100 text-primary" placeholder="Your Name..."/>
+                            <div class="contact-form m-0 mw-100">
+                                <div class="d-md-flex align-items-center justify-content-center p-0 mb-md-4 mb-5 pb-md-0 pb-3">
+                                    <div class="d-flex align-items-center justify-content-center me-3 mb-3 mb-md-0">
+                                        <div class="radio-control me-2 pe-1 cursor-pointer">
+                                            <input type="radio" name="filter" id="request" checked="">
+                                            <span class="d-block theme-radio"></span>
+                                        </div>
+                                        <label for="request" class="text-white text-uppercase font-muli font-medium mb-0 cursor-pointer"> REQUEST A CALL BACK</label>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center me-3">
+                                        <div class="radio-control me-2 pe-1 cursor-pointer">
+                                            <input type="radio" name="filter" id="contact" checked="">
+                                            <span class="d-block theme-radio"></span>
+                                        </div>
+                                        <label for="contact" class="text-white text-uppercase font-muli font-medium mb-0 cursor-pointer"> FILL OUT CONTACT FORM</label>
+                                    </div>
+                                </div>
+                                <div class="w-100 mb-3 mb-md-2 pb-1">
+                                    <input type="text" class="form-control w-100 text-primary font-muli text-uppercase small-label font-semibold" placeholder="Your Name..."/>
                                     <p class="error-message d-none">here is the validation error message</p>
                                 </div>
-                                <div class="w-100 mb-3">
-                                    <input type="email" class="form-control w-100 text-primary" placeholder="Your Email…"/>
+                                <div class="w-100 mb-3 mb-md-2 pb-1">
+                                    <input type="email" class="form-control w-100 text-primary font-muli text-uppercase small-label font-semibold" placeholder="Your Email…"/>
                                     <p class="error-message d-none">here is the validation error message</p>
                                 </div>
-                                <div class="w-100 mb-3">
-                                    <input type="text" class="form-control w-100 text-primary" placeholder="Your Number..."/>
+                                <div class="w-100">
+                                    <input type="text" class="form-control w-100 text-primary font-muli text-uppercase small-label font-semibold" placeholder="Your Number..."/>
                                     <p class="error-message d-none">here is the validation error message</p>
                                 </div>
 
-                                <div class="col-12 mb-3 px-0 d-flex flex-column flex-sm-row">
+                                <!-- <div class="col-12 mb-3 px-0 d-flex flex-column flex-sm-row">
                                     <div class="w-100">
                                         <select class="w-100">
                                             <option>Desired Date…</option>
@@ -1268,10 +1289,16 @@
                                             <option>01:00</option>
                                         </select>
                                     </div>
+                                </div> -->
+                                <div class="d-flex align-items-center justify-content-center my-4">
+                                    <div class="checkbox-control me-2 pe-1 cursor-pointer">
+                                        <input type="checkbox" name="filter" id="subscribe">
+                                        <span class="d-block theme-checkbox"></span>
+                                    </div>
+                                    <label for="subscribe" class="text-white text-uppercase font-muli font-medium mb-0 cursor-pointer"> PLEASE SELECT, TO SUBSCRIBE <br class="d-md-none">TO OUR NEWSLETTERS</label>
                                 </div>
-
                                 <div class="col-12 pt-2 mt-4 text-center">
-                                    <a href="javascript:void(0);" class="btn btn-secondary" data-bs-dismiss="modal"> REQUEST BOOKING </a>
+                                    <button type="submit" class="btn btn-primary">REQUEST A CALL BACK</button>
                                 </div>
                             </div>
                         </form>

@@ -15190,6 +15190,36 @@ p.error-message {
   opacity: 1;
 }
 
+.radio-control .theme-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ffffff;
+  position: relative;
+}
+.radio-control .theme-radio::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: #F58220;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s all ease-in-out;
+}
+.radio-control input {
+  display: none;
+}
+.radio-control input:checked + .theme-radio:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .product-filter .accordion-item {
   border: none;
 }
@@ -16062,9 +16092,6 @@ p.error-message {
   height: auto;
   background: transparent;
 }
-.info-modal .modal .btn-close:hover {
-  transform: rotate(90deg);
-}
 .info-modal .modal .modal-body {
   flex-grow: 1;
 }
@@ -16077,9 +16104,47 @@ p.error-message {
   transform: translate(0px, 0px);
 }
 
+.btn-close {
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+.btn-close:hover {
+  transform: rotate(90deg);
+}
+
 /* enquiry modal*/
 .enquiry-modal .modal .modal-dialog {
-  max-width: 700px;
+  max-width: 562px;
+}
+@media (max-width: 767.98px) {
+  .enquiry-modal .modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+.enquiry-modal .modal .modal-dialog .btn-close {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: 37px;
+  top: 47px;
+  z-index: 10;
+  opacity: 1;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+@media (min-width: 768px) {
+  .enquiry-modal .modal .modal-dialog .btn-close {
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+  }
 }
 .enquiry-modal .modal .contact-form {
   max-width: 430px;
@@ -16089,8 +16154,60 @@ p.error-message {
   color: #ffffff;
   margin-bottom: 6px;
 }
+.enquiry-modal .modal .contact-form .form-control {
+  padding: 10px 15px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+@media (max-width: 767.98px) {
+  .enquiry-modal .modal .contact-form .form-control {
+    padding: 13px 15px;
+  }
+}
+.enquiry-modal .modal .contact-form input::-moz-placeholder {
+  color: #ffffff;
+}
+.enquiry-modal .modal .contact-form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.enquiry-modal .modal .contact-form input::placeholder {
+  color: #ffffff;
+}
 .enquiry-modal .modal .contact-form .btn.btn-primary {
   min-width: 180px;
+}
+.enquiry-modal .modal .contact-form .checkbox-control .theme-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 0;
+}
+.enquiry-modal .modal .contact-form .checkbox-control .theme-checkbox:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+.enquiry-modal .modal .contact-form .checkbox-control ~ label {
+  font-size: 10px;
+  letter-spacing: 0.9px;
+  line-height: 13px;
+}
+@media (max-width: 767.98px) {
+  .enquiry-modal .modal .contact-form .checkbox-control ~ label {
+    line-height: 17px;
+  }
+}
+.enquiry-modal .modal .contact-form .radio-control ~ label {
+  font-size: 10px;
+  letter-spacing: 0.9px;
+  line-height: 13px;
+}
+@media (max-width: 767.98px) {
+  .enquiry-modal .modal .contact-form .radio-control ~ label {
+    font-size: 14px;
+    letter-spacing: 1.35px;
+    line-height: 19px;
+  }
 }
 .enquiry-modal .modal .contact-form .browse-btn {
   font-weight: 500;
@@ -16116,9 +16233,17 @@ p.error-message {
   border: none;
   border-radius: 5px;
 }
+.enquiry-modal .modal .modal-content .modal-body {
+  padding: 52px 59px 36px;
+}
 @media (max-width: 767.98px) {
-  .enquiry-modal .modal .modal-content {
-    padding: 30px 20px;
+  .enquiry-modal .modal .modal-content .modal-body {
+    padding: 42px 36px 58px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
   }
 }
 .enquiry-modal .modal .enquiry-bg {
@@ -17555,7 +17680,7 @@ footer ul.social-media li a:hover {
 .alt-product .object-cover {
   height: 567px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .alt-product .object-cover {
     height: 349px;
   }
