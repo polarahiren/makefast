@@ -16711,6 +16711,23 @@ p.error-message {
   display: none;
 }
 
+@media (max-width: 767.98px) {
+  .slick-indicators-white .slick-prev,
+.slick-indicators-white .slick-next {
+    display: none !important;
+  }
+}
+.slick-indicators-white .slick-prev:before,
+.slick-indicators-white .slick-next:before {
+  opacity: 1;
+}
+.slick-indicators-white .slick-prev:before {
+  background-image: url("../../assets/images/icons/arrow-prev-white.svg") !important;
+}
+.slick-indicators-white .slick-next:before {
+  background-image: url("../../assets/images/icons/arrow-next-white.svg") !important;
+}
+
 header {
   background-color: #ffffff;
   z-index: 99;
@@ -17728,11 +17745,14 @@ footer ul.social-media li a:hover {
     height: 400px;
   }
 }
-.news-detail-slider .slick-arrow {
+
+.news-detail-slider .slick-arrow,
+.case-stuides-details-slider .slick-arrow {
   height: 46px;
   width: 46px;
 }
-.news-detail-slider .slick-arrow:before {
+.news-detail-slider .slick-arrow:before,
+.case-stuides-details-slider .slick-arrow:before {
   height: 46px;
   width: 46px;
 }
@@ -17786,6 +17806,70 @@ footer ul.social-media li a:hover {
 }
 .latest-blog-slider .slick-next:before {
   background-image: url("../images/icons/slick-arrow.svg");
+}
+
+.hero-banner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #00000010;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.hero-banner img {
+  height: 700px;
+}
+@media (max-width: 1023.98px) {
+  .hero-banner img {
+    height: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-banner img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .case-studies-description h2, .case-studies-description .h2 {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+.case-studies-description p {
+  letter-spacing: 0.64px;
+  margin-bottom: 25px;
+}
+.case-studies-description p:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767.98px) {
+  .project-details {
+    background-color: #E2E2E235;
+  }
+  .project-details h2, .project-details .h2 {
+    font-size: 30px;
+  }
+}
+.project-details .border-bottom {
+  border-color: #D5D5D5 !important;
+}
+
+.case-stuides-details-slider {
+  box-shadow: 0 13px 20px #00000029;
+  line-height: 0;
+}
+.case-stuides-details-slider img {
+  height: 675px;
+}
+@media (max-width: 1023.98px) {
+  .case-stuides-details-slider img {
+    height: 440px;
+  }
 }
 
 body#tinymce {
