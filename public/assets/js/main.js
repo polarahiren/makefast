@@ -11893,7 +11893,11 @@ var App = /*#__PURE__*/function () {
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        lazyLoad: 'ondemand'
+        lazyLoad: 'ondemand',
+        responsive: [{
+          breakpoint: 767,
+          settings: "unslick"
+        }]
       }); //Case Studies Slider
 
       $('.single-carousel').slick({

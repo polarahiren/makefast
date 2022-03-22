@@ -310,9 +310,31 @@
 }
 
 .image-content-box{
+    @include media-breakpoint-down(md){
+        padding-bottom: 30px;
+        margin-bottom: 52px;
+        border-bottom: 1px solid rgba($secondary, $alpha: 0.20);
+        &:last-child{
+            border: 0;
+        }
+        .content-box{
+            h4{
+                font-size: $bodyL;
+            }
+            .btn{
+                .btn-icon-box{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
     .object-cover{
         width: 166px;
         height: 133px;
+        @include media-breakpoint-down(md){
+            width: 78px;
+            height: 69px;
+        }
     }
 }
 

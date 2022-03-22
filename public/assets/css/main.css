@@ -16062,6 +16062,9 @@ p.error-message {
   height: auto;
   background: transparent;
 }
+.info-modal .modal .btn-close:hover {
+  transform: rotate(90deg);
+}
 .info-modal .modal .modal-body {
   flex-grow: 1;
 }
@@ -17394,9 +17397,31 @@ footer ul.social-media li a:hover {
   }
 }
 
+@media (max-width: 767.98px) {
+  .image-content-box {
+    padding-bottom: 30px;
+    margin-bottom: 52px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  }
+  .image-content-box:last-child {
+    border: 0;
+  }
+  .image-content-box .content-box h4, .image-content-box .content-box .h4 {
+    font-size: 18px;
+  }
+  .image-content-box .content-box .btn .btn-icon-box {
+    transform: rotate(90deg);
+  }
+}
 .image-content-box .object-cover {
   width: 166px;
   height: 133px;
+}
+@media (max-width: 767.98px) {
+  .image-content-box .object-cover {
+    width: 78px;
+    height: 69px;
+  }
 }
 
 .image-box-section .image-box .object-cover {

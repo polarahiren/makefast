@@ -30,6 +30,9 @@
             width: auto;
             height: auto;
             background: transparent;
+            &:hover{
+                transform: rotate(90deg);
+            }
         }
 
         .modal-body {
