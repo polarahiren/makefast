@@ -472,9 +472,9 @@
 
 .alt-product{
     .object-cover{
-        height: 567px;
+        height: 570px;
         @include media-breakpoint-down(sm){
-            height: 349px;
+            height: 350px;
         }
     }
 }
@@ -668,6 +668,12 @@
         @include media-breakpoint-down(lg){
             height: 440px;
         }
+    }
+}
+
+.case-studies-items-section{
+    .alt-product .object-cover{
+        height: 300px;
     }
 }
 // case stuides open 
