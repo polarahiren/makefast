@@ -164,7 +164,7 @@
     }
 }
 
-.case-studies-box{
+.case-studies-section{
     @include media-breakpoint-down(md){
         .cat-name,
         .pro-name,
@@ -172,6 +172,9 @@
             color: $white !important;
         }
     }
+}
+
+.case-studies-box{
     .object-cover{
         height: 450px;
         @include media-breakpoint-down(md){
