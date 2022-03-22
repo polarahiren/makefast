@@ -432,3 +432,28 @@
         }
     }
 }
+
+
+.slick-indicators-white {
+    .slick-prev,
+    .slick-next {
+        @include media-breakpoint-down(md){
+            display: none !important;
+        }
+        &:before{
+            opacity: 1;
+        }
+    }
+
+    .slick-prev {
+        &:before {
+            background-image: url("../../assets/images/icons/arrow-prev-white.svg") !important;
+        }
+    }
+
+    .slick-next {
+        &:before {
+            background-image: url("../../assets/images/icons/arrow-next-white.svg") !important;
+        }
+    }
+}
