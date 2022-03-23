@@ -699,7 +699,7 @@
 .services-lists-group {
     position: sticky;
     top: 150px;
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(md){
         flex-wrap: nowrap;
         overflow: auto;
     }
@@ -711,11 +711,11 @@
         background-color: transparent !important;
         color: $black;
         transition: 0.2s all ease-in-out;
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(md){
             padding: 0px 0px 0px 0px;
             margin-bottom: 16px;
         }
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(md){
             white-space: nowrap;
         }
         &:hover{
