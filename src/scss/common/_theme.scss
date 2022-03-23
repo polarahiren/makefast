@@ -152,7 +152,6 @@ p.error-message {
     width: 100%;
     font-size: 14px;
     line-height: 1.8;
-    box-shadow: 0 0 36px rgb(113 113 113 / 10%);
     z-index: 10;
     @include media-breakpoint-up(md) {
         width: 50%;
@@ -174,7 +173,7 @@ p.error-message {
     @include media-breakpoint-down(md) {
         width: 100%;
         position: relative !important;
-        height: 350px !important;
+        height: 400px !important;
     }
 }
 
