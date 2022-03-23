@@ -713,3 +713,26 @@
         }
     }
 }
+
+
+// our story page
+.our-srory-section{
+    .btn-primary-light-icon{
+        &:hover .btn-icon-box{
+            background-color: #ffffff;
+        }
+    }
+}
+.our-srory-content{
+    h3{
+        font-size: 25px;
+    }
+    @include media-breakpoint-up(lg){
+        .normal-content{
+            font-size: 16px;
+            p{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
