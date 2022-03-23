@@ -273,6 +273,7 @@ li{
 .search-form {
   position: relative;
   .input-control {
+    padding: 12px 1.3rem;
     padding-right: 50px;
   }
   .input-group-append {
@@ -280,6 +281,12 @@ li{
     top: 50%;
     right: 8px;
     transform: translateY(-50%);
+  }
+  .faq-search{
+    letter-spacing: 1.26px;
+    &::placeholder{
+      color: $black-shade-2;
+    }
   }
 }
 

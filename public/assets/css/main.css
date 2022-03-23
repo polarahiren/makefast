@@ -14800,6 +14800,7 @@ li {
   position: relative;
 }
 .search-form .input-control {
+  padding: 12px 1.3rem;
   padding-right: 50px;
 }
 .search-form .input-group-append {
@@ -14807,6 +14808,18 @@ li {
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
+}
+.search-form .faq-search {
+  letter-spacing: 1.26px;
+}
+.search-form .faq-search::-moz-placeholder {
+  color: #0F0F0F;
+}
+.search-form .faq-search:-ms-input-placeholder {
+  color: #0F0F0F;
+}
+.search-form .faq-search::placeholder {
+  color: #0F0F0F;
 }
 
 @media (min-width: 768px) {
@@ -16040,6 +16053,13 @@ p.error-message {
   .news-card-img img {
     height: 300px;
   }
+}
+
+.team-card .team-card-body h4, .team-card .team-card-body .h4 {
+  font-size: 25px;
+}
+.team-card .team-card-img img {
+  height: 300px;
 }
 
 /* card-with-inner-body */
@@ -17963,6 +17983,75 @@ footer ul.social-media li a:hover {
   .our-projects-section h2, .our-projects-section .h2 {
     font-size: 35px;
   }
+}
+
+.team-read-more-btn {
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 0px;
+}
+
+.theme-accordion .accordion-item {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-top: 35px;
+}
+@media (max-width: 767.98px) {
+  .theme-accordion .accordion-item {
+    margin-top: 56px;
+  }
+}
+.theme-accordion .accordion-item:first-child {
+  margin-top: 0;
+}
+.theme-accordion .accordion-item .accordion-button {
+  padding: 0;
+  background: transparent;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #707070;
+  border-radius: 0;
+  color: #ffffff;
+}
+@media (max-width: 767.98px) {
+  .theme-accordion .accordion-item .accordion-button {
+    padding-bottom: 17px;
+  }
+}
+.theme-accordion .accordion-item .accordion-button:after {
+  width: 42px;
+  height: 42px;
+  background-image: url(../images/icons/plus-icon.svg);
+  background-size: 60px;
+  background-position: center;
+  border-radius: 100%;
+}
+.theme-accordion .accordion-item .accordion-button:not(.collapsed):after {
+  transform: rotate(-45deg);
+}
+.theme-accordion .accordion-item .accordion-body {
+  padding: 0;
+  padding-top: 27px;
+  color: #ffffff;
+  line-height: 26px;
+}
+@media (max-width: 767.98px) {
+  .theme-accordion.dark-accordion .accordion-item {
+    margin-top: 38px;
+  }
+}
+.theme-accordion.dark-accordion .accordion-item .accordion-button {
+  color: #000000;
+}
+.theme-accordion.dark-accordion .accordion-item .accordion-button:after {
+  background-image: url(../images/icons/plus-icon-dark.svg);
+  background-size: 42px;
+}
+.theme-accordion.dark-accordion .accordion-item .accordion-body {
+  color: #000000;
 }
 
 body#tinymce {
