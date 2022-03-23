@@ -377,3 +377,11 @@ li{
   }
 }
 // END responsive css
+
+.large-banner-section{
+  @include media-breakpoint-down(md){
+    img{
+      height: 400px;
+    }
+  }
+}

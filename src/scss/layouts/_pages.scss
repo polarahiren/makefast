@@ -37,7 +37,7 @@
 
 .image-box{
     .object-cover {
-        height: 434px;
+        height: 435px;
         @include media-breakpoint-down(md){
             height: 370px;
         }
@@ -48,6 +48,11 @@
         @include media-breakpoint-down(md){
             top: 50%;
             transform: translateY(-50%);
+
+            .title{
+                font-size: 26px;
+                line-height: 35px;
+            }
         }
     }
     &.image-overlay{
@@ -601,6 +606,15 @@
         background-image: url("../images/icons/slick-arrow.svg"); 
     }
 }
+.slick-light-arrow-white{
+    .slick-prev:before{ 
+        background-image: url("../images/icons/slick-arrow-white.svg"); 
+        transform: scaleX(-1);
+    }
+    .slick-next:before{ 
+        background-image: url("../images/icons/slick-arrow-white.svg"); 
+    }
+}
 // END news details page
 
 
@@ -716,14 +730,14 @@
 
 
 // our story page
-.our-srory-section{
+.about-story-section{
     .btn-primary-light-icon{
         &:hover .btn-icon-box{
             background-color: #ffffff;
         }
     }
 }
-.our-srory-content{
+.about-story-content{
     h3{
         font-size: 25px;
     }
@@ -733,6 +747,18 @@
             p{
                 margin-bottom: 25px;
             }
+        }
+    }
+}
+.our-projects-section{
+    @include media-breakpoint-up(md){
+        h2{
+            line-height: 50px;
+        }
+    }
+    @include media-breakpoint-between(md, lg){
+        h2{
+            font-size: 35px;
         }
     }
 }
