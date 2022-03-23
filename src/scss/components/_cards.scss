@@ -168,3 +168,19 @@
 }
 
 // END news card
+
+
+// team card
+.team-card{
+    .team-card-body{
+        h4{
+            font-size: 25px;
+        }
+    }
+    .team-card-img{
+        img{
+            height: 300px;
+        }
+    }
+}
+// ENd team card

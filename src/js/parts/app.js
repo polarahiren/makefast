@@ -69,6 +69,7 @@ export class App{
         }]
     }); //Home Slider
 
+    // Latest Blog Slider
     $('.latest-blog-slider').slick({
         dots: false,
         arrows: true,
@@ -77,10 +78,6 @@ export class App{
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        accessibility: true,
-        variableWidth: false,
-        focusOnSelect: false,
-        centerMode: false,
         lazyLoad: 'ondemand',
         prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
@@ -92,7 +89,10 @@ export class App{
                 slidesToScroll: 1
             }
         }]
-    }); //Latest Blog Slider
+    }); 
+    // END Latest Blog Slider
+
+
 
     $('.offer-slider').slick({
         dots: false,
@@ -153,6 +153,7 @@ export class App{
         }]
     }); //Case Studies Slider
 
+    //Case Studies Slider
     $('.brochure-slider').slick({
         dots: false,
         arrows: false,
@@ -161,17 +162,14 @@ export class App{
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 1,
-        accessibility: true,
-        variableWidth: false,
-        focusOnSelect: false,
-        centerMode: false,
         lazyLoad: 'ondemand',
         responsive: [{
             breakpoint: 767,
             settings: "unslick",
         }]
-    }); //Case Studies Slider
+    }); 
 
+    //Case Studies Slider
     $('.single-carousel').slick({
         dots: false,
         arrows: true,
@@ -185,8 +183,9 @@ export class App{
         focusOnSelect: false,
         centerMode: false,
         lazyLoad: 'ondemand'
-    }); //Case Studies Slider
+    }); 
 
+    //Featured Slider
     $('.features-carousel').slick({
         dots: false,
         arrows: false,
@@ -195,10 +194,6 @@ export class App{
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        accessibility: true,
-        variableWidth: false,
-        focusOnSelect: false,
-        centerMode: false,
         lazyLoad: 'ondemand',
         responsive: [{
             breakpoint: 1400,
@@ -215,7 +210,29 @@ export class App{
                 dots: true
             }
         }]
-    }); //Featured Slider
+    }); 
+
+        // team slider
+        $('.team-slider').slick({
+            dots: false,
+            arrows: true,
+            speed: 300,
+            autoplay: true,
+            infinite: true,
+            slidesToScroll: 1,
+            slidesToShow: 3, 
+            prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
+            nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        }); 
+    
 
 }
 
