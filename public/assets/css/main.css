@@ -17882,22 +17882,38 @@ footer ul.social-media li a:hover {
   position: sticky;
   top: 150px;
 }
+@media (max-width: 1023.98px) {
+  .services-lists-group {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
 .services-lists-group .list-group-item {
   border-color: #828282;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
+  padding: 0px 45px 0px 0px;
   background-color: transparent !important;
+  color: #000000;
   transition: 0.2s all ease-in-out;
 }
 @media (min-width: 1024px) {
   .services-lists-group .list-group-item {
-    padding: 4px 0px 4px 0px;
+    padding: 0px 0px 0px 0px;
     margin-bottom: 16px;
   }
 }
+@media (max-width: 1023.98px) {
+  .services-lists-group .list-group-item {
+    white-space: nowrap;
+  }
+}
+.services-lists-group .list-group-item:hover {
+  color: #011B21;
+}
 .services-lists-group .list-group-item.active {
   border-width: 0px 0px 0px 2px;
-  padding: 4px 0px 4px 15px;
+  padding-left: 15px;
 }
 
 body#tinymce {
