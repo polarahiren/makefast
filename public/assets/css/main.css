@@ -15035,7 +15035,6 @@ p.error-message {
   width: 100%;
   font-size: 14px;
   line-height: 1.8;
-  box-shadow: 0 0 36px rgba(113, 113, 113, 0.1);
   z-index: 10;
 }
 @media (min-width: 768px) {
@@ -15059,7 +15058,7 @@ p.error-message {
   .box-large-image {
     width: 100%;
     position: relative !important;
-    height: 350px !important;
+    height: 400px !important;
   }
 }
 
@@ -17914,6 +17913,22 @@ footer ul.social-media li a:hover {
 .services-lists-group .list-group-item.active {
   border-width: 0px 0px 0px 2px;
   padding-left: 15px;
+}
+
+.our-srory-section .btn-primary-light-icon:hover .btn-icon-box {
+  background-color: #ffffff;
+}
+
+.our-srory-content h3, .our-srory-content .h3 {
+  font-size: 25px;
+}
+@media (min-width: 1024px) {
+  .our-srory-content .normal-content {
+    font-size: 16px;
+  }
+  .our-srory-content .normal-content p {
+    margin-bottom: 25px;
+  }
 }
 
 body#tinymce {
