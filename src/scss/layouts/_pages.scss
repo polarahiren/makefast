@@ -606,6 +606,15 @@
         background-image: url("../images/icons/slick-arrow.svg"); 
     }
 }
+.slick-light-arrow-white{
+    .slick-prev:before{ 
+        background-image: url("../images/icons/slick-arrow-white.svg"); 
+        transform: scaleX(-1);
+    }
+    .slick-next:before{ 
+        background-image: url("../images/icons/slick-arrow-white.svg"); 
+    }
+}
 // END news details page
 
 
