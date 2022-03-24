@@ -15047,6 +15047,12 @@ p.error-message {
 .form-control:focus {
   box-shadow: none;
 }
+.form-control.border {
+  border: 1px solid;
+}
+.form-control.border.border-black {
+  border-color: #011B21 !important;
+}
 
 /* END input form css */
 .story-box {
@@ -16176,6 +16182,20 @@ p.error-message {
     transform: translate(50%, -50%);
   }
 }
+.enquiry-modal .modal .bg-primary .contact-form .form-control,
+.enquiry-modal .modal .bg-black .contact-form .form-control {
+  background: rgba(255, 255, 255, 0.2);
+}
+.enquiry-modal .modal .bg-primary .contact-form input::-moz-placeholder, .enquiry-modal .modal .bg-black .contact-form input::-moz-placeholder {
+  color: #ffffff;
+}
+.enquiry-modal .modal .bg-primary .contact-form input:-ms-input-placeholder, .enquiry-modal .modal .bg-black .contact-form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.enquiry-modal .modal .bg-primary .contact-form input::placeholder,
+.enquiry-modal .modal .bg-black .contact-form input::placeholder {
+  color: #ffffff;
+}
 .enquiry-modal .modal .contact-form {
   max-width: 430px;
   margin: 0 auto;
@@ -16187,7 +16207,7 @@ p.error-message {
 .enquiry-modal .modal .contact-form .form-control {
   padding: 10px 15px;
   font-size: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ffffff;
   border-radius: 3px;
 }
 @media (max-width: 767.98px) {
@@ -16196,13 +16216,13 @@ p.error-message {
   }
 }
 .enquiry-modal .modal .contact-form input::-moz-placeholder {
-  color: #ffffff;
+  color: #000000;
 }
 .enquiry-modal .modal .contact-form input:-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
 }
 .enquiry-modal .modal .contact-form input::placeholder {
-  color: #ffffff;
+  color: #000000;
 }
 .enquiry-modal .modal .contact-form .btn.btn-primary {
   min-width: 180px;
@@ -16210,7 +16230,7 @@ p.error-message {
 .enquiry-modal .modal .contact-form .checkbox-control .theme-checkbox {
   width: 24px;
   height: 24px;
-  border: 0;
+  border: 1px solo;
 }
 .enquiry-modal .modal .contact-form .checkbox-control .theme-checkbox:before {
   width: 20px;
@@ -16282,6 +16302,19 @@ p.error-message {
   width: 220%;
   right: -134px;
   left: auto !important;
+}
+
+.brochure-modal .modal .contact-form .checkbox-control .theme-checkbox {
+  width: 31px;
+  height: 31px;
+  border: 1px solid #000000;
+}
+.brochure-modal .modal .contact-form .checkbox-control .theme-checkbox:before {
+  width: 23px;
+  height: 23px;
+  border-radius: 6px;
+  top: 3px;
+  left: 3px;
 }
 
 .submit-modal .modal a.menu-close.d-block {
@@ -18052,6 +18085,17 @@ footer ul.social-media li a:hover {
 }
 .theme-accordion.dark-accordion .accordion-item .accordion-body {
   color: #000000;
+}
+
+.brochure-list .image-content-box .object-cover {
+  width: 169px;
+  height: 115px;
+}
+@media (max-width: 767.98px) {
+  .brochure-list .image-content-box .object-cover {
+    width: 78px;
+    height: 69px;
+  }
 }
 
 body#tinymce {

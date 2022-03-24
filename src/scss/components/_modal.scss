@@ -77,6 +77,17 @@
                 }
             }
         }
+        .bg-primary,
+        .bg-black{
+            .contact-form{
+                .form-control{
+                    background: rgba($white, $alpha: 0.20);
+                }
+                input::placeholder{
+                    color: $white;
+                }
+            }    
+        }
         .contact-form {
             max-width: 430px;
             margin: 0 auto;
@@ -87,14 +98,14 @@
             .form-control{
                 padding: 10px 15px;
                 font-size: $bodyXS;
-                background: rgba($white, $alpha: 0.20);
+                background: $white;
                 border-radius: 3px;
                 @include media-breakpoint-down(md){
                     padding: 13px 15px;
                 }
             }
             input::placeholder{
-                color: $white;
+                color: $black;
             }
             .btn.btn-primary{
                 min-width: 180px;
@@ -103,7 +114,7 @@
                 .theme-checkbox {
                     width: 24px;
                     height: 24px;
-                    border: 0;
+                    border: 1px solo;
                     &:before{
                         width: 20px;
                         height: 20px;
@@ -178,8 +189,26 @@
             right: -134px;
             left: auto !important;
         }
+
     }
 }
+
+// Brochure Modal
+.brochure-modal{
+    .modal .contact-form .checkbox-control .theme-checkbox{
+        width: 31px;
+        height: 31px;
+        border: 1px solid $black;
+        &:before{
+            width: 23px;
+            height: 23px;
+            border-radius: 6px;
+            top: 3px;
+            left: 3px;
+        }
+    }
+}
+// Brochure Modal
 
 .submit-modal{
     .modal{

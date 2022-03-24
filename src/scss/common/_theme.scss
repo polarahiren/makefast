@@ -142,6 +142,12 @@ p.error-message {
     &:focus{
         box-shadow: none;
     }
+    &.border{
+        border: 1px solid;
+        &.border-black{
+            border-color: $primary !important;
+        }
+    }
 }
 
 /* END input form css */

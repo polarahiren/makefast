@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Bootstrap Setup</title>
+    <title>Makefast - News Detail</title>
 
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
@@ -16,9 +16,9 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-offset="200" data-bs-target="#list-example">
     <!-- header -->
-    <header class="position-fixed header-transparent top-0 start-0 w-100">
+    <header class="position-fixed top-0 start-0 w-100">
         <!-- menu -->
         <div class="navbar">
             <div class="container">
@@ -26,7 +26,7 @@
                     <div class="col-12 col-lg-2 d-flex flex-wrap justify-content-between align-items-center">
 
                         <!-- Logo -->
-                        <a href="index.html" class="logo navbar-brand d-flex align-items-center me-0 p-0">
+                        <a href="index.html" class="logo navbar-fast-buckles d-flex align-items-center me-0 p-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="132.515" height="98.135" viewBox="0 0 132.515 98.135">
                                 <g id="Group_1872" data-name="Group 1872" transform="translate(-111.016 -72.241)">
                                     <path id="Path_12161" data-name="Path 12161" d="M236.474,170.372q.753-.069.754-.916v-14.61a4.85,4.85,0,0,1,.137-1.466,1.154,1.154,0,0,1,1.164-.618,9.78,9.78,0,0,1,3.106.277,5.162,5.162,0,0,1,1.9,1.732v-1.925q-.069-.7-1.028-.7-12.059-.046-13.658,0c-.381.03-.571.191-.571.479v2.262a15.878,15.878,0,0,1,1.247-1.256,3.191,3.191,0,0,1,1.928-.8,16.651,16.651,0,0,1,2-.069q1.179-.023,1.179,1.69v15.919Zm-12.242-16.513a4.576,4.576,0,0,0-2.124-1.05,6.133,6.133,0,0,0-1.393-.161,4.954,4.954,0,0,0-3.7,1.371,3.265,3.265,0,0,0-1.027,2.329,2.531,2.531,0,0,0,.365,1.462,8.873,8.873,0,0,0,2.924,2.284,26.166,26.166,0,0,1,3.381,2.124,5.477,5.477,0,0,1,1.736,2.055,3.788,3.788,0,0,1,.228,1.325,3.05,3.05,0,0,1-.32,1.462,6.625,6.625,0,0,1-3.084,2.65,9.6,9.6,0,0,1-4.088.868,13.165,13.165,0,0,1-2.49-.252q-1.439-.274-1.439-1.21v-2.147q1.645,2.97,4.088,2.969a4.07,4.07,0,0,0,1.8-.388q2.81-1.416,2.809-3.312a2.637,2.637,0,0,0-.616-1.759,7.9,7.9,0,0,0-2.353-1.69,21.574,21.574,0,0,1-3.608-2.124,5.335,5.335,0,0,1-1.508-1.713,4.543,4.543,0,0,1-.388-2.124,4.3,4.3,0,0,1,1.8-3.4A6.84,6.84,0,0,1,218.8,152.1a16.74,16.74,0,0,1,2.353-.137H222.2q1.394.092,1.439.115a2.457,2.457,0,0,1,1.279.5,5.039,5.039,0,0,1,.343,2.626,3.037,3.037,0,0,0-1.028-1.347M205.778,164.57a.613.613,0,0,0-.091-.3l-3.358-8.839q-.228-.5-.457-.5c-.137,0-.251.168-.343.5L199.2,164.89h6.1q.48-.023.48-.32m5.459,5.8h-2.65q-.868.182-1.485-1.85-.5-1.393-.754-1.965a2.736,2.736,0,0,0-.434-.754,1.223,1.223,0,0,0-.8-.228h-6.121l-1.233,4.134a2.222,2.222,0,0,1-.343.434.827.827,0,0,1-.571.228h-.982l6.167-18.157q.069-.228.457-.32a1.112,1.112,0,0,1,.343-.045h.982Zm-25.466,0q.754-.069.616-1.05v-6.555q.069-.96.846-.959h5.024q.3-.044.3-.4,0-.176-.457-.22h-5.71v-7.243q.092-1.23,1.165-1.207,3.517.159,4.682.251a4.775,4.775,0,0,1,3.563,2.421v-1.644a1.545,1.545,0,0,0-1.759-1.576q-6.829.024-8.839,0-1.394.069-1.393,1.188v16.993ZM178.21,153.7a6.828,6.828,0,0,0-1.3-.457,20.576,20.576,0,0,0-3.311-.342,21.143,21.143,0,0,1-2.193.023q-1.074.092-1.073,1.3v7.035H175.9q.662.023.776.182-.023.548-.548.411h-4.956q-.891.092-.891,1.3v6.533H173.3a13.54,13.54,0,0,0,4.819-.731q1.666-.754,1.758-1.942v2.444a.926.926,0,0,1-.32.777,1.335,1.335,0,0,1-.685.16H167.7V154.041a1.8,1.8,0,0,1,2.033-1.85q6.531-.068,8.61,0,1.529.092,1.53,1.325v1.965a2.92,2.92,0,0,0-1.667-1.781m-25.649-1.553q1.347.068,1.21,1v7.56q.023.526.365.525a1.221,1.221,0,0,0,.708-.388q6.623-7.628,6.943-7.994.662-.754,1.05-.708h1.417l-8.314,8.291,8.383,9.935h-1.782a2.565,2.565,0,0,1-1.781-.8q-6.029-6.6-6.3-6.9a.526.526,0,0,0-.365-.183c-.167,0-.274.161-.32.48V169.8q-.069.571-.868.571h-1.85V152.146ZM142.489,164.57a.613.613,0,0,0-.091-.3l-3.358-8.839q-.228-.5-.457-.5c-.137,0-.251.168-.342.5l-2.33,9.456h6.1q.48-.023.48-.32m5.459,5.8H145.3q-.868.182-1.485-1.85-.5-1.393-.754-1.965a2.736,2.736,0,0,0-.434-.754,1.221,1.221,0,0,0-.8-.228h-6.121l-1.233,4.134a2.222,2.222,0,0,1-.343.434.827.827,0,0,1-.571.228h-.982l6.167-18.157q.069-.228.457-.32a1.1,1.1,0,0,1,.342-.045h.982Zm-18.432-18.2v18.2h-1.759a.819.819,0,0,1-.731-.525,1.252,1.252,0,0,1-.114-.457V155.343l-5.733,14.435a1.017,1.017,0,0,1-.388.525.8.8,0,0,1-.206.069h-1.439q-.365.137-.776-.8l-4.659-14.686-1.987,14.983a.518.518,0,0,1-.388.434.716.716,0,0,1-.32.069l.594-18.2h2.056a1.03,1.03,0,0,1,1.028.64l5.916,16.4,6.052-16.17a1.331,1.331,0,0,1,.594-.754.909.909,0,0,1,.343-.115Z" transform="translate(0 -19.617)" fill="#fff"/>
@@ -805,333 +805,26 @@
     <div class="fake-header d-none"></div>
     <!-- END header -->
 
-    <main>
-        <div class="bg-primary position-relative position-md-sticky top-0 left-0 w-100">
-            <div class="hero-slider marine-hero-slider slick-slider slick-vertical-dots">
-                <div class="h-100 position-relative d-block">
-                    <div class="hero-filter container d-flex flex-column justify-content-center start-0 end-0 m-auto py-5 py-md-0 px-4 px-md-0">
-                        <div class="ps-lg-5 ms-lg-5 pt-5 pt-md-0 mt-5 mt-md-0">
-                            <div class="col-md-8 text-left mt-4 mt-md-0">
-                                <div class="text-uppercase small-label font-medium text-white opacity-50 mb-2 pb-1">FEATURED CASE STUDY</div>
-                                <h2 class="hero-title text-7xl md:text-8xl xl:text-9xl mt-0 pb-2 mb-0 text-white font-prata">Port Marine Safety Code</h2>
-                                <div class="col-md-9 p-0">
-                                    <div class="hero-content text-sm xl:text-lg text-white font-red-hat-display font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl, ornare eget tortor pulvinar, maximus.</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary-light-icon d-flex align-items-center mt-4">
-                                        <span>View case Study</span>
-                                        <div class="btn-icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                                <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#141414" stroke="#141414" stroke-width="1"></path>
-                                                </g>
-                                            </svg>   
-                                        </div>                           
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <img src="assets/images/marine/hero-section-background.png" class="img-fluid w-100 object-cover" alt="image">
-                        <img src="assets/images/slider/slider-overlay.svg" class="w-100 h-100 object-cover position-absolute top-0 left-0" alt="image">
-                    </div>
-                </div>
-
-                <div class="h-100 position-relative d-block">
-                    <div class="hero-filter container d-flex flex-column justify-content-center start-0 end-0 m-auto py-5 py-md-0 px-4 px-md-0">
-                        <div class="ps-lg-5 ms-lg-5 pt-5 pt-md-0 mt-5 mt-md-0">
-                            <div class="col-md-8 text-left mt-4 mt-md-0">
-                                <div class="text-uppercase small-label font-medium text-white opacity-50 mb-2 pb-1">FEATURED CASE STUDY</div>
-                                <h2 class="hero-title text-7xl md:text-8xl xl:text-9xl mt-0 pb-2 mb-0 text-white font-prata">Port Marine Safety Code</h2>
-                                <div class="col-md-9 p-0">
-                                    <div class="hero-content text-sm xl:text-lg text-white font-red-hat-display font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl, ornare eget tortor pulvinar, maximus.</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary-light-icon d-flex align-items-center mt-4">
-                                        <span>View case Study</span>
-                                        <div class="btn-icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                                <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#141414" stroke="#141414" stroke-width="1"></path>
-                                                </g>
-                                            </svg>   
-                                        </div>                           
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <img src="assets/images/home/home-slider.png" class="img-fluid w-100 object-cover" alt="image">
-                        <img src="assets/images/slider/slider-overlay.svg" class="w-100 h-100 object-cover position-absolute top-0 left-0" alt="image">
-                    </div>
-                </div>
-
-                <div class="h-100 position-relative d-block">
-                    <div class="hero-filter container d-flex flex-column justify-content-center start-0 end-0 m-auto py-5 py-md-0 px-4 px-md-0">
-                        <div class="ps-lg-5 ms-lg-5 pt-5 pt-md-0 mt-5 mt-md-0">
-                            <div class="col-md-8 text-left mt-4 mt-md-0">
-                                <div class="text-uppercase small-label font-medium text-white opacity-50 mb-2 pb-1">FEATURED CASE STUDY</div>
-                                <h2 class="hero-title text-7xl md:text-8xl xl:text-9xl mt-0 pb-2 mb-0 text-white font-prata">Port Marine Safety Code</h2>
-                                <div class="col-md-9 p-0">
-                                    <div class="hero-content text-sm xl:text-lg text-white font-red-hat-display font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl, ornare eget tortor pulvinar, maximus.</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary-light-icon d-flex align-items-center mt-4">
-                                        <span>View case Study</span>
-                                        <div class="btn-icon-box">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                                <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#141414" stroke="#141414" stroke-width="1"></path>
-                                                </g>
-                                            </svg>   
-                                        </div>                           
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <img src="assets/images/safety/hero-section-background.png" class="img-fluid w-100 object-cover" alt="image">
-                    </div>
-                </div>
+    
+    <main class="pt-5 mt-5">
+        <div class="py-md-5 container mt-5">
+            
+            <div class="brochure-title-box text-center text-md-start py-5 mb-1 col-12 col-md-7 pe-md-4">
+                <h1 class="text-26 md:text-7xl text-black-shade-2 font-prata mb-md-3">Brochures</h1>
+                <p class="normal-content mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicula. Sed fringilla, turpis quis dictum fermentum, arcu massa congue erat, a porta tellus libero eu turpis. Vestibulum pharetra</p>
             </div>
-            <a href="#featuredCat" class="scroll-to-bottom pb-5 position-absolute bottom-0 z-index">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17.654" height="30.127" viewBox="0 0 17.654 30.127">
-                    <g id="Group_2008" data-name="Group 2008" transform="translate(-711.173 -724.749)">
-                      <path id="Path_12191" data-name="Path 12191" d="M8.359,8.126a.58.58,0,0,0,.35-.145l7.729-6.957A.58.58,0,1,0,15.665.16L8.322,6.767.98.16a.58.58,0,1,0-.773.864L7.936,7.981a.58.58,0,0,0,.423.145Z" transform="translate(711.678 735.749)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                      <path id="Path_12192" data-name="Path 12192" d="M8.359,8.126a.58.58,0,0,0,.35-.145l7.729-6.957A.58.58,0,1,0,15.665.16L8.322,6.767.98.16a.58.58,0,1,0-.773.864L7.936,7.981a.58.58,0,0,0,.423.145Z" transform="translate(711.678 746.749)" fill="#fff"/>
-                      <path id="Path_12193" data-name="Path 12193" d="M8.359,8.126a.58.58,0,0,0,.35-.145l7.729-6.957A.58.58,0,1,0,15.665.16L8.322,6.767.98.16a.58.58,0,1,0-.773.864L7.936,7.981a.58.58,0,0,0,.423.145Z" transform="translate(711.678 724.749)" fill="#fff"/>
-                    </g>
-                </svg>                  
-            </a>
-        </div>
-
-        <div class="bg-white position-relative" id="featuredCat">
-        
-            <section class="service-box py-5 mt-5 mt-md-0">
-                <div class="mt-4 mt-md-5">
-                    <h2 class="text-3xl md:text-5xl text-black font-prata text-start text-md-center pb-2 mb-4 ps-3 ps-md-0">Featured Categories</h2>
-                    <div class="row mx-0">
-                        <div class="col-md-4 px-0 mb-2 mb-md-0">
-                            <div class="image-box h-100 position-relative image-overlay">
-                                <img src="assets/images/marine/category-image-1.png" alt="image" class="img-fluid object-cover w-100">
-                                <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
-                                    <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Biminis & Sunroofs</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">VIEW THIS AREA</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 px-0 mb-2 mb-md-0">
-                            <div class="image-box h-100 position-relative image-overlay">
-                                <img src="assets/images/marine/category-image-2.png" alt="image" class="img-fluid object-cover w-100">
-                                <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
-                                    <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Marine & Sailmakers Hardware</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">VIEW THIS AREA</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 px-0 mb-2 mb-md-0">
-                            <div class="image-box h-100 position-relative image-overlay">
-                                <img src="assets/images/marine/category-image-3.png" alt="image" class="img-fluid object-cover w-100">
-                                <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
-                                    <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Sprayhood Fittings</div>
-                                    <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">SHOP PRODUCTS</a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="brochure-list">
+                <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
+                    <div class="image-box me-md-3 pe-md-2 mb-3 mb-md-0 flex-shrink-0">
+                        <img src="assets/images/general/brochure.png" class="img-fluid object-cover" alt="image">
                     </div>
-                </div>
-            </section>
-
-            <section class="feature-product-section py-5">
-                <div class="container mt-4 mt-md-5">
-                    <h2 class="text-3xl md:text-5xl text-black-2 font-prata text-start text-md-center mb-3 mb-md-2">Featured Products</h2>
-                    <a href="javascript:void(0);" class="btn-text text-sm text-black-2 font-medium d-table ms-0 mx-md-auto">VIEW ALL</a>
-                    <div class="row mt-4 pt-2 pt-md-0 px-lg-5 mx-lg-5 flex-nowrap overflow-auto overflow-scroll-hidden">
-                        <div class="col-9 col-md-4 px-lg-4">
-                            <div class="product-box px-lg-2 card-hover">
-                                <a href="javascript:void(0);" class="d-block">
-                                    <div class="pro-img mb-4 mb-md-3 overflow-hidden">
-                                        <img src="assets/images/products/product-image-1.png" class="img-fluid w-100 object-cover" alt="image">
-                                    </div>
-                                    <div class="pro-cat-name text-xs text-black-2 mb-0 mb-md-2">FITTINGS</div>
-                                    <div class="pro-name text-lg md:text-xl text-black-2 font-prata d-block">Bimini Top Fitting</div>
-                                </a>
-                            </div>
+                    <div class="d-md-flex align-items-center justify-content-md-between w-100">
+                        <div class="content-box flex-grow-1 pe-md-3">
+                            <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
+                            <p class="text-sm md:text-base text-black mb-md-0 mb-2 font-normal">Sprayhood fittings, marine &amp; sailmakers hardware, awnings &amp; sunroofs and buckles</p>
                         </div>
-                        <div class="col-9 col-md-4 px-lg-4">
-                            <div class="product-box px-lg-2 card-hover">
-                                <a href="javascript:void(0);" class="d-block">
-                                    <div class="pro-img mb-4 mb-md-3 overflow-hidden">
-                                        <img src="assets/images/products/product-image-2.png" class="img-fluid w-100 object-cover" alt="image">
-                                    </div>
-                                    <div class="pro-cat-name text-xs text-black-2 mb-0 mb-md-2">FITTINGS</div>
-                                    <div class="pro-name text-lg md:text-xl text-black-2 font-prata d-block">Bimini Top Fitting</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-9 col-md-4 px-lg-4">
-                            <div class="product-box px-lg-2 card-hover">
-                                <a href="javascript:void(0);" class="d-block">
-                                    <div class="pro-img mb-4 mb-md-3 overflow-hidden">
-                                        <img src="assets/images/products/product-image-3.png" class="img-fluid w-100 object-cover" alt="image">
-                                    </div>
-                                    <div class="pro-cat-name text-xs text-black-2 mb-0 mb-md-2">FITTINGS</div>
-                                    <div class="pro-name text-lg md:text-xl text-black-2 font-prata d-block">Bimini Top Fitting</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="case-studies-2 pt-2 pb-5 py-md-5">
-                <div class="container mt-md-5 pt-4">
-                    <div class="col-md-6 mb-md-4 pb-md-2 d-md-flex align-items-center">
-                        <h2 class="text-3xl md:text-5xl text-black-2 font-prata d-block d-md-inline-block mb-3 mb-md-0 me-md-4 pe-md-2">Case Studies</h2>
-                        <a href="javascript:void(0);" class="btn-text text-sm text-black-2 font-medium d-block d-md-inline-block mb-2 mb-md-0 pb-5 pb-md-0 ms-0">VIEW ALL</a>
-                    </div>
-                    <div class="case-studies-slider slick-arrow-top-right position-relative">
-                        <div class="overflow-hidden p-4">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-7 px-0">
-                                    <img src="assets/images/marine/case-studies.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="col-md-6 col-lg-5 px-md-0 p-4 d-flex align-items-center content-box">
-                                    <div class="pt-md-0 mt-md-0 px-2 px-md-5 ms-md-4 me-md-3">
-                                        <div class="small-label font-medium text-secondary text-uppercase mb-2">CASE STUDY - MARINE</div>
-                                        <h2 class="text-3xl text-black-2 mb-2 font-prata">Our Story</h2>
-                                        <p class="text-base text-secondary opacity-75 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl nisl, ornare eget tortor pulvinar, maximus aliquam neque. Lorem ipsum</p>
-                                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center">
-                                            <div class="btn-icon-box">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                    <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                                    <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
-                                                    </g>
-                                                </svg>   
-                                            </div>                           
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden p-4">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-7 px-0">
-                                    <img src="assets/images/marine/case-studies.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="col-md-6 col-lg-5 px-md-0 p-4 d-flex align-items-center content-box">
-                                    <div class="pt-md-0 mt-md-0 px-2 px-md-5 ms-md-4 me-md-3">
-                                        <div class="small-label font-medium text-secondary text-uppercase mb-2">CASE STUDY - MARINE</div>
-                                        <h2 class="text-3xl text-black-2 mb-2 font-prata">Our Story</h2>
-                                        <p class="text-base text-secondary opacity-75 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae est fermentum, volutpat felis quis, ornare velit. Curabitur nisl nisl, ornare eget tortor pulvinar, maximus aliquam neque. Lorem ipsum</p>
-                                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center">
-                                            <div class="btn-icon-box">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                                    <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                                    <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
-                                                    </g>
-                                                </svg>   
-                                            </div>                           
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="call-to-section my-5 pt-2 pt-md-3 pb-4">
-                <div class="theme-call-to-action">
-                    <img src="assets/images/marine/call-to-action-background.png" class="img-fluid w-100 object-cover" alt="image">
-                </div>
-            </section>
-
-            <section class="latest-blog-section overflow-hidden py-5 mt-4 mt-md-5 mb-4 mb-md-5">
-                <div class="container">
-                    <div class="col-md-6 mb-4 pb-md-2">
-                        <h2 class="text-3xl md:text-5xl text-black-2 font-prata">Latest News & Articles</h2>
-                    </div>
-                    <div class="latest-blog-slider slick-arrow-top-right slider-overflow-visable">
-                        <div class="pe-4">
-                            <div class="blog-box card-hover pb-2">
-                                <div class="blog-image mb-3 mb-md-4 overflow-hidden">
-                                    <img src="assets/images/home/blog-image-1.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="blog-cat-name text-xs text-secondary mb-2 pb-md-1 font-medium">INSIGHTS</div>
-                                <div class="blog-title text-2xl text-black-2 mb-3 font-prata">Apprentice Brandon Baynham completes certification</div>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon">
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                              <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                                            </g>
-                                        </svg>                              
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pe-4">
-                            <div class="blog-box card-hover pb-2">
-                                <div class="blog-image mb-3 mb-md-4 overflow-hidden">
-                                    <img src="assets/images/home/blog-image-2.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="blog-cat-name text-xs text-secondary mb-2 pb-md-1 font-medium">INSIGHTS</div>
-                                <div class="blog-title text-2xl text-black-2 mb-3 font-prata">Apprentice Brandon Baynham completes certification</div>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon">
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                              <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                                            </g>
-                                        </svg>                              
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pe-4">
-                            <div class="blog-box card-hover pb-2">
-                                <div class="blog-image mb-3 mb-md-4 overflow-hidden">
-                                    <img src="assets/images/home/blog-image-3.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="blog-cat-name text-xs text-secondary mb-2 pb-md-1 font-medium">INSIGHTS</div>
-                                <div class="blog-title text-2xl text-black-2 mb-3 font-prata">Apprentice Brandon Baynham completes certification</div>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon">
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                              <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                                            </g>
-                                        </svg>                              
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pe-4">
-                            <div class="blog-box card-hover pb-2">
-                                <div class="blog-image mb-3 mb-md-4 overflow-hidden">
-                                    <img src="assets/images/home/blog-image-4.png" alt="image" class="img-fluid w-100 object-cover">
-                                </div>
-                                <div class="blog-cat-name text-xs text-secondary mb-2 pb-md-1 font-medium">INSIGHTS</div>
-                                <div class="blog-title text-2xl text-black-2 mb-3 font-prata">Apprentice Brandon Baynham completes certification</div>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon">
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                              <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#fff" stroke="#fff" stroke-width="1"/>
-                                            </g>
-                                        </svg>                              
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="brochure-section mt-3 pt-4 pb-5 overflow-hidden mb-5">
-                <div class="container">
-                    <div class="d-flex justify-content-center justify-content-md-start align-items-center flex-column flex-md-row mb-5 pb-2">
-                        <h2 class="text-3xl text-black-2 font-prata mb-2 mb-md-0 flex-grow-1 pe-md-2 text-center text-md-start">Brochure downloads</h2>
-                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-end justify-content-center font-muli text-uppercase" tabindex="0">
-                            <span>View All</span>
+                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0" data-bs-toggle="modal" data-bs-target="#downloadBrochure">
+                            <span class="d-none d-md-inline text-nowrap">DOWNLOAD PDF</span>
                             <div class="btn-icon-box">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
                                     <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
@@ -1141,82 +834,143 @@
                             </div>                           
                         </a>
                     </div>
-                    <div class="brochure-slider slider-overflow-visable col-md-9">
-                        <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
-                            <div class="image-box me-md-4 pe-md-2 mb-3 mb-md-0">
-                                <img src="assets/images/marine/brochure.png" class="img-fluid object-cover" alt="image">
-                            </div>
-                            <div class="content-box">
-                                <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
-                                <p class="text-base text-black mb-md-3 mb-2 font-normal">Sprayhood fittings, marine & sailmakers hardware, awnings & sunroofs and buckles</p>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0">
-                                    <span class="d-none d-md-inline">DOWNLOAD PDF</span>
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                            <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
-                                            </g>
-                                        </svg>   
-                                    </div>                           
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
-                            <div class="image-box me-md-4 pe-md-2 mb-3 mb-md-0">
-                                <img src="assets/images/marine/brochure.png" class="img-fluid object-cover" alt="image">
-                            </div>
-                            <div class="content-box">
-                                <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
-                                <p class="text-base text-black mb-md-3 mb-2 font-normal">Sprayhood fittings, marine & sailmakers hardware, awnings & sunroofs and buckles</p>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0">
-                                    <span class="d-none d-md-inline">DOWNLOAD PDF</span>
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                            <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
-                                            </g>
-                                        </svg>   
-                                    </div>                           
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
-                            <div class="image-box me-md-4 pe-md-2 mb-3 mb-md-0">
-                                <img src="assets/images/marine/brochure.png" class="img-fluid object-cover" alt="image">
-                            </div>
-                            <div class="content-box">
-                                <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
-                                <p class="text-base text-black mb-md-3 mb-2 font-normal">Sprayhood fittings, marine & sailmakers hardware, awnings & sunroofs and buckles</p>
-                                <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0">
-                                    <span class="d-none d-md-inline">DOWNLOAD PDF</span>
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                            <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
-                                            </g>
-                                        </svg>   
-                                    </div>                           
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </section>
 
-            <section class="image-box-section mb-3">
-                <div class="image-box h-100 position-relative image-overlay">
-                    <img src="assets/images/marine/call-to-action-2-background.png" alt="image" class="img-fluid object-cover w-100 d-none d-md-block">
-                    <img src="assets/images/home/view-area.png" alt="image" class="img-fluid object-cover w-100 d-md-none">
-                    <img class="w-100 h-100 object-cover position-absolute top-0 left-0 d-md-block" alt="image" src="assets/images/slider/slider-overlay.svg">
-                    <div class="image-filter px-3 position-absolute start-0 end-0 m-auto text-center d-md-flex align-items-center justify-content-center">
-                        <div class="title text-5xl md:text-7xl text-white font-prata mb-2 pb-1 mb-md-0 pb-md-0 me-md-4">Biminis & Sunroofs</div>
-                        <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">VIEW THIS AREA</a>
+                <hr class="bg-secondary my-5 opacity-20">
+
+                <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
+                    <div class="image-box me-md-3 pe-md-2 mb-3 mb-md-0 flex-shrink-0">
+                        <img src="assets/images/general/brochure.png" class="img-fluid object-cover" alt="image">
+                    </div>
+                    <div class="d-md-flex align-items-center justify-content-md-between w-100">
+                        <div class="content-box flex-grow-1 pe-md-3">
+                            <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
+                            <p class="text-sm md:text-base text-black mb-md-0 mb-2 font-normal">Sprayhood fittings, marine &amp; sailmakers hardware, awnings &amp; sunroofs and buckles</p>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0" data-bs-toggle="modal" data-bs-target="#downloadBrochure">
+                            <span class="d-none d-md-inline text-nowrap">DOWNLOAD PDF</span>
+                            <div class="btn-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                                    <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
+                                    <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
+                                    </g>
+                                </svg>   
+                            </div>                           
+                        </a>
                     </div>
                 </div>
-            </section>            
-            
+
+                <hr class="bg-secondary my-5 opacity-20">
+
+                <div class="image-content-box d-md-flex align-items-center text-center text-md-start">
+                    <div class="image-box me-md-3 pe-md-2 mb-3 mb-md-0 flex-shrink-0">
+                        <img src="assets/images/general/brochure.png" class="img-fluid object-cover" alt="image">
+                    </div>
+                    <div class="d-md-flex align-items-center justify-content-md-between w-100">
+                        <div class="content-box flex-grow-1 pe-md-3">
+                            <h4 class="text-black m-0 font-prata mb-2 mb-md-0">Makefast Marine Catalogue</h4>
+                            <p class="text-sm md:text-base text-black mb-md-0 mb-2 font-normal">Sprayhood fittings, marine &amp; sailmakers hardware, awnings &amp; sunroofs and buckles</p>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-md-start justify-content-center text-semibold font-muli" tabindex="0" data-bs-toggle="modal" data-bs-target="#downloadBrochure">
+                            <span class="d-none d-md-inline text-nowrap">DOWNLOAD PDF</span>
+                            <div class="btn-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                                    <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
+                                    <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
+                                    </g>
+                                </svg>   
+                            </div>                           
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
+        <section class="service-box pt-5 py-md-5 mt-4 mt-md-0">
+            <div class="row mx-0 mt-md-5">
+                <div class="col-md-4 px-0 mb-2 mb-md-0">
+                    <div class="image-box h-100 position-relative image-overlay">
+                        <img src="assets/images/general/case-studies-item-img.png" alt="image" class="  img-fluid object-cover w-100">
+                        <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
+                            <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Biminis & Sunroofs</div>
+                            <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">VIEW THIS AREA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-0 mb-2 mb-md-0">
+                    <div class="image-box h-100 position-relative image-overlay">
+                        <img src="assets/images/home/view-area.png" alt="image" class="  img-fluid object-cover w-100">
+                        <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
+                            <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Marine & Sailmakers Hardware</div>
+                            <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">VIEW THIS AREA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-0">
+                    <div class="image-box h-100 position-relative image-overlay">
+                        <img src="assets/images/marine/category-image-2.png" alt="image" class="  img-fluid object-cover w-100">
+                        <div class="image-filter position-absolute start-0 end-0 m-auto text-center px-3">
+                            <div class="title text-26 md:text-5xl text-white font-prata mb-2 pb-1">Sprayhood Fittings</div>
+                            <a href="javascript:void(0);" class="btn btn-primary px-md-5 mt-2 mt-md-0">SHOP PRODUCTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Brochure Modal -->
+    <div class="enquiry-modal brochure-modal">
+        <div class="modal fade enquiry-modal view-booking-modal" id="downloadBrochure" aria-hidden="true" aria-labelledby="downloadBrochure" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body bg-white position-relative">
+                        <!--close button-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+                                <g id="Group_1360" data-name="Group 1360" transform="translate(-1243 -319)">
+                                  <circle id="Ellipse_15" data-name="Ellipse 15" cx="29" cy="29" r="29" transform="translate(1243 319)" fill="#000"/>
+                                  <g id="Group_138" data-name="Group 138" transform="translate(-0.73 0.42)">
+                                    <rect id="Rectangle_132" data-name="Rectangle 132" width="26.665" height="2.807" transform="translate(1262.731 356.435) rotate(-45)" fill="#fff"/>
+                                    <rect id="Rectangle_133" data-name="Rectangle 133" width="26.665" height="2.807" transform="translate(1281.586 358.42) rotate(-135)" fill="#fff"/>
+                                  </g>
+                                </g>
+                            </svg>                              
+                        </button>
+                        <!--END close button-->
+
+                        <h3 class="mb-3 heading-font text-center text-black-2 text-3xl font-prata mb-2">Download Brochure</h3>
+                        <form>
+                            <div class="contact-form m-0 mw-100">
+                                
+                                <div class="w-100 mb-3 mb-md-2 pb-1">
+                                    <input type="text" class="form-control w-100 text-black font-muli text-uppercase small-label font-semibold border border-black" placeholder="Your Name..."/>
+                                    <p class="error-message d-none">here is the validation error message</p>
+                                </div>
+                                <div class="w-100 mb-3 mb-md-2 pb-1">
+                                    <input type="email" class="form-control w-100 text-black font-muli text-uppercase small-label font-semibold border border-black" placeholder="Your Email…"/>
+                                    <p class="error-message d-none">here is the validation error message</p>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-center my-4">
+                                    <div class="checkbox-control me-2 pe-1 cursor-pointer">
+                                        <input type="checkbox" name="filter" id="subscribe">
+                                        <span class="d-block theme-checkbox"></span>
+                                    </div>
+                                    <label for="subscribe" class="text-black text-uppercase font-muli font-medium mb-0 cursor-pointer"> PLEASE SELECT, TO SUBSCRIBE <br class="d-md-none">TO OUR NEWSLETTERS</label>
+                                </div>
+                                <div class="col-12 pt-2 mt-4 text-center">
+                                    <button type="submit" class="btn btn-primary btn-black">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brochure Modal -->
 
     <!-- footer --->
     <footer class="pt-5 bg-white text-white">
@@ -1331,7 +1085,7 @@
                                 </li>
                             </ul>
                             <div class="footer-bottom-left-logo me-4 pe-2 mt-4 pt-2">
-                                <img src="assets/images/logos/footer-bottom-logo.png" class="img-fluid object-cover" alt="image">
+                                <img src="assets/images/logos/footer-bottom-logo.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1389,7 +1143,7 @@
                 <div class="row align-items-center justify-content-between pb-md-2 pb-3">
                     <div class="col-md-4 align-items-center d-none d-lg-flex">
                         <div class="footer-bottom-left-logo me-4 pe-2">
-                            <img src="assets/images/logos/footer-bottom-logo.png" alt="image">
+                            <img src="assets/images/logos/footer-bottom-logo.png" alt="">
                         </div>
                         <ul class="d-flex justify-content-start social-media p-0 m-0">
                             <li class="px-3 ps-0">
@@ -1466,6 +1220,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
