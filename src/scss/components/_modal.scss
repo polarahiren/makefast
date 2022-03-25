@@ -77,17 +77,6 @@
                 }
             }
         }
-        .bg-primary,
-        .bg-black{
-            .contact-form{
-                .form-control{
-                    background: rgba($white, $alpha: 0.20);
-                }
-                input::placeholder{
-                    color: $white;
-                }
-            }    
-        }
         .contact-form {
             max-width: 430px;
             margin: 0 auto;
@@ -110,38 +99,9 @@
             .btn.btn-primary{
                 min-width: 180px;
             }
-            .checkbox-control{
-                .theme-checkbox {
-                    width: 24px;
-                    height: 24px;
-                    border: 1px solo;
-                    &:before{
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 6px;
-                    }
-                }
-                ~ label{
-                    font-size: 10px;
-                    letter-spacing: 0.9px;
-                    line-height: 13px;
-                    @include media-breakpoint-down(md){
-                        line-height: 17px;
-                    }
-                }
-            }
-            .radio-control{
-                ~ label{
-                    font-size: 10px;
-                    letter-spacing: 0.9px;
-                    line-height: 13px;
-                    @include media-breakpoint-down(md){
-                        font-size: $bodyS;
-                        letter-spacing: 1.35px;
-                        line-height: 19px;
-                    }
-                }
-            }
+            .select2-container{
+                width: 100% !important;
+            }            
             .browse-btn {
                 font-weight: 500;
                 cursor: pointer;

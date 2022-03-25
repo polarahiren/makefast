@@ -52,6 +52,10 @@
         &:hover{
             .btn-icon-box{
                 background: $primary;
+                svg path{
+                    fill: $white;
+                    stroke: $white;
+                }
             }
         }
     }

@@ -41,7 +41,7 @@ p.error-message {
 
 
 /* nice select */
-.nice-select {
+.nice-select123 {
     border-color: transparent;
     height: auto;
     padding-right: 30px;
@@ -121,7 +121,7 @@ p.error-message {
 }
 
 .last-filter{
-    .nice-select .list{
+    .nice-select123 .list{
         right: 0px;
         left: auto;
     }
@@ -149,7 +149,57 @@ p.error-message {
         }
     }
 }
-
+.bg-primary,
+.bg-black{
+    .contact-form{
+        .form-control{
+            background: rgba($white, $alpha: 0.20) !important;
+        }
+        input::placeholder{
+            color: $white !important;
+        }
+    } 
+    .select-light{
+        .select2-selection{
+            background-color: rgba($white, $alpha: 0.20);
+            .select2-selection__rendered{
+                color: $white;
+            }
+        }
+    }
+    .checkbox-control{
+        .theme-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 0;
+            &:before{
+                width: 20px;
+                height: 20px;
+                border-radius: 6px;
+            }
+        }
+        ~ label{
+            font-size: 10px;
+            letter-spacing: 0.9px;
+            line-height: 13px;
+            @include media-breakpoint-down(md){
+                line-height: 17px;
+            }
+        }
+    }
+    .radio-control{
+        ~ label{
+            font-size: 10px;
+            letter-spacing: 0.9px;
+            line-height: 13px;
+            @include media-breakpoint-down(md){
+                font-size: $bodyS;
+                letter-spacing: 1.35px;
+                line-height: 19px;
+            }
+        }
+    }   
+}
 /* END input form css */
 
 
@@ -420,6 +470,42 @@ p.error-message {
                 z-index: 1;
                 opacity: 20%;
             }
+        }
+    }
+}
+
+.select2{
+    .select2-selection {
+        border-color: $black;
+        border-radius: 5px;
+        padding: 9px 26px;
+        height: auto;
+        .select2-selection__rendered {
+            font-size: $bodyXS;
+            letter-spacing: 1.8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding-left: 0;
+        }
+        .select2-selection__arrow {
+            height: 100%;
+            position: absolute;
+            top: 1px;
+            right: 17px;
+            width: 20px;
+        }
+    }
+}
+.select2-dropdown{
+    border-color: $black;
+    z-index: 9999;
+    .select2-results__option{
+        font-size: $bodyXS;
+        letter-spacing: 1.8px;
+        font-weight: 500;
+        text-transform: uppercase;
+        &.select2-results__option--highlighted{
+            background-color: $black;
         }
     }
 }

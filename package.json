@@ -19,6 +19,7 @@
     "laravel-mix": "^6.0.24",
     "lozad": "^1.16.0",
     "popper.js": "^1.16.1",
+    "select2": "^4.1.0-rc.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

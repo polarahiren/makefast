@@ -845,3 +845,32 @@
         }
     }
 }
+
+.select-option{
+    .select2 {
+        width: 100% !important;
+    }
+    .select2-search{
+        display: none;
+    }
+}
+
+
+.portal-hero-section{
+    @include media-breakpoint-up(md){
+        height: 780px;
+    }
+}
+
+.service-form-box{
+    .checkbox-control{
+        .theme-checkbox{
+            width: 31px;
+            height: 31px;
+            &:before{
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+}

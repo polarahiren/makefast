@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap';
+import 'select2/dist/js/select2.min.js';
 import lozad from 'lozad';
 
 import {App} from './parts/app.js'
@@ -37,10 +38,10 @@ $(function () {
 // ===========================================================================
 
 //nice select
-require('jquery-nice-select');
-jQuery(document).ready(function() {
-    jQuery('select').niceSelect();
-});
+// require('jquery-nice-select');
+// jQuery(document).ready(function() {
+//     jQuery('select').niceSelect();
+// });
 
 // fancy box
 require('@fancyapps/ui/src/Fancybox/Fancybox');
@@ -157,5 +158,13 @@ jQuery('[data-scroll="true"]').click(function (e) {
     }
     jQuery("body, html").animate({
         scrollTop: position
+    });
+});
+
+// Select2 JS
+$(document).ready(function() {
+    $('.select-dropdown').select2();
+    $('.product-option, .select-light > .select-dropdown').select2({
+            minimumResultsForSearch: -1
     });
 });
