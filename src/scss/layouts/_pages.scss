@@ -883,3 +883,70 @@
         }
     }
 }
+
+.history-list{
+    @include media-breakpoint-up(md){
+        &:before{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: $secondary;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .container{
+            height: 433px;
+        }
+    }
+    .history-divider{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        @include media-breakpoint-down(lg){
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+    }  
+}
+
+.history-item-section{
+    @include media-breakpoint-up(md){
+        .story-box {
+            width: 35%;
+        }
+        .box-large-image {
+            width: calc(50% - 76px);
+        }
+    }
+
+    .box-large-image{
+        @include media-breakpoint-down(md){
+            height: auto !important;
+        }
+        .object-cover {
+            height: 433px;
+            border-radius: 5px;
+            @include media-breakpoint-down(md){
+                height: 291px;
+                border-radius: 0px;
+            }
+        }
+    }
+    .history-item-year {
+        font-size: 122px;
+        opacity: 0.07;
+        position: absolute;
+        top: -38px;
+        left: -60px;
+        color: $black-shade-2;
+        z-index: -1;
+        @include media-breakpoint-down(md){
+            right: 33px;
+            left: auto;
+            top: -56px;
+            font-size: 87px;
+        }
+    }    
+}

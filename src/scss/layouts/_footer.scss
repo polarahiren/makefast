@@ -59,3 +59,31 @@ footer{
         }
     }
 }
+
+.sticky-footer{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    .btn-primary{
+        padding: 10px 22px;
+        border-radius: 10px 10px 0px 0px;
+        text-transform: capitalize;
+        font-size: $bodyS;
+        letter-spacing: 0.28px;
+        &:hover{
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+    .chet-box{
+        width: 62px;
+        height: 62px;
+        background-color: $black-shade-2;
+        border-radius: 100%;
+        @include generate-transition(all, 500ms, ease);
+        &:hover{
+            background-color: $primary;
+        }
+    }
+}

@@ -84,6 +84,7 @@
     color: $black;
     background-color: $white;
     border-color: $white;
+    &:focus,
     &:hover{
         color: $white;
         background-color: $black;
