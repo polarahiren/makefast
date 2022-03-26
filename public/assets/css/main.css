@@ -14980,6 +14980,9 @@ li {
 .career-descriptions .border-bottom {
   border-bottom: 1px solid #70707050 !important;
 }
+.career-descriptions .career-type-label {
+  letter-spacing: 1.26px;
+}
 .career-descriptions .career-content {
   -webkit-box-orient: vertical;
   display: -webkit-box;
@@ -15009,6 +15012,17 @@ li {
 }
 .career-descriptions .more-btn.show span:first-child {
   display: none;
+}
+
+.browse-btn {
+  border: 1px dashed #000000;
+  border-radius: 6px;
+}
+@media (max-width: 767.98px) {
+  .browse-btn {
+    border: 1px dashed #00000042;
+    border-radius: 0px;
+  }
 }
 
 p.error-message {
@@ -15279,7 +15293,7 @@ p.error-message {
   letter-spacing: 1.8px;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Prata-Regular";
 }
 
@@ -16410,26 +16424,6 @@ h1, .h1, h2, .h2, h3, .h3 {
 .enquiry-modal .modal .contact-form .select2-container {
   width: 100% !important;
 }
-.enquiry-modal .modal .contact-form .browse-btn {
-  font-weight: 500;
-  cursor: pointer;
-  text-align: center;
-}
-.enquiry-modal .modal .contact-form .browse-btn button {
-  border: none;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  border-radius: 5px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.7);
-}
-.enquiry-modal .modal .contact-form .browse-btn span {
-  font-size: 13px;
-  margin-left: 20px;
-}
 .enquiry-modal .modal .modal-content {
   border: none;
   border-radius: 5px;
@@ -16466,6 +16460,15 @@ h1, .h1, h2, .h2, h3, .h3 {
   border-radius: 6px;
   top: 3px;
   left: 3px;
+}
+.brochure-modal .contact-form label {
+  color: #000000 !important;
+}
+.brochure-modal .contact-form .small-label {
+  letter-spacing: 1.08px;
+}
+.brochure-modal .modal .modal-content .modal-body {
+  border-radius: 4px;
 }
 
 .submit-modal .modal a.menu-close.d-block {

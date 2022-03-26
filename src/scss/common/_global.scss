@@ -511,4 +511,9 @@ li{
 .browse-btn{
   border:1px dashed #000000;
   border-radius: 6px;
+
+  @include media-breakpoint-down(md) {
+    border:1px dashed #00000042;
+    border-radius: 0px;
+  }
 }
