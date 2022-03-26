@@ -269,3 +269,90 @@
     }
 }
 /* END checkout modal */
+
+
+
+
+//team modal
+.team-modal {
+    .modal-dialog{
+        max-width: 880px;
+        @include media-breakpoint-down(md) {
+            margin: 0px;
+
+            .modal-content{
+                min-height: 100vh;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            width: 90%;
+        }
+    }
+
+    .team-member-profile{
+        @include media-breakpoint-down(md) {
+            img{
+                height: 350px !important;
+            }
+        }
+    }
+
+    .member-social-info {
+        border-width: 1px 0px;
+        border-style: solid;
+        border-color: $secondary;
+
+        a {
+            font-size: 15px;
+            font-weight: 300;
+
+            img {
+                width: 18px;
+            }
+        }
+    }
+
+    p {
+        opacity: 0.7;
+    }
+
+    .team-member-profile-info{
+        @include media-breakpoint-up(md) {
+            padding-bottom: 100px !important;
+        }
+    }
+
+    .row{
+        display: flex !important;
+    }
+
+
+    .slick-indicators{
+        .slick-next{
+            top: auto;
+            right: 32%;
+            bottom: 20px;
+        }
+        .slick-prev{
+            top: auto;
+            left: auto;
+            right: calc(32% + 65px);
+            bottom: 20px;
+        }
+
+        .slick-prev,
+        .slick-next{
+            opacity: 0.6;
+            &:hover{
+                background: $secondary;
+                opacity: 1;
+            }
+        }
+
+        &.slick-dots-lines ul.slick-dots{
+            bottom: 20px;
+        }
+    }
+}
+
+// END team modal

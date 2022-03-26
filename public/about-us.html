@@ -915,7 +915,7 @@
                     <div class="col-12 col-md-10">
                         <div class="team-slider slick-arrow-top-right slider-overflow-visable mt-4 pt-2">
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1" data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-1.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -948,7 +948,7 @@
                             </div>
 
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1"  data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-2.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -981,7 +981,7 @@
                             </div>
 
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1"  data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-1.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -1014,7 +1014,7 @@
                             </div>
 
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1"  data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-2.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -1047,7 +1047,7 @@
                             </div>
 
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1"  data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-1.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -1080,7 +1080,7 @@
                             </div>
 
                             <div class="px-2">
-                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1">
+                                <a href="javascript:void(0);" class="d-block team-card card-hover px-1"  data-bs-toggle="modal" data-bs-target="#teamModal">
                                     <div class="team-card-img overflow-hidden">
                                         <img src="assets/images/general/team-member-img-2.png" class="w-100 object-cover" alt="team member image" />
                                     </div>
@@ -1206,10 +1206,90 @@
                     </a>
                 </div>
             </div>
+
+
+    <!-- Team Modal -->
+    <div class="modal fade team-modal enquiry-modal" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0 position-relative">
+<!--                    close button-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/icons/close-icon.svg" class="w-100" alt="close icon" />
+                    </button>
+<!--                END    close button-->
+
+
+<!--                    Add this class For makeing Slider ==> .team-member-slider -->
+                    <div class="slick-indicators same-height-carousel slick-dots-lines slick-dots-primary mt-5 pt-5 mt-md-0 pt-md-0">
+                        <div class="row mx-0">
+                            <div class="col-12 col-md-6 px-0">
+                                <div class="w-100 h-100 team-member-profile">
+                                    <img src="assets/images/general/team-member-img-1.png" class="object-cover w-100 h-100" alt="member photo" />
+                                </div>
+                            </div>
+
+                            <div class="team-member-profile-info col-12 col-md-6 position-relative py-5 px-4 p-md-5">
+                                <span class="mb-1 d-block small-label text-primary text-opacity-50 font-medium">HEAD OF SALES</span>
+                                <h2 class="text-primary heading-font mb-3">Gregg Phillips</h2>
+
+                                <div class="member-social-info py-3 mb-3 mb-md-4">
+                                    <a href="tel:01234567891" class="py-1 mb-1 d-flex text-primary">
+                                        <img src="assets/images/social/footer-call-icon.svg" alt="call icon" class="me-3" />
+                                        01234567891
+                                    </a>
+
+                                    <a href="mailto:gregg@bowensonandwatson.co.uk" class="py-1 mb-1 d-flex text-primary">
+                                        <img src="assets/images/social/email.svg" alt="email icon" class="me-3" />
+                                        gregg@bowensonandwatson.co.uk
+                                    </a>
+                                </div>
+
+                                <p class="pt-1 text-primary text-sm leading-relax">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                            </div>
+                        </div>
+
+                        <!--<div class="row mx-0">
+                            <div class="col-12 col-md-6 px-0">
+                                <div class="w-100 h-100 team-member-profile">
+                                    <img src="assets/images/team/member-2.png" class="object-cover w-100 h-100" alt="member photo" />
+                                </div>
+                            </div>
+
+                            <div class="team-member-profile-info col-12 col-md-6 position-relative py-5 px-4 p-md-5">
+                                <span class="mb-1 d-block small-label text-primary text-opacity-50 font-medium">HEAD OF SALES</span>
+                                <h2 class="text-primary heading-font mb-3">Gregg Phillips</h2>
+
+                                <div class="member-social-info py-3 mb-3 mb-md-4">
+                                    <a href="tel:01234567891" class="py-1 mb-1 d-flex text-primary">
+                                        <img src="assets/images/social/footer-call-icon.svg" alt="call icon" class="me-3" />
+                                        01234567891
+                                    </a>
+
+                                    <a href="mailto:gregg@bowensonandwatson.co.uk" class="py-1 mb-1 d-flex text-primary">
+                                        <img src="assets/images/social/email.svg" alt="email icon" class="me-3" />
+                                        gregg@bowensonandwatson.co.uk
+                                    </a>
+                                </div>
+
+                                <p class="pt-1 text-primary text-sm leading-relax">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                            </div>
+                        </div>-->
+
+                        <button class="slick-prev slick-arrow d-none d-md-flex" aria-label="Previous" type="button" style="">Previous</button>
+                        <button class="slick-next slick-arrow d-none d-md-flex" aria-label="Next" type="button" style="">Next</button>
+                    </div>
+<!--                    Add this class For makeing Slider team-member-slider-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Team Modal -->
+
     </main>
 
         <!-- Sticky Footer -->
-        <div class="sticky-footer container position-fixed bottom-0 d-flex align-items-end justify-content-between">
+        <div class="sticky-footer w-100 position-fixed bottom-0 d-flex align-items-end justify-content-between px-lg-5 px-3">
             <a href="javascript:void(0)" class="btn btn-primary btn-black">
                 <div class="d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
