@@ -16954,7 +16954,7 @@ header .navbar ul li a.menu-item:after {
   transition: all 500ms ease;
   /* IE 10+, Fx 29+ */
 }
-header .navbar ul li a.menu-item:hover:after {
+header .navbar ul li a.menu-item.active:after, header .navbar ul li a.menu-item:hover:after {
   width: 20px;
 }
 header .navbar .logo {
@@ -18206,7 +18206,7 @@ footer ul.social-media li a:hover {
   background: transparent;
   padding-bottom: 22px;
   border-bottom: 1px solid #707070;
-  border-radius: 0;
+  border-radius: 0 !important;
   color: #ffffff;
 }
 @media (max-width: 767.98px) {
