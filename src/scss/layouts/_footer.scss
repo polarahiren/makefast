@@ -30,6 +30,8 @@ footer{
                         left: 0;
                         @include generate-transition(all, 500ms, ease);
                     }
+                    &.active,
+                    &.focus,
                     &:hover{
                         &:after{
                             width: 20px;
@@ -61,15 +63,13 @@ footer{
 }
 
 .sticky-footer{
-    left: 0%;
-    z-index: 99;
-
     .btn-primary{
         padding: 10px 22px;
         border-radius: 10px 10px 0px 0px;
         text-transform: capitalize;
         font-size: $bodyS;
         letter-spacing: 0.28px;
+        left: 56px;
         &:hover{
             background-color: $primary;
             border-color: $primary;
@@ -81,6 +81,7 @@ footer{
         height: 62px;
         background-color: $black-shade-2;
         border-radius: 100%;
+        right: 56px;
         @include generate-transition(all, 500ms, ease);
         &:hover{
             background-color: $primary;

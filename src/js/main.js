@@ -168,3 +168,9 @@ $(document).ready(function() {
             minimumResultsForSearch: -1
     });
 });
+
+// Active Menu
+// Active class on Current Page
+$('ul li a').filter(function(){
+    return this.href === location.href;
+}).addClass('active');
