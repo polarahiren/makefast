@@ -436,6 +436,21 @@ li{
     @include media-breakpoint-down(lg){
       transform: translateX(100px);
     }
-    
+
   }
+}
+
+.modal,
+.contact-form{
+  .select2 .select2-selection{
+    border-color: transparent;
+  }
+  .select2-container{
+    width: 100% !important;
+  }
+}
+
+.contact-form .text-xs{
+  font-size: 10px;
+  letter-spacing: 0.9px;
 }
