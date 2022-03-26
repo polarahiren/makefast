@@ -454,3 +454,51 @@ li{
   font-size: 10px;
   letter-spacing: 0.9px;
 }
+
+
+
+.career-descriptions {
+  .btn-secondary {
+      min-width: 165px;
+  }
+
+  .border-bottom{
+    border-bottom: 1px solid #70707050 !important;
+  }
+
+  .career-content {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+
+      @include media-breakpoint-down(md) {
+          height: 116px;
+      }
+
+      p {
+          margin-bottom: 16px;
+      }
+
+      &.open {
+          display: block;
+          margin-bottom: 0px !important;
+          height: auto;
+      }
+
+  }
+
+  .more-btn {
+      cursor: pointer;
+
+      &:not(.show) span:last-child {
+          display: none;
+      }
+
+      &.show span:first-child {
+          display: none;
+      }
+  }
+}
