@@ -14974,6 +14974,43 @@ li {
   letter-spacing: 0.9px;
 }
 
+.career-descriptions .btn-secondary {
+  min-width: 165px;
+}
+.career-descriptions .border-bottom {
+  border-bottom: 1px solid #70707050 !important;
+}
+.career-descriptions .career-content {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+@media (max-width: 767.98px) {
+  .career-descriptions .career-content {
+    height: 116px;
+  }
+}
+.career-descriptions .career-content p {
+  margin-bottom: 16px;
+}
+.career-descriptions .career-content.open {
+  display: block;
+  margin-bottom: 0px !important;
+  height: auto;
+}
+.career-descriptions .more-btn {
+  cursor: pointer;
+}
+.career-descriptions .more-btn:not(.show) span:last-child {
+  display: none;
+}
+.career-descriptions .more-btn.show span:first-child {
+  display: none;
+}
+
 p.error-message {
   margin-top: 5px;
   color: #ff0000;
@@ -15240,6 +15277,10 @@ p.error-message {
   font-size: 12px !important;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: "Prata-Regular";
 }
 
 .normal-content {

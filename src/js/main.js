@@ -169,13 +169,11 @@ $(document).ready(function() {
     });
 });
 
-<<<<<<< Updated upstream
 // Active Menu
 // Active class on Current Page
 $('ul li a').filter(function(){
     return this.href === location.href;
 }).addClass('active');
-=======
 
 // career read more
 $("[data-job='true']").click(function(){
@@ -183,4 +181,3 @@ $("[data-job='true']").click(function(){
     var filter = $(this).data("job-name");
     $(filter).toggleClass("open");
 });
->>>>>>> Stashed changes
