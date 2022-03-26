@@ -203,50 +203,44 @@
 
 
 
-.team-modal{
-    .modal-dialog{
-        max-width: 1000px;
-        @include media-breakpoint-down(md) {
-            margin: 0px;
-        }
+// .team-modal{
+//     .modal-dialog{
+//         max-width: 1000px;
+//         @include media-breakpoint-down(md) {
+//             margin: 0px;
+//         }
 
-        @include media-breakpoint-up(md) {
-            width: 90%;
-        }
-    }
-    .modal-content{
-        @include media-breakpoint-up(md) {
-            border-radius: 5px;
-            overflow: hidden;
-            height: 550px;
-            overflow-y: auto;
-        }
-    }
-    .modal-body{
-        padding: 0px;
-        height: 100%;
-        overflow-y: auto;
+//         @include media-breakpoint-up(md) {
+//             width: 90%;
+//         }
+//     }
+//     .modal-content{
+//         @include media-breakpoint-up(md) {
+//             border-radius: 5px;
+//             height: 550px;
+//         }
+//     }
+//     .modal-body{
+//         padding: 0px;
+//         height: 100%;
+//         overflow-y: auto;
 
-        @include media-breakpoint-up(lg) {
-            h3 {
-                font-size: 32px;
-            }
-        }
-        @include media-breakpoint-up(md) {
-            .team-img{
-                width: 46%;
-            }
-            .team-content{
-                width: 54%;
-            }
-        }
-    }
-    .btn-close{
-        right: 20px;
-        top: 20px;
-        z-index: 9;
-    }
-}
+//         @include media-breakpoint-up(lg) {
+//             h3 {
+//                 font-size: 32px;
+//             }
+//         }
+//         @include media-breakpoint-up(md) {
+//             .team-img{
+//                 width: 46%;
+//             }
+//             .team-content{
+//                 width: 54%;
+//             }
+//         }
+//     }
+    
+// }
 
 
 
@@ -275,6 +269,14 @@
 
 //team modal
 .team-modal {
+    .modal-content{
+        border-radius: 0px;
+        border: none;
+        @include media-breakpoint-up(md) {
+            height: 500px;
+        }
+    }
+
     .modal-dialog{
         max-width: 880px;
         @include media-breakpoint-down(md) {
@@ -286,6 +288,33 @@
         }
         @include media-breakpoint-up(md) {
             width: 90%;
+        }
+    }
+
+
+    .btn-close{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 10;
+        opacity: 1;
+        transition: all 500ms ease;
+        right: 0px;
+        top: 0px;
+
+        &:hover{
+            transform: translate(50%, -50%) rotate(90deg);
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 58px;
+            height: 58px;
+            transform: translate(50%, -50%);
+        }
+        
+        @include media-breakpoint-down(md) {
+            right: 15px;
+            top: 30px;
         }
     }
 
@@ -318,7 +347,7 @@
 
     .team-member-profile-info{
         @include media-breakpoint-up(md) {
-            padding-bottom: 100px !important;
+            padding-bottom: 70px !important;
         }
     }
 
@@ -330,21 +359,33 @@
     .slick-indicators{
         .slick-next{
             top: auto;
-            right: 32%;
+            right: 33%;
             bottom: 20px;
+            left: auto;
+
+            &:before{
+                background-image: url(../../assets/images/icons/next-slick.svg);
+                margin-left: 2px;
+            }
         }
         .slick-prev{
             top: auto;
             left: auto;
             right: calc(32% + 65px);
             bottom: 20px;
+
+            &:before{
+                background-image: url(../../assets/images/icons/prev-slick.svg);
+                margin-right: 2px;
+            }
         }
 
         .slick-prev,
         .slick-next{
-            opacity: 0.6;
+            background: $secondary;
+            transition: 0.4s all ease-in-out;
             &:hover{
-                background: $secondary;
+                background: $black;
                 opacity: 1;
             }
         }

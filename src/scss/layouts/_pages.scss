@@ -578,7 +578,8 @@
         }
     }
 }
-.latest-blog-slider{
+.latest-blog-slider,
+.team-slider{
     .slick-prev:before,
     .slick-next:before{
         content: "";
@@ -606,6 +607,7 @@
         background-image: url("../images/icons/slick-arrow.svg"); 
     }
 }
+
 .slick-light-arrow-white{
     .slick-prev:before{ 
         background-image: url("../images/icons/slick-arrow-white.svg"); 

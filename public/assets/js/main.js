@@ -11768,48 +11768,54 @@ var App = /*#__PURE__*/function () {
   _createClass(App, [{
     key: "init",
     value: function init() {
-      $('.large-slider').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        autoplay: true,
-        slidesToShow: 1,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: true
-          }
-        }]
-      });
+      // $('.large-slider').slick({
+      //     dots: false,
+      //     arrows: false,
+      //     infinite: true,
+      //     speed: 300,
+      //     autoplay: true,
+      //     slidesToShow: 1,
+      //     responsive: [
+      //         {
+      //             breakpoint: 768,
+      //             settings: {
+      //                 arrows: true
+      //             }
+      //         }
+      //     ]
+      // });
+
       /* related products slider */
-
-      $('.logos-slider').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 400,
-        autoplay: true,
-        slidesToShow: 6,
-        responsive: [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 5,
-            arrows: false
-          }
-        }, {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3
-          }
-        }]
-      }); // Slick Slider JS
-
+      // $('.logos-slider').slick({
+      //     dots: false,
+      //     arrows: false,
+      //     infinite: true,
+      //     speed: 400,
+      //     autoplay: true,
+      //     slidesToShow: 6,
+      //     responsive: [
+      //         {
+      //             breakpoint: 1200,
+      //             settings: {
+      //                 slidesToShow: 5,
+      //                 arrows: false,
+      //             }
+      //         },
+      //         {
+      //             breakpoint: 1024,
+      //             settings: {
+      //                 slidesToShow: 4,
+      //             }
+      //         },
+      //         {
+      //             breakpoint: 768,
+      //             settings: {
+      //                 slidesToShow: 3,
+      //             }
+      //         }
+      //     ]
+      // });
+      // Slick Slider JS
       $('.hero-slider').slick({
         dots: true,
         arrows: false,
@@ -11839,6 +11845,11 @@ var App = /*#__PURE__*/function () {
         prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
           breakpoint: 767,
           settings: {
             arrows: false,
@@ -11975,6 +11986,11 @@ var App = /*#__PURE__*/function () {
         prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
           breakpoint: 767,
           settings: {
             arrows: false,
