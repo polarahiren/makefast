@@ -169,8 +169,8 @@ $(document).ready(function() {
     });
 });
 
-// Active Menu
 // Active class on Current Page
+
 $('ul li a').filter(function(){
     return this.href === location.href;
 }).addClass('active');

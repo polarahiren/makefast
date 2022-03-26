@@ -466,6 +466,10 @@ li{
     border-bottom: 1px solid #70707050 !important;
   }
 
+  .career-type-label{
+    letter-spacing: 1.26px;
+  }
+
   .career-content {
       -webkit-box-orient: vertical;
       display: -webkit-box;
@@ -501,4 +505,10 @@ li{
           display: none;
       }
   }
+}
+
+
+.browse-btn{
+  border:1px dashed #000000;
+  border-radius: 6px;
 }
