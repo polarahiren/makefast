@@ -8,6 +8,10 @@
     font-weight: 500;
     transition: 0.4s all ease-in-out;
     border-radius: 4px;
+
+    @include media-breakpoint-down(xxl) {
+        padding: 13px 15px;
+    }
 }
 
 
