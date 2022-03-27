@@ -82,14 +82,50 @@ $("[data-menu='true']").click(function(){
 $(".menu-bg-overlay, .menu-close").click(function () {
     $(".custom-mega-menu").removeClass("show");
     $("body").removeClass("fixed-bg");
-    $(".mega-menu").removeClass("open");
+    $(".mega-menu").removeClass("open"); 
 });
 
 $(".mega-menu-back").click(function () {
     $(".custom-mega-menu").removeClass("show");
     $("body").removeClass("fixed-bg");
-    $(".mega-menu").removeClass("open");
+    $(".mega-menu").removeClass("open"); 
 });
+
+
+// mega menu tabs
+$("[data-mega-menu='true']").click(function(){
+    var siblings = $(this).parent().siblings().find(".open");
+    var openedMegamenu = siblings.data("mega-menu-name");
+    $(openedMegamenu).toggleClass("show");
+    siblings.removeClass("open");
+    $(this).toggleClass("open");
+    var megamenuTab = $(this).data("mega-menu-name");
+    $(megamenuTab).toggleClass("show");
+});
+
+// mega menu tab active class added for Desktop
+$(window).ready(function() {
+    if ($(window).width() > 992) {
+        $('li:first-child .our-category').addClass('open');
+        $('.mega-menu-result #megamenu-tab1').addClass('show');
+    }
+});
+
+// mega menu third layer active
+$(document).ready(function(){
+    $(".our-category").click(function(){
+        $(".mega-menu-result").addClass("show-megamenu");
+    });
+
+    if ($(window).width() <= 991) {
+        $(".mega-menu-back, .menu-close").click(function () {
+            $(".our-category").removeClass("open");
+            $(".mega-menu-result-tab").removeClass("show");
+            $(".mega-menu-result").removeClass("show-megamenu");
+        });
+    }
+});
+
 
 // For Lazy Load
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
