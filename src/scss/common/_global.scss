@@ -552,3 +552,18 @@ li{
     }
   }
 }
+
+.testimonial-box{
+  .content{
+    span{
+      &:first-child{
+        transform: translate(30px, 0px);
+        display: inline-block;    
+      }
+      &:last-child{
+        transform: translate(-25px, 40px);
+        display: inline-block;    
+      }
+    }
+  }
+}
