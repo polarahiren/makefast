@@ -117,13 +117,10 @@ body.header-transparent{
 body .header-fixed {
     .navbar{
         @include media-breakpoint-down(lg) {
-            background-color: $white;
             padding-top: 12px !important;
             padding-bottom: 12px !important;
             
             .logo{
-                color: $black;
-    
                 svg{
                     max-width: 85px;
                     height: 50px;
@@ -132,22 +129,47 @@ body .header-fixed {
         }
 
         @include media-breakpoint-up(lg) {
-            background-color: $white;
             padding-top: 10px !important;
             padding-bottom: 10px !important;
             box-shadow: 0 12px 20px rgb(0 0 0 / 5%);
 
+            .logo{
+                svg{
+                    max-width: 110px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .custom-mega-menu {
+            top: 100px;
+        }
+    }
+}
+// fixed header
+
+// fixed header megamenu open background and colors
+body .header-fixed,
+body.fixed-bg {
+    .navbar{
+        @include media-breakpoint-down(lg) {
+            background-color: $white;
+            
+            .logo{
+                color: $black;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            background-color: $white;
             ul li a{
                 color: $black !important;
             }
 
             .logo{
                 color: $black !important;
-    
-                svg{
-                    max-width: 110px;
-                    height: 70px;
-                }
             }
         }
         
@@ -159,15 +181,11 @@ body .header-fixed {
             }
         }
     }
-
-    @include media-breakpoint-up(lg) {
-        .custom-mega-menu {
-            top: 90px;
-        }
-    }
 }
+// END fixed header megamenu open background and colors
 
-// fixed header
+
+
 
 
 
@@ -232,19 +250,18 @@ body .header-fixed {
     background-color: $white;
     position: fixed;
     left: 0;
-    top: 120px;
+    top: 140px;
     width: 100%;
+    height: auto;
     z-index: 999;
     transition: 0.4s all ease-in-out;
     opacity: 0;
     visibility: hidden;
-    height: calc(100vh - 120px);
     color: $black;
   
     @include media-breakpoint-up(lg) {
-        background-color: $black;
         padding: 4rem 0px 2rem !important;
-        color: $white;
+        color: $black;
     }
 
     @include media-breakpoint-down(lg) {
@@ -266,22 +283,14 @@ body .header-fixed {
     visibility: visible;
   }
   
-  .fixed-bg {
+
+//   header fixed background and text color
+  body.fixed-bg {
     overflow: hidden;
     transition: 0.4s all ease-in-out;
 
     header{
-        @include media-breakpoint-up(lg) {
-            background-color: $black;
-            .logo,
-            ul li a.menu-item{
-                color: $white;
-            }
-
-            .custom-mega-menu {
-                height: calc(100vh - 90px);
-            }
-        }
+        background-color: $white;
     }
   }
 
@@ -465,6 +474,16 @@ body .header-fixed {
             color: $black;
         }
     }
+}
+
+.fixed-bg .menu-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
 }
 
 @include media-breakpoint-up(lg) {
