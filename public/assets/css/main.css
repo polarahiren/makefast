@@ -17121,9 +17121,6 @@ header.header-fixed .top-bar {
   }
 }
 
-.navbar #navbarHeader {
-  display: none;
-}
 @media (min-width: 1024px) {
   .navbar #navbarHeader {
     padding: 0px;
