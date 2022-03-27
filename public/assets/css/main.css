@@ -16874,16 +16874,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   opacity: 0.13 !important;
 }
 .slick-slider.slick-arrow-top-right .slick-next {
-  right: -12px;
+  right: 8px;
   top: -60px;
 }
 .slick-slider.slick-arrow-top-right .slick-prev {
-  right: 45px;
+  right: 60px;
   top: -60px;
   left: auto;
 }
 .slick-slider.slick-light-arrow .slick-arrow:before {
   color: #ffffff;
+}
+
+.case-studies-slider.slick-arrow-top-right .slick-next,
+.case-studies-slider.slick-arrow-top-right .slick-prev {
+  top: -25px;
 }
 
 .slick-overflow .slick-list {
@@ -17816,11 +17821,16 @@ footer ul.social-media li a:hover {
 }
 
 .theme-call-to-action .object-cover {
-  height: 639px;
+  height: 330px;
 }
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .theme-call-to-action .object-cover {
-    height: 331px;
+    height: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  .theme-call-to-action .object-cover {
+    height: 800px;
   }
 }
 
@@ -18069,6 +18079,8 @@ footer ul.social-media li a:hover {
 
 .latest-blog-slider .slick-prev:before,
 .latest-blog-slider .slick-next:before,
+.case-studies-slider .slick-prev:before,
+.case-studies-slider .slick-next:before,
 .team-slider .slick-prev:before,
 .team-slider .slick-next:before {
   content: "";
@@ -18085,6 +18097,10 @@ footer ul.social-media li a:hover {
 .latest-blog-slider .slick-prev:focus:before,
 .latest-blog-slider .slick-next:hover:before,
 .latest-blog-slider .slick-next:focus:before,
+.case-studies-slider .slick-prev:hover:before,
+.case-studies-slider .slick-prev:focus:before,
+.case-studies-slider .slick-next:hover:before,
+.case-studies-slider .slick-next:focus:before,
 .team-slider .slick-prev:hover:before,
 .team-slider .slick-prev:focus:before,
 .team-slider .slick-next:hover:before,
@@ -18092,11 +18108,13 @@ footer ul.social-media li a:hover {
   opacity: 1 !important;
 }
 .latest-blog-slider .slick-prev:before,
+.case-studies-slider .slick-prev:before,
 .team-slider .slick-prev:before {
   background-image: url("../images/icons/slick-arrow.svg");
   transform: scaleX(-1);
 }
 .latest-blog-slider .slick-next:before,
+.case-studies-slider .slick-next:before,
 .team-slider .slick-next:before {
   background-image: url("../images/icons/slick-arrow.svg");
 }

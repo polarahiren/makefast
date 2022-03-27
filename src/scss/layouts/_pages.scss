@@ -310,9 +310,12 @@
 
 .theme-call-to-action{
     .object-cover{
-        height: 639px;
-        @include media-breakpoint-down(md){
-            height: 331px;
+        height: 330px;
+        @include media-breakpoint-up(md){
+            height: 650px;
+        }       
+        @include media-breakpoint-up(xl){
+            height: 800px;
         }       
     }
 }
@@ -579,6 +582,7 @@
     }
 }
 .latest-blog-slider,
+.case-studies-slider,
 .team-slider{
     .slick-prev:before,
     .slick-next:before{

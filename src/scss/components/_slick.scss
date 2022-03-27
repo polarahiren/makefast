@@ -260,11 +260,11 @@
     }
     &.slick-arrow-top-right{
         .slick-next {
-            right: -12px;
+            right: 8px;
             top: -60px;
         }
         .slick-prev{
-            right: 45px;
+            right: 60px;
             top: -60px;
             left: auto;
         }
@@ -277,6 +277,14 @@
         }
     }
 }
+
+.case-studies-slider.slick-arrow-top-right{
+    .slick-next,
+    .slick-prev {
+        top: -25px;
+    }
+}
+
 
 .slick-overflow .slick-list{
     overflow: visible;
