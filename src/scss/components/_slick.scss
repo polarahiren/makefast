@@ -369,6 +369,8 @@
 .slick-slider{
     ul.slick-dots{
         li{
+            height: auto;
+            width: auto;
             button{
                 &::before{
                     display: none;
