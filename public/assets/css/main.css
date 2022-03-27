@@ -17511,10 +17511,11 @@ footer ul.social-media li a:hover {
   font-size: 14px;
   letter-spacing: 0.28px;
   left: 56px;
+  border: 1px solid #000000;
 }
 .sticky-footer .btn-primary:hover {
-  background-color: #011B21;
-  border-color: #011B21;
+  background-color: #000000;
+  border-color: #000000;
   color: #ffffff;
 }
 .sticky-footer .chet-box {

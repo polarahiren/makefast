@@ -70,9 +70,10 @@ footer{
         font-size: $bodyS;
         letter-spacing: 0.28px;
         left: 56px;
+        border: 1px solid $black;
         &:hover{
-            background-color: $primary;
-            border-color: $primary;
+            background-color: $black;
+            border-color: $black;
             color: $white;
         }
     }
