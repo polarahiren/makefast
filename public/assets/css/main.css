@@ -15046,6 +15046,12 @@ li {
   color: #000000;
 }
 
+@media (max-width: 767.98px) {
+  .map-img img {
+    height: 350px;
+  }
+}
+
 p.error-message {
   margin-top: 5px;
   color: #ff0000;

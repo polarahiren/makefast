@@ -538,3 +538,11 @@ li{
     color: #000000;
   }
 }
+
+.map-img {
+  @include media-breakpoint-down(md) {
+    img{
+     height: 350px; 
+    }
+  }
+}
