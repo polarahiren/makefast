@@ -14811,6 +14811,9 @@ li {
   right: 8px;
   transform: translateY(-50%);
 }
+.search-form .input-group-append .btn-primary-dark-icon .btn-icon-box:hover {
+  transform: translateX(0px);
+}
 .search-form .faq-search {
   letter-spacing: 1.26px;
 }
@@ -15782,6 +15785,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   border: 0;
   background-color: transparent;
   font-family: "Muli", sans-serif;
+  transition: 0.3s all ease-in-out;
 }
 .btn.btn-primary-dark-icon .btn-icon-box {
   background: #141414;
@@ -15799,7 +15803,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   padding-right: 13px;
 }
 .btn.btn-primary-dark-icon:hover .btn-icon-box {
-  background: #011B21;
+  transform: translateX(10px);
 }
 .btn.btn-primary-light-icon {
   padding: 0;
@@ -15814,6 +15818,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 .btn.btn-primary-light-icon .btn-icon-box {
   background: #ffffff;
+  transition: 0.3s all ease-in-out;
 }
 .btn.btn-primary-light-icon .btn-icon-box svg path {
   fill: #000000;
@@ -15828,11 +15833,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   padding-right: 13px;
 }
 .btn.btn-primary-light-icon:hover .btn-icon-box {
-  background: #011B21;
-}
-.btn.btn-primary-light-icon:hover .btn-icon-box svg path {
-  fill: #ffffff;
-  stroke: #ffffff;
+  transform: translateX(10px);
 }
 .btn .btn-icon-box {
   width: 39px;

@@ -10,6 +10,8 @@
         border: 0;
         background-color: transparent;
         font-family: "Muli", sans-serif;
+        transition: 0.3s all ease-in-out;
+
         .btn-icon-box{
             background: $button-black;
             svg path{
@@ -23,7 +25,8 @@
         }
         &:hover{
             .btn-icon-box{
-                background: $primary;
+                transform: translateX(10px);
+                // background: $primary;
             }
         }
     }
@@ -40,6 +43,7 @@
 
         .btn-icon-box{
             background: $white;
+            transition: 0.3s all ease-in-out;
             svg path{
                 fill: $black;
                 stroke: $black;
@@ -51,11 +55,12 @@
         }
         &:hover{
             .btn-icon-box{
-                background: $primary;
-                svg path{
-                    fill: $white;
-                    stroke: $white;
-                }
+                transform: translateX(10px);
+                // background: $primary;
+                // svg path{
+                //     fill: $white;
+                //     stroke: $white;
+                // }
             }
         }
     }
