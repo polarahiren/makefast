@@ -60,11 +60,11 @@ export class App{
         speed: 300,
         autoplay: true,
         slidesToShow: 1,
-        lazyLoad: 'ondemand',
         responsive: [{
             breakpoint: 767,
             settings: {
-                dots: false
+                dots: false,
+                adaptiveHeight: true,
             }
         }]
     }); //Home Slider
@@ -78,7 +78,6 @@ export class App{
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        lazyLoad: 'ondemand',
         prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [
@@ -114,7 +113,6 @@ export class App{
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        lazyLoad: 'ondemand',
         responsive: [{
             breakpoint: 767,
             settings: {
@@ -149,8 +147,7 @@ export class App{
         accessibility: true,
         variableWidth: false,
         focusOnSelect: false,
-        centerMode: false,
-        lazyLoad: 'ondemand',
+        centerMode: false, 
         prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow:"<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [{
@@ -169,8 +166,7 @@ export class App{
         autoplay: true,
         infinite: true,
         slidesToScroll: 1,
-        slidesToShow: 1,
-        lazyLoad: 'ondemand',
+        slidesToShow: 1, 
         responsive: [{
             breakpoint: 767,
             settings: "unslick",
@@ -190,7 +186,6 @@ export class App{
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        lazyLoad: 'ondemand'
     }); 
 
     //Featured Slider
@@ -201,8 +196,7 @@ export class App{
         autoplay: true,
         infinite: true,
         slidesToScroll: 1,
-        slidesToShow: 3,
-        lazyLoad: 'ondemand',
+        slidesToShow: 3, 
         responsive: [{
             breakpoint: 1400,
             settings: {
