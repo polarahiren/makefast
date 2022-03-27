@@ -11736,8 +11736,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.product-option, .select-light > .select-dropdown').select2({
     minimumResultsForSearch: -1
   });
-}); // Active Menu
-// Active class on Current Page
+}); // Active class on Current Page
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('ul li a').filter(function () {
   return this.href === location.href;

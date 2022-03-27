@@ -72,9 +72,12 @@ footer{
         left: 56px;
         border: 1px solid $black;
         &:hover{
-            background-color: $black;
-            border-color: $black;
+            background-color: $primary;
+            border-color: $primary;
             color: $white;
+        }
+        @include media-breakpoint-down(md){
+            left: 15px;
         }
     }
     .chet-box{
@@ -86,6 +89,9 @@ footer{
         @include generate-transition(all, 500ms, ease);
         &:hover{
             background-color: $primary;
+        }
+        @include media-breakpoint-down(md){
+            right: 15px;
         }
     }
 }

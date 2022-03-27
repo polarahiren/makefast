@@ -39,7 +39,7 @@
     .object-cover {
         height: 435px;
         @include media-breakpoint-down(md){
-            height: 370px;
+            height: 366px;
         }
     }
     .image-filter {
@@ -285,6 +285,16 @@
     }
 }
 
+.marine-categories{
+    .image-box{
+        .object-cover {
+            @include media-breakpoint-down(md){
+                height: 361px;
+            }
+        }
+    }
+}
+
 .case-studies-slider{
     margin: -24px -12px;
     // @include media-breakpoint-down(md){
@@ -360,12 +370,19 @@
     }
 }
 
+.product-carousel-row{
+    @include media-breakpoint-down(md){
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+    }
+}
+
 .single-carousel{
     .product-image{
         .object-cover{
             height: 530px;
             @include media-breakpoint-down(md){
-                height: 340px;
+                height: 540px;
             }
         }
     }
@@ -405,6 +422,14 @@
 }
 
 .product-content-box{
+    .pro-type{
+        letter-spacing: 1.26px;
+        line-height: 18px;
+        @include media-breakpoint-down(md){
+            letter-spacing: 2.1px;
+        }
+
+    }
     .view-popup{
         text-decoration: underline;
         letter-spacing: 1.8px;
@@ -425,6 +450,12 @@
     }
     .feature-content {
         width: calc(100% - 139px);
+    }
+}
+
+.key-features{
+    ul.slick-dots{
+        bottom: -20px;
     }
 }
 
@@ -734,6 +765,21 @@
     }
 }
 
+.service-carousel{
+    .news-detail-image{
+        .object-cover{
+            height: 435px;
+        }
+    }
+    .slick-arrow {
+        display: block !important;
+    }
+}
+
+.service-precision-image{
+    height: 435px;
+}
+
 
 // our story page
 .about-story-section{
@@ -969,3 +1015,4 @@
         }
     }    
 }
+

@@ -809,8 +809,8 @@
     <main class="pt-5 mt-5">
         <div class="py-5 container mt-5">
             <div class="row">
-                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                    <div id="services-lists" class="privacy-policy-list services-lists-group d-flex flex-row flex-md-column">
+                <div class="col-12 col-md-4 mb-5 mb-md-0">
+                    <div id="services-lists" class="privacy-policy-list services-lists-group d-flex flex-row flex-md-column overflow-scroll-hidden">
                         <a class="list-group-item small-label font-medium active" href="#overview" data-scroll="true">Overview</a>
                         <a class="list-group-item small-label font-medium" href="#precision-engineering" data-scroll="true">precision engineering</a>
                         <a class="list-group-item small-label font-medium" href="#privacy-policy-item-3" data-scroll="true">automotive toolmaking</a>
@@ -820,11 +820,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 px-0">
                     <div class="scrollspy-example text-primary text-sm leading-relax" data-bs-spy="scroll" data-bs-target="#services-lists" data-bs-offset="10" tabindex="0">
 
                     <div id="overview" data-scroll-offset="160">
-                        <div class="overview text-start text-black-shade-2">
+                        <div class="overview text-start text-black-shade-2 px-3">
                             <h1 class="text-3xl lg:text-7xl text-black-shade-2 font-prata mb-md-3">Overview</h1>
                             <div class="normal-content">
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -834,7 +834,7 @@
                         </div>
 
                         <div class="">
-                            <div class="single-carousel slick-indicators-white">
+                            <div class="single-carousel service-carousel slick-indicators-white">
                                 <div class="news-detail-image">
                                     <img src="assets/images/services/service-details-carousel.png" class="img-fluid w-100 object-cover" alt="slide image">
                                 </div>
@@ -853,33 +853,35 @@
                     </div>
 
                     <div id="precision-engineering" data-scroll-offset="150">
-                        <div class="col-12 text-start normal-content pb-5 px-2 mb-lg-4">
-                            <img src="assets/images/services/service-detail-image.png" class="img-fluid w-100 object-cover mb-4 pb-2" alt="Service Detail">
-                            <h2 class="text-4xl text-black-shade-2 font-prata mb-md-3">Precision Engineering</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                            <div class="d-md-flex align-items-center mt-0">
-                                <a href="contact.html" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-start font-muli me-md-5 text-uppercase py-3 py-md-0" tabindex="0">
-                                    <span>Get in Touch</span>
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                            <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
-                                            </g>
-                                        </svg>   
-                                    </div>                           
-                                </a>
-                                <a href="shop.html" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-start font-muli text-uppercase py-3 py-md-0" tabindex="0">
-                                    <span>View Products</span>
-                                    <div class="btn-icon-box">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-                                            <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
-                                            <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
-                                            </g>
-                                        </svg>   
-                                    </div>                           
-                                </a>
+                        <div class="col-12 text-start normal-content pb-5 px-md-2 mb-lg-4">
+                            <img src="assets/images/services/service-detail-image.png" class="img-fluid w-100 object-cover mb-4 pb-2 service-precision-image" alt="Service Detail">
+                            <div class="content-box px-3 px-md-0">
+                                <h2 class="text-4xl text-black-shade-2 font-prata mb-md-3">Precision Engineering</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                <div class="d-md-flex align-items-center mt-0">
+                                    <a href="contact.html" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-start font-muli me-md-5 text-uppercase py-3 py-md-0" tabindex="0">
+                                        <span>Get in Touch</span>
+                                        <div class="btn-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                                                <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
+                                                <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
+                                                </g>
+                                            </svg>   
+                                        </div>                           
+                                    </a>
+                                    <a href="shop.html" class="btn btn-primary-dark-icon d-flex align-items-center justify-content-start font-muli text-uppercase py-3 py-md-0" tabindex="0">
+                                        <span>View Products</span>
+                                        <div class="btn-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+                                                <g id="Group_1868" data-name="Group 1868" transform="translate(-56 -1631)">
+                                                <path id="Path_12172" data-name="Path 12172" d="M4.859,4.724a.337.337,0,0,0,.2-.084L9.556.6a.337.337,0,1,0-.449-.5L4.838,3.934.57.093A.337.337,0,1,0,.12.6L4.613,4.64a.337.337,0,0,0,.246.084Z" transform="translate(73.137 1655.338) rotate(-90)" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path>
+                                                </g>
+                                            </svg>   
+                                        </div>                           
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -893,7 +895,7 @@
 
     <!-- Sticky Footer -->
     <div class="sticky-footer w-100">
-        <a href="javascript:void(0)" class="btn btn-primary btn-black position-fixed bottom-0 ">
+        <a href="javascript:void(0)" class="btn btn-primary btn-black position-fixed bottom-0 z-index">
             <div class="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
                     <g id="Group_1866" data-name="Group 1866" transform="translate(-69 -742)">
@@ -904,7 +906,7 @@
                 <div class="ms-2">Request a call back</div>
             </div>
         </a>
-        <a href="javascript:void(0)" class="chet-box position-fixed bottom-0  mb-3">
+        <a href="javascript:void(0)" class="chet-box position-fixed bottom-0 z-index mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                 <g id="Group_1527" data-name="Group 1527" transform="translate(-1302.729 -687.729)">
                     <g id="Layer_2" data-name="Layer 2" transform="translate(1319.838 704.84)">
