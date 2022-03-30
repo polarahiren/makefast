@@ -269,13 +269,16 @@
             position: absolute;
             top: 261px;
             z-index: 9;
-            @include media-breakpoint-down(md){
-                position: relative;
-                top: auto;
-                .hero-title{
+            .hero-title{
+                line-height: normal;
+                @include media-breakpoint-down(md){
                     letter-spacing: 0.44px;
                     line-height: 49px;
                 }
+            }
+            @include media-breakpoint-down(md){
+                position: relative;
+                top: auto;
             }
             .hero-content{
                 letter-spacing: 0.68px;
@@ -629,6 +632,7 @@
     }
     .slick-prev:hover:before,
     .slick-prev:focus:before,
+    // .slick-next:before,
     .slick-next:hover:before,
     .slick-next:focus:before{
         opacity: 1 !important;
@@ -760,7 +764,7 @@
         }
         &.active{
             border-width: 0px 0px 0px 2px;
-            padding-left: 15px;
+            padding-left: 8px;
         }
     }
 }
@@ -881,6 +885,14 @@
             .accordion-body{
                 color: $black;
             }
+        }
+    }
+}
+
+.brochure-section{
+    .image-content-box{
+        .btn .btn-icon-box svg{
+            transform: rotate(90deg);
         }
     }
 }

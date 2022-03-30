@@ -11665,6 +11665,37 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-back").click(function 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".custom-mega-menu").removeClass("show");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("fixed-bg");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu").removeClass("open");
+}); // mega menu tabs
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-mega-menu='true']").click(function () {
+  var siblings = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().siblings().find(".open");
+  var openedMegamenu = siblings.data("mega-menu-name");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(openedMegamenu).toggleClass("show");
+  siblings.removeClass("open");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass("open");
+  var megamenuTab = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data("mega-menu-name");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(megamenuTab).toggleClass("show");
+}); // mega menu tab active class added for Desktop
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).ready(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() > 992) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('li:first-child .our-category').addClass('open');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mega-menu-result #megamenu-tab1').addClass('show');
+  }
+}); // mega menu third layer active
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".our-category").click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-result").addClass("show-megamenu");
+  });
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() <= 991) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-back, .menu-close").click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".our-category").removeClass("open");
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-result-tab").removeClass("show");
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".mega-menu-result").removeClass("show-megamenu");
+    });
+  }
 }); // For Lazy Load
 
 var observer = lozad__WEBPACK_IMPORTED_MODULE_3___default()(); // lazy loads elements with default selector as '.lozad'
@@ -11833,11 +11864,11 @@ var App = /*#__PURE__*/function () {
         speed: 300,
         autoplay: true,
         slidesToShow: 1,
-        lazyLoad: 'ondemand',
         responsive: [{
           breakpoint: 767,
           settings: {
-            dots: false
+            dots: false,
+            adaptiveHeight: true
           }
         }]
       }); //Home Slider
@@ -11851,7 +11882,6 @@ var App = /*#__PURE__*/function () {
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        lazyLoad: 'ondemand',
         prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [{
@@ -11881,7 +11911,6 @@ var App = /*#__PURE__*/function () {
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        lazyLoad: 'ondemand',
         responsive: [{
           breakpoint: 767,
           settings: {
@@ -11917,7 +11946,6 @@ var App = /*#__PURE__*/function () {
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        lazyLoad: 'ondemand',
         prevArrow: "<button type='button' class='slick-prev slick-arrow'></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow'></button>",
         responsive: [{
@@ -11937,7 +11965,6 @@ var App = /*#__PURE__*/function () {
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 1,
-        lazyLoad: 'ondemand',
         responsive: [{
           breakpoint: 767,
           settings: "unslick"
@@ -11955,8 +11982,7 @@ var App = /*#__PURE__*/function () {
         accessibility: true,
         variableWidth: false,
         focusOnSelect: false,
-        centerMode: false,
-        lazyLoad: 'ondemand'
+        centerMode: false
       }); //Featured Slider
 
       $('.features-carousel').slick({
@@ -11967,7 +11993,6 @@ var App = /*#__PURE__*/function () {
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        lazyLoad: 'ondemand',
         responsive: [{
           breakpoint: 1400,
           settings: {
