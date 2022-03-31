@@ -15960,6 +15960,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .light-form.contact-form textarea::placeholder {
   color: #ffffff !important;
 }
+.light-form .select-light .select2-container--open .select2-selection {
+  background-color: #ffffff;
+}
+.light-form .select-light .select2-container--open .select2-selection .select2-selection__rendered {
+  color: #000000;
+}
 .light-form .select-light .select2-selection {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -16138,6 +16144,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   border-color: #000000;
   z-index: 9999;
 }
+.select2-dropdown .select2-results__options {
+  border-top: 1px solid #D6D6D6;
+}
 .select2-dropdown .select2-results__option {
   font-size: 12px;
   letter-spacing: 1.8px;
@@ -16151,8 +16160,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   /* IE 10+, Fx 29+ */
 }
 .select2-dropdown .select2-results__option:first-child {
+  display: none;
   background-color: transparent;
-  border-bottom: 1px solid #D6D6D6;
 }
 .select2-dropdown .select2-results__option.select2-results__option--highlighted {
   background-color: #000000;
@@ -16615,9 +16624,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .team-modal .member-social-info a img {
   width: 18px;
 }
-.team-modal p {
-  opacity: 0.7;
-}
 @media (min-width: 768px) {
   .team-modal .team-member-profile-info {
     padding-bottom: 70px !important;
@@ -16648,8 +16654,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 .team-modal .slick-indicators .slick-prev,
 .team-modal .slick-indicators .slick-next {
-  background: #707070;
+  background: #0F0F0F;
   transition: 0.4s all ease-in-out;
+}
+.team-modal .slick-indicators .slick-prev[disable],
+.team-modal .slick-indicators .slick-next[disable] {
+  opacity: 0.5;
 }
 .team-modal .slick-indicators .slick-prev:hover,
 .team-modal .slick-indicators .slick-next:hover {
@@ -17509,7 +17519,7 @@ footer ul.social-media li a:hover {
   }
 }
 .hero-slider .slick-slide .hero-filter {
-  top: 261px;
+  top: 288px;
 }
 @media (max-width: 767.98px) {
   .hero-slider .slick-slide .hero-filter {
@@ -18094,7 +18104,7 @@ footer ul.social-media li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40px;
-  opacity: 0.2 !important;
+  opacity: 1 !important;
   transition: 0.2s all ease-in-out;
 }
 .latest-blog-slider .slick-prev:hover:before,

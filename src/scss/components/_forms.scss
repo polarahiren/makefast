@@ -31,6 +31,14 @@
         }
     } 
     .select-light{
+        .select2-container--open{
+            .select2-selection{
+                background-color: $white;
+                .select2-selection__rendered{
+                    color: $black;
+                }
+            }
+        }
         .select2-selection{
             background-color: rgba($white, $alpha: 0.20);
             .select2-selection__rendered{
@@ -224,6 +232,9 @@
 .select2-dropdown{
     border-color: $black;
     z-index: 9999;
+    .select2-results__options{
+        border-top: 1px solid $light-gray;
+    }
     .select2-results__option{
         font-size: $bodyXS;
         letter-spacing: 1.8px;
@@ -232,8 +243,8 @@
         padding: 14px 15px;
         @include generate-transition(all, 500ms, ease);
         &:first-child{
+            display: none;
             background-color: transparent;
-            border-bottom: 1px solid $light-gray;
         }
         &.select2-results__option--highlighted{
             background-color: $black;
