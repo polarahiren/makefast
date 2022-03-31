@@ -153,7 +153,8 @@
     .pro-cat-name{
         letter-spacing: 1.8px;
         @include media-breakpoint-down(md){
-            color: $white;
+            // color: $white;
+            font-weight: 500;
         }
     }
     .pro-name{
@@ -383,7 +384,7 @@
 .single-carousel{
     .product-image{
         .object-cover{
-            height: 530px;
+            height: 539px;
             @include media-breakpoint-down(md){
                 height: 540px;
             }
@@ -485,6 +486,10 @@
 
 .product-view{
     box-shadow: 0px 0px 26px #0000001A;
+    @include media-breakpoint-down(sm){
+        margin-right: -12px;
+        margin-left: -12px;
+    }
     .object-cover{
         height: 413px;
         @include media-breakpoint-down(lg){
@@ -737,6 +742,17 @@
 // case stuides open 
 
 // Services Open
+.service-menu{
+    @include media-breakpoint-down(md){
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        left: 0;
+        background: #ffffff;
+        padding: 15px 10px;
+        z-index: 99;
+    }
+}
 .services-lists-group {
     position: sticky;
     top: 150px;
@@ -765,6 +781,9 @@
         &.active{
             border-width: 0px 0px 0px 2px;
             padding-left: 8px;
+            @include media-breakpoint-down(md){
+                opacity: .37;
+            }
         }
     }
 }

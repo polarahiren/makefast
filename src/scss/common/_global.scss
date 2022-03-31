@@ -275,6 +275,9 @@ li{
   .input-control {
     padding: 12px 1.3rem;
     padding-right: 50px;
+    @include media-breakpoint-down(md){
+      padding: 8px 1.3rem;
+    }
   }
   .input-group-append {
     position: absolute;
