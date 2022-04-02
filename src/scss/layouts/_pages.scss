@@ -636,10 +636,8 @@
         transition: 0.2s all ease-in-out;
     }
     .slick-prev:hover:before,
-    .slick-prev:focus:before,
     // .slick-next:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before{
+    .slick-next:hover:before{
         opacity: 1 !important;
     }
 

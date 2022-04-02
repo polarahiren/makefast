@@ -220,7 +220,7 @@ export class App{
             arrows: true,
             speed: 300,
             autoplay: true,
-            infinite: true,
+            infinite: false,
             slidesToScroll: 1,
             slidesToShow: 3, 
             prevArrow:"<button type='button' class='slick-prev slick-arrow'></button>",
