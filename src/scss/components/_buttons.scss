@@ -1,3 +1,9 @@
+[type=button]{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+    appearance: none;
+}
+
 .btn{
     @include generate-transition(all, 500ms, ease);
     &.btn-primary-dark-icon{

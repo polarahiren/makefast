@@ -753,7 +753,7 @@
 }
 .services-lists-group {
     position: sticky;
-    top: 150px;
+    top: 250px;
     @include media-breakpoint-down(md){
         flex-wrap: nowrap;
         overflow: auto;
