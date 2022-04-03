@@ -547,6 +547,12 @@
             display: block;
             position: absolute;
         }
+        
+        @include media-breakpoint-down(lg){
+            &:first-child:before{
+                width: 100%;
+            }
+        }
     }
 }
 // END news page

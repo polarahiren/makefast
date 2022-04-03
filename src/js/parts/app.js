@@ -241,7 +241,18 @@ export class App{
                     }
                 }
             ]
-        }); 
+        });
+
+        // team member slider
+        // $('.team-member-slider').slick({
+        //     dots: false,
+        //     arrows: true,
+        //     speed: 300,
+        //     autoplay: true,
+        //     infinite: false,
+        //     slidesToScroll: 1,
+        //     slidesToShow: 1, 
+        // }); 
     
 
 }
