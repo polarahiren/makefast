@@ -164,7 +164,12 @@
     }
 
     input{
-        display: none;
+        position: absolute;
+        z-index: 9;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        opacity: 0;
 
         &:checked + .theme-checkbox:before {
             transform: scale(1);
